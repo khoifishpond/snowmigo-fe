@@ -51,6 +51,7 @@ group :development, :test do
   gem 'orderly'
   gem 'faker'
   gem 'factory_bot_rails'
+  gem 'travis'
 end
 
 group :development do
