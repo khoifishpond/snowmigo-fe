@@ -1,20 +1,11 @@
-https://docs.travis-ci.com/user/languages/ruby/
-
 language: ruby
 rbenv:
 - 2.7.2
+before_install:
+  - yes | gem update --system --force
+  - gem install bundler -v 2.2.30
 addons:
-- postgresql: 9.6
+  postgresql: 9.6
 script:
-- bundle exec rails db:create RAILS_ENV=test
+- bundle exec rails db:{create,migrate} RAILS_ENV=test
 - bundle exec rspec
-deploy:
-  provider: heroku
-  api_key:
-    secure:
-  app: something here
-  run: rails db:migrate
-  on:
-    repo: khoifishpond/snowmigo-fe
-    branch: main
-env:
