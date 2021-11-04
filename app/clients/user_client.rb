@@ -1,8 +1,8 @@
 class UserClient
   class << self
-    # def fetch(endpoint)
-    #   parse_data(conn.get(endpoint))
-    # end
+    def fetch(endpoint)
+      parse_data(conn.get(endpoint))
+    end
 
     def post_data(endpoint, attribute_hash)
       attribute_json = attribute_hash.to_json
