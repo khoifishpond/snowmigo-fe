@@ -47,7 +47,6 @@ group :development, :test do
   gem 'launchy'
   gem 'simplecov'
   gem 'shoulda-matchers'
-  gem 'vcr'
   gem 'orderly'
   gem 'faker'
   gem 'factory_bot_rails'
