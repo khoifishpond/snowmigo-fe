@@ -4,6 +4,11 @@ class UserClient
       parse_data(conn.get(endpoint))
     end
 
+    def post_data(endpoint, attribute_hash)
+      attribute_json = attribute_hash.to_json
+      parse_data(conn.post(endpoint, attribute_json, "Content-Type" => "application/json"))
+    end
+
     private
 
     def parse_data(response)
@@ -11,7 +16,7 @@ class UserClient
     end
 
     def conn
-      Faraday.new('http://localhost:3000')
+      Faraday.new('http://snowmigo-be.herokuapp.com')
     end
   end
 end
