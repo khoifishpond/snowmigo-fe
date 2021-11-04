@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 04 Nov 2021 04:27:41 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"04ee2af666ca64ce2dfc3e97d9b8451f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e95fea5c-6b10-42fc-b864-b0284336178e
+      X-Runtime:
+      - '0.004137'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Laura Court","email":"laura.mcourt@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null}}}'
+  recorded_at: Thu, 04 Nov 2021 04:27:42 GMT
+recorded_with: VCR 6.0.0
