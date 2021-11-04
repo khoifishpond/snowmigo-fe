@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 04 Nov 2021 03:08:29 GMT
+      - Thu, 04 Nov 2021 03:12:51 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -33,9 +33,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 904fa637-18f8-4199-8810-5e886ef8cc5b
+      - 33a28ada-781f-4f31-827f-b4c860bbf7aa
       X-Runtime:
-      - '0.152098'
+      - '0.005317'
       Transfer-Encoding:
       - chunked
       Via:
@@ -43,5 +43,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"2","type":"user","attributes":{"name":null,"email":"mikeosmonson@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null}}}'
-  recorded_at: Thu, 04 Nov 2021 03:08:30 GMT
+  recorded_at: Thu, 04 Nov 2021 03:12:51 GMT
 recorded_with: VCR 6.0.0
