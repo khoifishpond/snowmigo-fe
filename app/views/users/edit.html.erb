@@ -1,0 +1,17 @@
+<%= form_with url: user_path(current_user), method: :patch, local: true do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, value: current_user.name %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.label :ski_pass %>
+  <%= f.text_field :ski_pass %>
+  <%= f.label :ski_or_board %>
+  <%= f.text_field :ski_or_board %>
+  <%= f.label :exp_level %>
+  <%= f.text_field :exp_level %>
+  <%= f.label :emergency_name %>
+  <%= f.text_field :emergency_name %>
+  <%= f.label :emergency_number %>
+  <%= f.text_field :emergency_number %>
+  <%= f.submit "Update Info" %>
+<% end %>
