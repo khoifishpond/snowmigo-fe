@@ -2,12 +2,19 @@
 
 <div id='user-info'>
   <ul>
-    <li>Location</li>
-    <li>Pass Type</li>
-    <li>Board or ski</li>
-    <li>Favorite Resorts</li>
-    <li>Experience Level</li>
-    <li>Emergency Contact</li>
+    <li>Location <%= current_user.address %></li>
+    <li>Pass Type <%= current_user.pass_type %></li>
+    <li>Board or ski <%= current_user.ski_or_board %></li>
+    <li>Experience Level <%= current_user.xp_level %></li>
+    <li>Emergency Contact <%= current_user.emergency_name %></li>
   </ul>
-  <%= link_to "Edit info", edit_user_path(current_user) %>
+  <%= link_to "Edit info", edit_user_path(current_user.id) %>
+</div>
+
+<div id='upcoming-trips'>
+
+</div>
+
+<div id='past-trips'>
+
 </div>
