@@ -11,11 +11,13 @@
 # a separate helper file that requires the additional dependencies and performs
 # the additional setup, and require it from the spec files that actually need
 # it.
-#
+require 'support/integration_spec_helper.rb'
 require 'webmock/rspec'
+require 'capybara/rspec'
+require 'omniauth'
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-
+  config.include IntegrationSpecHelper  #, :type => :request
   # config.before(:each) do
   # json_response = File.read('spec/fixtures/users.json')
   # stub_request(:get, "http://localhost:3000/api/v1/users").
@@ -38,7 +40,7 @@ RSpec.configure do |config|
   #        	  'User-Agent'=>'Faraday v1.8.0'
   #            }).
   #          to_return(status: 200, body: "", headers: {})
-  # 
+  #
   # end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
@@ -120,3 +122,11 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+Capybara.default_host = 'https://snowmigo.herokuapp.com'
+
+OmniAuth.config.test_mode = true
+OmniAuth.config.add_mock(:google_oauth2, {:info =>
+  {:email => 'example@gmail.com',
+  :name => 'Freddie Mercury'
+  }})
+OmniAuth.config.silence_get_warning = true

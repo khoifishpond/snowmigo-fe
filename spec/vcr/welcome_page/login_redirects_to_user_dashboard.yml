@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"example@gmail.com","name":"Freddie Mercury"}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 05 Nov 2021 02:52:29 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"aadf83f519199ce317a1b58fa7e71551"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ec93d9fd-0a09-4af3-83e2-50a4160d46f3
+      X-Runtime:
+      - '0.004670'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null}}}'
+  recorded_at: Fri, 05 Nov 2021 02:52:29 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 05 Nov 2021 02:52:28 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"aadf83f519199ce317a1b58fa7e71551"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 40475161-0947-4f88-a9e9-c19eb4ce4121
+      X-Runtime:
+      - '0.003522'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null}}}'
+  recorded_at: Fri, 05 Nov 2021 02:52:29 GMT
+recorded_with: VCR 6.0.0

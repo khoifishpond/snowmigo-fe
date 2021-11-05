@@ -13,6 +13,6 @@ class ApplicationController < ActionController::Base
   # end
   #
   # def permission_denied
-  #   redirect_to root_path, alert: 'Please login to access your account'
+  #   redirect_to root_path, alert: 'Please login or create an account.'
   # end
 end
