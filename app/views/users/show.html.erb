@@ -1,1 +1,13 @@
-<h1>IT WORKS</h1>
+<h1>Welcome <%= current_user.name %></h1>
+
+<div id='user-info'>
+  <ul>
+    <li>Location</li>
+    <li>Pass Type</li>
+    <li>Board or ski</li>
+    <li>Favorite Resorts</li>
+    <li>Experience Level</li>
+    <li>Emergency Contact</li>
+  </ul>
+  <%= link_to "Edit info", edit_user_path(current_user) %>
+</div>
