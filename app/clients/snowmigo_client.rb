@@ -1,4 +1,4 @@
-class UserClient
+class SnowmigoClient
   class << self
     def fetch(endpoint)
       parse_data(conn.get(endpoint))
