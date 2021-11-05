@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/4
+    body:
+      encoding: UTF-8
+      string: '{"name":"Ozzie","email":"mikeosmonson@gmail.com","address":"Denver","pass_type":"Epic","ride_type":"snow
+        board","xp_level":"expert","emergency_name":"Christina","emergency_number":"3945638198"}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 05 Nov 2021 02:47:48 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ee8ec4eb98463ec7ea5b424a2d5cee06"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 70a6c403-b38b-481f-937f-dfd4ce743d96
+      X-Runtime:
+      - '0.032008'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Ozzie","email":"mikeosmonson@gmail.com","exp_level":null,"ski_pass":null,"address":"Denver","ski_or_board":0,"emergency_name":"Christina","emergency_number":"3945638198"}}}'
+  recorded_at: Fri, 05 Nov 2021 02:47:49 GMT
+recorded_with: VCR 6.0.0
