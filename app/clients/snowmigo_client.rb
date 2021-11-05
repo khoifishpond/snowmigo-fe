@@ -9,6 +9,11 @@ class SnowmigoClient
       parse_data(conn.post(endpoint, attribute_json, "Content-Type" => "application/json"))
     end
 
+    def patch_data(endpoint, attribute_hash)
+      attribute_json = attribute_hash.to_json
+      parse_data(conn.patch(endpoint, attribute_json, "Content-Type" => "application/json"))
+    end
+
     private
 
     def parse_data(response)
