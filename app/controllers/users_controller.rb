@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    UserFacade.user_update(current_user.id, updated_attributes)
+    user = UserFacade.user_update(current_user.id, updated_attributes)
     redirect_to user_path(current_user.id)
   end
 
@@ -19,9 +19,9 @@ class UsersController < ApplicationController
    {
     name: params[:name],
     address: params[:address],
-    pass_type: params[:pass_type],
+    ski_pass: params[:ski_pass],
     ski_or_board: params[:ski_or_board],
-    xp_level: params[:xp_level],
+    exp_level: params[:exp_level],
     emergency_name: params[:emergency_name],
     emergency_number: params[:emergency_number]
     }
