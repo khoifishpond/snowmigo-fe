@@ -1,17 +1,34 @@
 <%= form_with url: user_path(current_user), method: :patch, local: true do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name, value: current_user.name %>
-  <%= f.label :address %>
-  <%= f.text_field :address %>
-  <%= f.label :ski_pass %>
-  <%= f.text_field :ski_pass %>
-  <%= f.label :ski_or_board %>
-  <%= f.text_field :ski_or_board %>
-  <%= f.label :exp_level %>
-  <%= f.text_field :exp_level %>
-  <%= f.label :emergency_name %>
-  <%= f.text_field :emergency_name %>
-  <%= f.label :emergency_number %>
-  <%= f.text_field :emergency_number %>
-  <%= f.submit "Update Info" %>
+  <div class="form-floating mb-3">
+    <%= f.text_field :name, class: "form-control", id: "floatingInput2", value: current_user.name %>
+    <%= f.label :name %>
+  </div>
+  <div class="form-floating mb-3">
+    <%= f.text_field :address, class: "form-control", id: "floatingInput2", value: current_user.address %>
+    <%= f.label :address %>
+  </div>
+  <div class="form-floating mb-3">
+    <%= f.text_field :emergency_name, class: "form-control", id: "floatingInput2", value: current_user.emergency_name %>
+    <%= f.label :emergency_name %>
+  </div>
+  <div class="form-floating mb-3">
+    <%= f.text_field :emergency_number, class: "form-control", id: "floatingInput2", value: current_user.emergency_number %>
+    <%= f.label :emergency_number %>
+  </div>
+  <div>
+    <h6>Ski Pass</h6>
+    <%= f.select :ski_pass, options_for_select([['Epic', 'Epic'], ['Ikon', 'Ikon'], ['Other', 'Other']]), value: current_user.ski_pass %>
+  </div>
+  <br>
+  <div>
+    <h6>Ski or Snowboard?</h6>
+    <%= f.select :ski_or_board, options_for_select([['Ski', 'Ski'], ['Snowboard', 'Snowboard'], ['Both', 'Both']]), value: current_user.ski_or_board %>
+  </div>
+  <br>
+  <div>
+    <h6>Experience Level</h6>
+    <%= f.select :exp_level, options_for_select([['Beginner', 'Beginner'], ['Intermediate', 'Intermediate'], ['Advanced', 'Advanced'], ['Expert', 'Expert']]), value: current_user.exp_level %>
+  </div>
+  <br>
+    <%= f.submit "Update Info" %>
 <% end %>
