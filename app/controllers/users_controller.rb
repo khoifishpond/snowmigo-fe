@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
   def show
     @user = UserFacade.user_get(params[:id])
+    #use response codes to get flash messages
   end
 
   def edit
