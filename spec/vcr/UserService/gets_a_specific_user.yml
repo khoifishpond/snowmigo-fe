@@ -21,25 +21,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 04 Nov 2021 04:29:50 GMT
+      - Sat, 06 Nov 2021 23:09:23 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"04ee2af666ca64ce2dfc3e97d9b8451f"
+      - W/"36b3f5e873fcda1a4b08cc9b658dd6e7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f7417bda-06c2-4fbf-8c79-71b5ec8d739a
+      - e2b6c5b9-5211-4ea3-a345-03e38077a299
       X-Runtime:
-      - '0.003693'
+      - '0.004879'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Laura Court","email":"laura.mcourt@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null}}}'
-  recorded_at: Thu, 04 Nov 2021 04:29:50 GMT
+      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Ozzie","email":"mikeosmonson@gmail.com","exp_level":"expert","ski_pass":"Epic","address":"Denver","ski_or_board":"snow
+        board","emergency_name":"Christina","emergency_number":"3945638198"}}}'
+  recorded_at: Sat, 06 Nov 2021 23:09:23 GMT
 recorded_with: VCR 6.0.0

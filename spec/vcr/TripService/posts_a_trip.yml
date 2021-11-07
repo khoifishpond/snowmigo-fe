@@ -2,10 +2,11 @@
 http_interactions:
 - request:
     method: post
-    uri: http://snowmigo-be.herokuapp.com/api/v1/users
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips
     body:
       encoding: UTF-8
-      string: '{"email":"mikeosmonson@gmail.com"}'
+      string: '{"name":"name","start_date":"Tue, 02 Nov 2021","end_date":"Mon, 08
+        Nov 2021","resort_id":1}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -17,31 +18,31 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 201
+      message: Created
     headers:
       Server:
       - Cowboy
       Date:
-      - Thu, 04 Nov 2021 03:09:33 GMT
+      - Sat, 06 Nov 2021 23:07:56 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"7b4fc60293f2d94f50fbeb4384125956"
+      - W/"09cc05970ee7d862df643a984139fcad"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e35e5b7b-8060-4116-9e16-0be3fd5f15c6
+      - c8f64c9e-ca3d-4a69-9565-e0d03d65f11d
       X-Runtime:
-      - '0.005124'
+      - '0.014391'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2","type":"user","attributes":{"name":null,"email":"mikeosmonson@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null}}}'
-  recorded_at: Thu, 04 Nov 2021 03:09:33 GMT
+      string: '{"data":{"id":"11","type":"trip","attributes":{"name":"name","resort_id":1,"start_date":"2021-11-02","end_date":"2021-11-08"}}}'
+  recorded_at: Sat, 06 Nov 2021 23:07:56 GMT
 recorded_with: VCR 6.0.0
