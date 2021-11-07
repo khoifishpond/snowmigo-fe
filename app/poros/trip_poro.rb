@@ -6,7 +6,7 @@ class TripPoro
     @name = data[:attributes][:name]
     @start_date = data[:attributes][:start_date]
     @end_date = data[:attributes][:end_date]
-    @riders = data[:relationships][:riders]
+    # @riders = data[:relationships][:riders]
     @resort_id = data[:attributes][:resort_id]
     @resort_name = data[:attributes][:resort_name]
   end
