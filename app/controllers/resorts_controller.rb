@@ -6,4 +6,7 @@ class ResortsController < ApplicationController
       @resorts = nil
     end
   end
+
+  def show
+  end
 end
