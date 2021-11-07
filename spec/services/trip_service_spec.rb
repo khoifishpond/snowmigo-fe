@@ -7,14 +7,15 @@ RSpec.describe TripService, :vcr do
     expect(result).to be_a(Hash)
     expect(result.size).to eq(3)
     expect(result.first).to be_a(Array)
-    expect(result[:attributes][:resort_id]).to eq(1)
+    expect(result[:attributes][:resort_id]).to eq(2)
   end
 
   it 'returns a trip' do
-    result = TripService.trip_get(25)
+    result = TripService.trip_get(47)
     expect(result).to be_a(Hash)
     expect(result.size).to eq(3)
     expect(result.first).to be_a(Array)
-    expect(result[:attributes][:start_date]).to eq('2021-12-12')
+    expect(result[:attributes][:start_date]).to eq('2021-11-08')
+    expect(result[:attributes][:end_date]).to eq('2021-11-25')
   end
 end
