@@ -6,5 +6,10 @@ RSpec.describe TripFacade, :vcr do
       result = TripFacade.create_trip({ name: 'Happy fun time', start_date: '11/11/1111', end_date: '22/22/2222', resort_id: 2 })
       expect(result).to be_a(TripPoro)
     end
+
+    it 'gets a trip' do
+      result = TripFacade.trip_get(25)
+      expect(result).to be_a(TripPoro)
+    end
   end
 end
