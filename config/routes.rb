@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'auth/google_oauth2/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   resources :users, only: :show
+  resources :resorts, only: :index
 end
