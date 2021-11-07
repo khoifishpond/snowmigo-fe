@@ -8,8 +8,11 @@
 </div>
 <div id="resorts">
   <% if @resorts %>
+  <ul>
     <% @resorts.each do |resort| %>
+      <li><%= link_to resort.name, resort_path(resort.id) %></li>
     <% end %>
+  </ul>
   <% else %>
     Please select a State to search for resorts.
   <% end %>
