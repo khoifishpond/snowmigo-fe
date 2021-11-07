@@ -1,5 +1,5 @@
-<div>
-  <%= @trip.name %>
-  <%= @trip.start_date %>
-  <%= @trip.end_date %>
+
+<div id='trip-info'>
+  <p><%= @trip.name %></p>
+  <h6>From <%= @trip.start_date.to_date.strftime('%b %-d, %Y') %> to <%= @trip.end_date.to_date.strftime('%b %-d, %Y') %></h6>
 </div>
