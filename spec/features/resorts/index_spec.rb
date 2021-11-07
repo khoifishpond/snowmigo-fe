@@ -22,11 +22,16 @@ RSpec.describe 'resorts index page' do
     end
   end
 
-  it 'returns resorts within selected state', :vcr do #vcr
+  it 'returns resorts links within selected state' do #vcr
     within('#resorts-search') do
       select 'Colorado', :from => 'state'
       click_on 'Search'
     end
     expect(current_path).to eq(resorts_path)
+    within('#resorts') do
+      expect(page).to have_link('Arapahoe Basin')
+      click_on 'Arapahoe Basin'
+    end
+    expect(current_path).to eq(resort_path('303001'))
   end
 end
