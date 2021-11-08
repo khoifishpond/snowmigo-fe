@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 08 Nov 2021 04:07:50 GMT
+      - Mon, 08 Nov 2021 04:07:48 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ae57f5fd-6241-46c0-b0fb-fe778e106afc
+      - 27e43cf5-3fc9-4759-a470-0b03cf9c223a
       X-Runtime:
-      - '0.006006'
+      - '0.005897'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,5 +41,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"47","type":"trip","attributes":{"name":"Yay a trip","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25"},"relationships":{"resort_options":{"data":[]}}},"included":[]}'
-  recorded_at: Mon, 08 Nov 2021 04:07:50 GMT
+  recorded_at: Mon, 08 Nov 2021 04:07:49 GMT
 recorded_with: VCR 6.0.0

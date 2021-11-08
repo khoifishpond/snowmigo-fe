@@ -5,7 +5,7 @@ http_interactions:
     uri: http://snowmigo-be.herokuapp.com/api/v1/trips
     body:
       encoding: UTF-8
-      string: '{"name":"","start_date":"12/12/2021","end_date":"12/12/2021","resort_id":""}'
+      string: '{"name":"Happy fun time","start_date":"12/12/2021","end_date":"12/14/2021","resort_id":null,"resort_name":null}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -23,30 +23,30 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sun, 07 Nov 2021 00:47:28 GMT
+      - Mon, 08 Nov 2021 04:07:48 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"dcbdfc3b89cadcf1db78c510364db169"
+      - W/"6439c3eaa20115b0751d81056a44346a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6d1eb04d-9ea0-427d-b1b1-c288225040d5
+      - 10a1eb42-a826-47c3-b898-bd45711f96fe
       X-Runtime:
-      - '0.008691'
+      - '0.011821'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"25","type":"trip","attributes":{"name":"","resort_id":null,"start_date":"2021-12-12","end_date":"2021-12-12"}}}'
-  recorded_at: Sun, 07 Nov 2021 00:47:28 GMT
+      string: '{"data":{"id":"94","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":null},"relationships":{"resort_options":{"data":[]}}}}'
+  recorded_at: Mon, 08 Nov 2021 04:07:49 GMT
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/25
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/94
     body:
       encoding: US-ASCII
       string: ''
@@ -65,25 +65,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sun, 07 Nov 2021 00:47:28 GMT
+      - Mon, 08 Nov 2021 04:07:49 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"dcbdfc3b89cadcf1db78c510364db169"
+      - W/"9dad7106cfb2202ceb39982ef83d1a06"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 590c54b0-38ac-4a0e-871d-ef05c556ac62
+      - f4983a56-90a2-4de9-b2a2-4ce7b938980c
       X-Runtime:
-      - '0.006937'
+      - '0.006758'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"25","type":"trip","attributes":{"name":"","resort_id":null,"start_date":"2021-12-12","end_date":"2021-12-12"}}}'
-  recorded_at: Sun, 07 Nov 2021 00:47:28 GMT
+      string: '{"data":{"id":"94","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":null},"relationships":{"resort_options":{"data":[]}}},"included":[]}'
+  recorded_at: Mon, 08 Nov 2021 04:07:49 GMT
 recorded_with: VCR 6.0.0

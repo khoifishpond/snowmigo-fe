@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://snowmigo-be.herokuapp.com/api/v1/trips
+    method: patch
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/25
     body:
       encoding: UTF-8
-      string: '{"name":"Happy fun time","start_date":"11/11/1111","end_date":"22/22/2222","resort_id":2}'
+      string: '{"name":"Happy time","start_date":"11/11/1111","end_date":"22/22/2222","resort_id":3}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -17,31 +17,31 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 201
-      message: Created
+      code: 200
+      message: OK
     headers:
       Server:
       - Cowboy
       Date:
-      - Mon, 08 Nov 2021 04:07:47 GMT
+      - Mon, 08 Nov 2021 04:13:07 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"d3df38d7b19bf75bf7b651fd1ad38f2d"
+      - W/"690332ca1a2bf3f11f609e095a2694b6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 00ae3f35-8bd7-420a-b622-8e3adb386fe5
+      - 80011f05-8f41-4518-a257-9a37f8272542
       X-Runtime:
-      - '0.012677'
+      - '0.010219'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"93","type":"trip","attributes":{"name":"Happy fun time","resort_id":2,"resort_name":null,"start_date":"1111-11-11","end_date":null},"relationships":{"resort_options":{"data":[]}}}}'
-  recorded_at: Mon, 08 Nov 2021 04:07:48 GMT
+      string: '{"data":{"id":"25","type":"trip","attributes":{"name":"Happy time","resort_id":3,"resort_name":null,"start_date":"1111-11-11","end_date":null},"relationships":{"resort_options":{"data":[]}}}}'
+  recorded_at: Mon, 08 Nov 2021 04:13:08 GMT
 recorded_with: VCR 6.0.0

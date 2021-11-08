@@ -23,27 +23,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sat, 06 Nov 2021 23:09:21 GMT
+      - Mon, 08 Nov 2021 04:07:49 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"aadf83f519199ce317a1b58fa7e71551"
+      - W/"0e34a463cefc0a026a252b1dd299e83f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 196722c2-9b0d-4560-a7af-6e8e5736946d
+      - 83ad2399-ccd3-4be8-9bd1-034b9c76edff
       X-Runtime:
-      - '0.010065'
+      - '0.011327'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null}}}'
-  recorded_at: Sat, 06 Nov 2021 23:09:22 GMT
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null},"relationships":{"trips":{"data":[]}}}}'
+  recorded_at: Mon, 08 Nov 2021 04:07:49 GMT
 - request:
     method: get
     uri: http://snowmigo-be.herokuapp.com/api/v1/users/5
@@ -65,27 +65,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sat, 06 Nov 2021 23:09:21 GMT
+      - Mon, 08 Nov 2021 04:07:49 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"aadf83f519199ce317a1b58fa7e71551"
+      - W/"167e00cc44078fdb694943e1485ae844"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7bf11ce5-98c0-4627-b2a0-6794ec2ecdb7
+      - 7ef7337f-0abb-44cd-8bc3-9fa7fd90c07e
       X-Runtime:
-      - '0.004242'
+      - '0.006536'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null}}}'
-  recorded_at: Sat, 06 Nov 2021 23:09:22 GMT
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null},"relationships":{"trips":{"data":[]}}},"included":[]}'
+  recorded_at: Mon, 08 Nov 2021 04:07:49 GMT
 - request:
     method: get
     uri: http://snowmigo-be.herokuapp.com/api/v1/users/5
@@ -107,25 +107,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sat, 06 Nov 2021 23:09:21 GMT
+      - Mon, 08 Nov 2021 04:07:48 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"aadf83f519199ce317a1b58fa7e71551"
+      - W/"167e00cc44078fdb694943e1485ae844"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 63b248ba-5aba-4730-b7da-6cc19b065774
+      - 3865b80f-070c-4be4-b8fd-911628778193
       X-Runtime:
-      - '0.005041'
+      - '0.006495'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null}}}'
-  recorded_at: Sat, 06 Nov 2021 23:09:22 GMT
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null},"relationships":{"trips":{"data":[]}}},"included":[]}'
+  recorded_at: Mon, 08 Nov 2021 04:07:49 GMT
 recorded_with: VCR 6.0.0
