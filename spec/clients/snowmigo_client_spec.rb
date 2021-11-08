@@ -31,4 +31,8 @@ RSpec.describe SnowmigoClient, :vcr do
     expect(result.size).to eq(4)
     expect(result).to be_a(Hash)
   end
+
+  it 'deletes data' do
+    result = SnowmigoClient.destroy_data("/api/v1/trips/6")
+  end
 end
