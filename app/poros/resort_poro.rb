@@ -4,7 +4,7 @@ class ResortPoro
   def initialize(response)
     @id = response[:id]
     @name = response[:attributes][:name]
-    @new_snow = response[:attributes][:new_snow]
+    @new_snow = no_new_snow(response[:attributes][:new_snow])
     @base_depth = response[:attributes][:base_depth]
     @open_trails = response[:attributes][:open_trails]
     @open_lifts = response[:attributes][:open_lifts]
@@ -21,6 +21,14 @@ class ResortPoro
       'No'
     else
       'Yes'
+    end
+  end
+
+  def no_new_snow(snow)
+    if snow == ''
+      '0'
+    else
+      snow
     end
   end
 
