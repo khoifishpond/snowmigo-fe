@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 08 Nov 2021 17:48:10 GMT
+      - Mon, 08 Nov 2021 17:59:30 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -33,9 +33,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ec7e7e7d-cb51-4491-8707-9a4369ae5c4b
+      - 9f525b62-1662-4484-8e20-359d0c00ecde
       X-Runtime:
-      - '0.007213'
+      - '0.007855'
       Transfer-Encoding:
       - chunked
       Via:
@@ -43,5 +43,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"25","type":"trip","attributes":{"name":"Happy time","resort_id":3,"resort_name":null,"start_date":"1111-11-11","end_date":null},"relationships":{"resort_options":{"data":[]}}}}'
-  recorded_at: Mon, 08 Nov 2021 17:48:11 GMT
+  recorded_at: Mon, 08 Nov 2021 17:59:30 GMT
 recorded_with: VCR 6.0.0
