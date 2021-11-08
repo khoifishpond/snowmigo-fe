@@ -1,5 +1,5 @@
 class TripPoro
-  attr_reader :id, :start_date, :end_date, :resort_id, :name, :resort_name, :riders
+  attr_reader :id, :start_date, :end_date, :resort_id, :name, :resort_name
 
   def initialize(data)
     @id = data[:id]
