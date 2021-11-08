@@ -14,6 +14,10 @@ class SnowmigoClient
       parse_data(conn.patch(endpoint, attribute_json, "Content-Type" => "application/json"))
     end
 
+    def destroy_data(endpoint)
+      conn.delete(endpoint)
+    end
+
     private
 
     def parse_data(response)
