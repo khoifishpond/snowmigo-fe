@@ -1,0 +1,51 @@
+<img src='<%= @resort.logo %>', alt='<%= @resort.name %>'>
+<h3><%= @resort.name %></h3>
+<p>Mask Requirements: <%= @resort.mask_required %></p>
+<div id="<%= @resort.id %>-snow">
+  <ul><strong>Snow Conditions</strong>
+    <li>New Snow:<%= @resort.new_snow %> in</li>
+    <li>Base Depth: <%= @resort.base_depth %> in</li>
+    <li>Snow Condition: <%= @resort.snow_condition %></li>
+  </ul>
+</div>
+<div id="<%= @resort.id %>-features">
+  <ul><strong>Resort Features</strong>
+    <li>Open Lifts: <%= @resort.open_lifts %></li>
+    <li>Open Trails: <%= @resort.open_trails %></li>
+    <li><%= link_to 'Trail Map', @resort.trail_map %></li>
+  </ul>
+</div>
+<div id="<%= @resort.id %>-weather">
+  <ul><strong>Today's Weather</strong>
+    <li>Morning:<br>
+      <div id="morning-weather">
+        <img src="<%= @resort.morning_weather[:weather_icon] %>" alt="<%= @resort.morning_weather[:weather] %>">
+        <ul>
+          <li>Snowfall: <%= @resort.morning_weather[:snowfall] %></li>
+          <li>Temperature: <%= @resort.morning_weather[:temp] %> Fahrenheit</li>
+          <li>Wind: <%= @resort.morning_weather[:wind] %> mph</li>
+        </ul>
+      </div>
+    </li>
+    <li>Noon:<br>
+      <div id="noon-weather">
+        <img src="<%= @resort.noon_weather[:weather_icon] %>" alt="<%= @resort.noon_weather[:weather] %>">
+        <ul>
+          <li>Snowfall: <%= @resort.noon_weather[:snowfall] %></li>
+          <li>Temperature: <%= @resort.noon_weather[:temp] %> Fahrenheit</li>
+          <li>Wind: <%= @resort.noon_weather[:wind] %> mph</li>
+        </ul>
+      </div>
+    </li>
+    <li>Afternoon:<br>
+      <div id="afternoon-weather">
+        <img src="<%= @resort.afternoon_weather[:weather_icon] %>" alt="<%= @resort.afternoon_weather[:weather] %>">
+        <ul>
+          <li>Snowfall: <%= @resort.afternoon_weather[:snowfall] %></li>
+          <li>Temperature: <%= @resort.afternoon_weather[:temp] %> Fahrenheit</li>
+          <li>Wind: <%= @resort.afternoon_weather[:wind] %> mph</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
