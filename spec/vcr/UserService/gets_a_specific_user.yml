@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 08 Nov 2021 04:07:50 GMT
+      - Mon, 08 Nov 2021 17:48:14 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7f332bbe-7a5c-4dfb-a8ac-bbf5ed309ecd
+      - 1f8cf4f9-a0dc-4164-b01a-13854a291c61
       X-Runtime:
-      - '0.008092'
+      - '0.012670'
       Transfer-Encoding:
       - chunked
       Via:
@@ -42,5 +42,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"4","type":"user","attributes":{"name":"Ozzie","email":"mikeosmonson@gmail.com","exp_level":"expert","ski_pass":"Epic","address":"Denver","ski_or_board":"snow
         board","emergency_name":"Christina","emergency_number":"3945638198"},"relationships":{"trips":{"data":[]}}},"included":[]}'
-  recorded_at: Mon, 08 Nov 2021 04:07:51 GMT
+  recorded_at: Mon, 08 Nov 2021 17:48:14 GMT
 recorded_with: VCR 6.0.0

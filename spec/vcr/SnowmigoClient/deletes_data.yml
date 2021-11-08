@@ -15,31 +15,27 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Server:
       - Cowboy
       Date:
-      - Mon, 08 Nov 2021 04:15:37 GMT
+      - Mon, 08 Nov 2021 17:48:10 GMT
       Connection:
       - keep-alive
       Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"6b86b273ff34fce19d6b804eff5a3f57"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      - text/html; charset=UTF-8
       X-Request-Id:
-      - 5ca10c24-cd76-450a-b16c-d8a765087248
+      - baf114a1-57ac-4b9d-b6d2-cc0d9bd07b29
       X-Runtime:
-      - '0.006410'
-      Transfer-Encoding:
-      - chunked
+      - '0.004284'
+      Content-Length:
+      - '0'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '1'
-  recorded_at: Mon, 08 Nov 2021 04:15:38 GMT
+      string: ''
+  recorded_at: Mon, 08 Nov 2021 17:48:10 GMT
 recorded_with: VCR 6.0.0
