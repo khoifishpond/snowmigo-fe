@@ -23,25 +23,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sun, 07 Nov 2021 04:35:55 GMT
+      - Mon, 08 Nov 2021 17:59:29 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3440ae916fbfb044631857e6889618ea"
+      - W/"3a01597673d663ae51cbaa19901a90fa"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9f9f79d8-94df-4320-9f87-550d70058690
+      - 3cdee81b-1dab-403f-a41f-3af73361d117
       X-Runtime:
-      - '0.102550'
+      - '0.014644'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2","type":"user","attributes":{"name":"mike","email":"mikeosmonson@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null}}}'
-  recorded_at: Sun, 07 Nov 2021 04:35:55 GMT
+      string: '{"data":{"id":"2","type":"user","attributes":{"name":"mike","email":"mikeosmonson@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null},"relationships":{"trips":{"data":[]}}}}'
+  recorded_at: Mon, 08 Nov 2021 17:59:29 GMT
 recorded_with: VCR 6.0.0

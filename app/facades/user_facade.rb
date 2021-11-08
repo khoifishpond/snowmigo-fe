@@ -10,5 +10,10 @@ class UserFacade
       user = UserService.user_get(id)
       UserPoro.new(user)
     end
+
+    def user_update(id, updated_attributes)
+      user = UserService.user_update(id, updated_attributes)
+      UserPoro.new(user)
+    end
   end
 end

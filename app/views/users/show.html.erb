@@ -1,1 +1,22 @@
-<h1>IT WORKS</h1>
+<h1>Welcome <%= current_user.name %></h1>
+
+<div id='user-info'>
+  <ul>
+    <li>Location <%= current_user.address %></li>
+    <li>Pass Type <%= current_user.ski_pass %></li>
+    <li>Board or ski <%= current_user.ski_or_board %></li>
+    <li>Experience Level <%= current_user.exp_level %></li>
+    <li>Emergency Contact Name <%= current_user.emergency_name %></li>
+    <li>Emergency Contact Number <%= number_to_phone(current_user.emergency_number, area_code: true) %></li>
+  </ul>
+  <%= link_to "Edit info", edit_user_path(current_user.id) %>
+</div>
+<br>
+
+<div id='upcoming-trips'>
+
+</div>
+
+<div id='past-trips'>
+
+</div>

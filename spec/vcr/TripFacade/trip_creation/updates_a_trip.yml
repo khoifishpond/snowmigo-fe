@@ -1,14 +1,16 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/users/4
+    method: patch
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/25
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: '{"name":"Happy time","start_date":"11/11/1111","end_date":"22/22/2222","resort_id":3}'
     headers:
       User-Agent:
       - Faraday v1.8.0
+      Content-Type:
+      - application/json
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,25 +23,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 04 Nov 2021 04:27:41 GMT
+      - Mon, 08 Nov 2021 17:59:30 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"04ee2af666ca64ce2dfc3e97d9b8451f"
+      - W/"690332ca1a2bf3f11f609e095a2694b6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e95fea5c-6b10-42fc-b864-b0284336178e
+      - 9f525b62-1662-4484-8e20-359d0c00ecde
       X-Runtime:
-      - '0.004137'
+      - '0.007855'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Laura Court","email":"laura.mcourt@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null}}}'
-  recorded_at: Thu, 04 Nov 2021 04:27:42 GMT
+      string: '{"data":{"id":"25","type":"trip","attributes":{"name":"Happy time","resort_id":3,"resort_name":null,"start_date":"1111-11-11","end_date":null},"relationships":{"resort_options":{"data":[]}}}}'
+  recorded_at: Mon, 08 Nov 2021 17:59:30 GMT
 recorded_with: VCR 6.0.0

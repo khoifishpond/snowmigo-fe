@@ -1,0 +1,7 @@
+
+<div id='trip-info'>
+  <p><%= @trip.name %></p>
+  <h6>From <%= @trip.format_start_date %> to <%= @trip.format_end_date %></h6>
+  <%= link_to "Update trip info", edit_trip_path(@trip.id) %>
+  <%= link_to "Delete trip info", trip_path(@trip.id), method: :delete %>
+</div>
