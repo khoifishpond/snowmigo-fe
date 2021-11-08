@@ -2,4 +2,7 @@
 <div id='trip-info'>
   <p><%= @trip.name %></p>
   <h6>From <%= @trip.start_date.to_date.strftime('%b %-d, %Y') %> to <%= @trip.end_date.to_date.strftime('%b %-d, %Y') %></h6>
+  <%= link_to "Update trip info", edit_trip_path(@trip.id) %>
+  <%= link_to "Delete trip info", trip_path(@trip.id), method: :delete %>
+
 </div>
