@@ -1,7 +1,6 @@
 class ResortPoro
   attr_reader :id, :name, :new_snow, :base_depth, :open_trails, :open_lifts,
-  :snow_condition, :chance_of_snow, :mask_required, :trail_map, :logo,
-  :morning_weather, :noon_weather, :afternoon_weather
+  :snow_condition, :chance_of_snow, :mask_required, :trail_map, :logo
   def initialize(response)
     @id = response[:id]
     @name = response[:attributes][:name]
@@ -14,9 +13,7 @@ class ResortPoro
     @trail_map = response[:attributes][:trail_map]
     @logo = response[:attributes][:logo]
     @chance_of_snow = response[:attributes][:chance_of_snow]
-    @morning_weather = response[:attributes][:hourly_weather][:morning]
-    @noon_weather = response[:attributes][:hourly_weather][:noon]
-    @afternoon_weather = response[:attributes][:hourly_weather][:afternoon]
+    @hourly_weather = response[:attributes][:hourly_weather]
   end
 
   def mask(enum)
@@ -25,5 +22,17 @@ class ResortPoro
     else
       'Yes'
     end
+  end
+
+  def morning_weather
+    @hourly_weather[:morning]
+  end
+
+  def noon_weather
+    @hourly_weather[:noon]
+  end
+
+  def afternoon_weather
+    @hourly_weather[:afternoon]
   end
 end
