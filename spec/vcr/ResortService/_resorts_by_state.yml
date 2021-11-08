@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/resorts?states=co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 07 Nov 2021 19:20:05 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"981e10807453bba9a9196f02003e33df"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e3b35f6c-7a23-4674-bbbb-429a273080a4
+      X-Runtime:
+      - '0.018412'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"303001","type":"state_resort","attributes":{"name":"Arapahoe
+        Basin"}},{"id":"999816020","type":"state_resort","attributes":{"name":"Ashcroft
+        Ski Touring"}},{"id":"303004","type":"state_resort","attributes":{"name":"Aspen
+        Highlands"}},{"id":"303003","type":"state_resort","attributes":{"name":"Aspen
+        Mountain"}},{"id":"999816021","type":"state_resort","attributes":{"name":"Aspen
+        Snowmass Nordic Trail System"}},{"id":"303005","type":"state_resort","attributes":{"name":"Beaver
+        Creek"}},{"id":"720025","type":"state_resort","attributes":{"name":"Bluebird
+        Backcountry"}},{"id":"303007","type":"state_resort","attributes":{"name":"Breckenridge"}},{"id":"303027","type":"state_resort","attributes":{"name":"Buttermilk"}},{"id":"719003","type":"state_resort","attributes":{"name":"Cooper/Chicago
+        Ridge"}},{"id":"303009","type":"state_resort","attributes":{"name":"Copper
+        Mountain Resort"}},{"id":"303010","type":"state_resort","attributes":{"name":"Crested
+        Butte Mountain Resort"}},{"id":"999812026","type":"state_resort","attributes":{"name":"Crested
+        Butte Nordic Center"}},{"id":"720001","type":"state_resort","attributes":{"name":"Echo
+        Mountain"}},{"id":"303011","type":"state_resort","attributes":{"name":"Eldora
+        Mountain Resort"}},{"id":"303018","type":"state_resort","attributes":{"name":"Granby
+        Ranch"}},{"id":"720024","type":"state_resort","attributes":{"name":"Hesperus
+        Ski Area"}},{"id":"303013","type":"state_resort","attributes":{"name":"Howelsen
+        Hill Ski Area"}},{"id":"303026","type":"state_resort","attributes":{"name":"Irwin
+        Catskiing by Eleven"}},{"id":"303030","type":"state_resort","attributes":{"name":"Kendall
+        Mountain"}},{"id":"303014","type":"state_resort","attributes":{"name":"Keystone
+        Resort"}},{"id":"303015","type":"state_resort","attributes":{"name":"Loveland
+        Ski Area"}},{"id":"719002","type":"state_resort","attributes":{"name":"Monarch
+        Mountain"}},{"id":"303016","type":"state_resort","attributes":{"name":"Powderhorn
+        Mountain Resort"}},{"id":"303017","type":"state_resort","attributes":{"name":"Purgatory
+        Resort"}},{"id":"303387","type":"state_resort","attributes":{"name":"Silverton
+        Mountain"}},{"id":"999804032","type":"state_resort","attributes":{"name":"Snow
+        Mountain Ranch"}},{"id":"303020","type":"state_resort","attributes":{"name":"Snowmass"}},{"id":"303021","type":"state_resort","attributes":{"name":"Steamboat"}},{"id":"303019","type":"state_resort","attributes":{"name":"Sunlight
+        Mountain Resort"}},{"id":"303022","type":"state_resort","attributes":{"name":"Telluride
+        Ski Resort"}},{"id":"303023","type":"state_resort","attributes":{"name":"Vail
+        Mountain Resort"}},{"id":"999816034","type":"state_resort","attributes":{"name":"Vail
+        Nordic Center"}},{"id":"303024","type":"state_resort","attributes":{"name":"Winter
+        Park Resort"}},{"id":"303025","type":"state_resort","attributes":{"name":"Wolf
+        Creek Ski Area"}}]}'
+  recorded_at: Sun, 07 Nov 2021 19:20:06 GMT
+recorded_with: VCR 6.0.0

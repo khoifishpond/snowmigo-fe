@@ -1,0 +1,133 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"example@gmail.com","name":"Freddie Mercury"}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 08 Nov 2021 04:01:47 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0e34a463cefc0a026a252b1dd299e83f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d940e49d-a95a-43d6-b36b-95a0d1a2b57b
+      X-Runtime:
+      - '0.075419'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null},"relationships":{"trips":{"data":[]}}}}'
+  recorded_at: Mon, 08 Nov 2021 04:01:48 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 08 Nov 2021 04:01:47 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"167e00cc44078fdb694943e1485ae844"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cf8ddc0e-4134-4391-8956-8d0b7eada68d
+      X-Runtime:
+      - '0.011746'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null},"relationships":{"trips":{"data":[]}}},"included":[]}'
+  recorded_at: Mon, 08 Nov 2021 04:01:48 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/resorts/303001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 08 Nov 2021 04:01:48 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e785edc7cbc0769761ed4274cb44c69a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a6efd297-f96d-49db-9c80-38ee63b68251
+      X-Runtime:
+      - '0.456791'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"303001","type":"resort","attributes":{"name":"Arapahoe
+        Basin","new_snow":"","base_depth":"19","open_trails":"1/147","open_lifts":"1/9","snow_condition":"Machine
+        Groomed","mask_required":"1","trail_map":"http://feeds.snocountry.net/trailmapDisplay.php?permcode=303001","logo":"http://snocountry.com/ski_area_logos/303001logo.jpg","chance_of_snow":"0","hourly_weather":{"morning":{"temp":"38","weather":"Sunny","weather_icon":"http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png","wind":"17","snowfall":null},"noon":{"temp":"41","weather":"Sunny","weather_icon":"http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png","wind":"27","snowfall":null},"afternoon":{"temp":"38","weather":"Sunny","weather_icon":"http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png","wind":"18","snowfall":null}}}}]}'
+  recorded_at: Mon, 08 Nov 2021 04:01:48 GMT
+recorded_with: VCR 6.0.0
