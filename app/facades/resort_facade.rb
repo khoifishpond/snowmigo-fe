@@ -6,5 +6,10 @@ class ResortFacade
         ResortPoro.new(resort)
       end
     end
+
+    def resort_by_id(id)
+      resort = ResortService.resort_by_id(id)
+      ResortPoro.new(resort[:data].first)
+    end
   end
 end
