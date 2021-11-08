@@ -29,22 +29,22 @@ RSpec.describe 'resort show page' do
       within('#morning-weather') do
         expect(page).to have_css("img[alt*='Sunny']")
         expect(page).to have_content("Snowfall:")
-        expect(page).to have_content("Temperature: 38 Fahrenheit")
-        expect(page).to have_content("Wind: 17 mph")
+        expect(page).to have_content("Temperature: 34 Fahrenheit")
+        expect(page).to have_content("Wind: 19 mph")
       end
       expect(page).to have_content('Noon:')
       within('#noon-weather') do
-        expect(page).to have_css("img[alt*='Sunny']")
+        expect(page).to have_css("img[alt*='Partly cloudy']")
         expect(page).to have_content("Snowfall:")
-        expect(page).to have_content("Temperature: 41 Fahrenheit")
-        expect(page).to have_content("Wind: 27 mph")
+        expect(page).to have_content("Temperature: 37 Fahrenheit")
+        expect(page).to have_content("Wind: 23 mph")
       end
       expect(page).to have_content('Afternoon:')
       within('#afternoon-weather') do
-        expect(page).to have_css("img[alt*='Sunny']")
+        expect(page).to have_css("img[alt*='Partly cloudy']")
         expect(page).to have_content("Snowfall:")
-        expect(page).to have_content("Temperature: 38 Fahrenheit")
-        expect(page).to have_content("Wind: 18 mph")
+        expect(page).to have_content("Temperature: 35 Fahrenheit")
+        expect(page).to have_content("Wind: 23 mph")
       end
     end
   end
