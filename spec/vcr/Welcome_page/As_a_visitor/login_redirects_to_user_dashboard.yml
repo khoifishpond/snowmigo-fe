@@ -1,0 +1,131 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"example@gmail.com","name":"Freddie Mercury"}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 09 Nov 2021 03:50:05 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4cb883f777fe1a04fdff067d26760f7b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d5113b4f-288c-4ef3-a436-5f0fa9e26297
+      X-Runtime:
+      - '0.009049'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Epic","address":"","ski_or_board":"","emergency_name":"","emergency_number":""},"relationships":{"trips":{"data":[]}}}}'
+  recorded_at: Tue, 09 Nov 2021 03:50:05 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 09 Nov 2021 03:50:05 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"63f25c3e41c6ec7990c5aa6556018061"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d06ab8d9-9413-4140-96eb-64c5ae9df28f
+      X-Runtime:
+      - '0.006237'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Epic","address":"","ski_or_board":"","emergency_name":"","emergency_number":""},"relationships":{"trips":{"data":[]}}},"included":[]}'
+  recorded_at: Tue, 09 Nov 2021 03:50:05 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 09 Nov 2021 03:50:05 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"63f25c3e41c6ec7990c5aa6556018061"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1fa78291-da41-491c-8cdf-bde73a88fdb4
+      X-Runtime:
+      - '0.006046'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Epic","address":"","ski_or_board":"","emergency_name":"","emergency_number":""},"relationships":{"trips":{"data":[]}}},"included":[]}'
+  recorded_at: Tue, 09 Nov 2021 03:50:05 GMT
+recorded_with: VCR 6.0.0
