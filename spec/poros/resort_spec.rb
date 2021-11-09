@@ -2,43 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Resort do
   before(:each) do
-    data = {id: "1",
-            type: 'state_resort',
-            attributes: {
-              name: 'Arapahoe Basin',
-              new_snow: '3',
-              base_depth: '21',
-              open_trails: '1/147',
-              open_lifts: '1/9',
-              snow_condition: 'Machine Groomed',
-              mask_required: '1',
-              trail_map: 'http://feeds.snocountry.net/trailmapDisplay.php?permcode=303001',
-              logo: 'http://snocountry.com/ski_area_logos/303001logo.jpg',
-              chance_of_snow: '0',
-              hourly_weather: {
-                morning: {
-                  temp: '38',
-                  weather: 'Sunny',
-                  weather_icon: 'http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png',
-                  wind: '17',
-                  snowfall: 'null'
-                },
-                noon: {
-                  temp: '41',
-                  weather: 'Sunny',
-                  weather_icon: 'http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png',
-                  wind: '27',
-                  snowfall: 'null'
-                },
-                afternoon: {
-                  temp: '38',
-                  weather: 'Sunny',
-                  wind: '18',
-                  snowfall: 'null'
-                }
-              }
-              }}
-    @resort = Resort.new(data)
+    @resort = Resort.new(resort_data)
   end
 
   it 'exists and has attributes' do
@@ -76,5 +40,9 @@ RSpec.describe Resort do
     expect(@resort.morning_weather).to eq(morning_weather)
     expect(@resort.noon_weather).to eq(noon_weather)
     expect(@resort.afternoon_weather).to eq(afternoon_weather)
+  end
+
+  it 'shows no if mask enum is 0' do
+    expect(@resort.mask('0')).to eq('No')
   end
 end
