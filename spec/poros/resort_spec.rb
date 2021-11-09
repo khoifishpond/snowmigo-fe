@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe ResortPoro do
+RSpec.describe Resort do
   before(:each) do
     data = {id: "1",
             type: 'state_resort',
@@ -38,7 +38,7 @@ RSpec.describe ResortPoro do
                 }
               }
               }}
-    @resort = ResortPoro.new(data)
+    @resort = Resort.new(data)
   end
 
   it 'exists and has attributes' do

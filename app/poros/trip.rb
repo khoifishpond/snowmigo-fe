@@ -1,4 +1,4 @@
-class TripPoro
+class Trip
   attr_reader :id, :start_date, :end_date, :resort_id, :name, :resort_name
 
   def initialize(data)
