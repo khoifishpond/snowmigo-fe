@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'User Dashboard', :vcr do
   describe 'Requires a user' do
-    #for when we use our require user method
+    # for when we use our require user method
     # it 'redirects if no user' do
     #   visit user_path
     #
@@ -13,7 +13,7 @@ RSpec.describe 'User Dashboard', :vcr do
 
   describe 'As a verified User' do
     describe 'With Successful Login' do
-      before {
+      before do
         login_with_oauth
 
         @user_attributes = {
@@ -29,7 +29,7 @@ RSpec.describe 'User Dashboard', :vcr do
             emergency_number: nil
           }
         }
-      }
+      end
 
       # it 'Flash Message shows success' do
       #   expect(page).to have_content('Login Successful')

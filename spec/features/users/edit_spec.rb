@@ -28,10 +28,4 @@ describe 'user info edit page', :vcr do
   end
 end
 
-
-
-
-
-
-
 # save_and_open_page

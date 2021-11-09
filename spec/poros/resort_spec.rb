@@ -12,22 +12,22 @@ RSpec.describe Resort do
       weather_icon: 'http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png',
       wind: '17',
       snowfall: 'null'
-      }
+    }
     noon_weather = {
       temp: '41',
       weather: 'Sunny',
       weather_icon: 'http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png',
       wind: '27',
       snowfall: 'null'
-      }
+    }
     afternoon_weather = {
       temp: '38',
       weather: 'Sunny',
       wind: '18',
       snowfall: 'null'
-      }
+    }
     expect(@resort.name).to eq('Arapahoe Basin')
-    expect(@resort.id).to eq("1")
+    expect(@resort.id).to eq('1')
     expect(@resort.new_snow).to eq('3')
     expect(@resort.base_depth).to eq('21')
     expect(@resort.open_trails).to eq('1/147')

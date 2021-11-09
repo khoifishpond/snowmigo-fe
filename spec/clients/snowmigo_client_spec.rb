@@ -9,7 +9,7 @@ RSpec.describe SnowmigoClient, :vcr do
   end
 
   it 'returns get json data' do
-    result = SnowmigoClient.fetch("/api/v1/users/4")
+    result = SnowmigoClient.fetch('/api/v1/users/4')
     result = result[:data]
     expect(result.size).to eq(4)
     expect(result).to be_a(Hash)

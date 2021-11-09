@@ -1,6 +1,7 @@
 class Resort
   attr_reader :id, :name, :new_snow, :base_depth, :open_trails, :open_lifts,
-  :snow_condition, :chance_of_snow, :mask_required, :trail_map, :logo
+              :snow_condition, :chance_of_snow, :mask_required, :trail_map, :logo
+
   def initialize(response)
     @id = response[:id]
     @name = response[:attributes][:name]

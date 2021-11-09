@@ -14,15 +14,15 @@ RSpec.describe UserFacade, :vcr do
 
     it 'updates user info' do
       result = UserFacade.user_update(4, {
-                                            name: 'Ozzie',
-                                            email: 'mikeosmonson@gmail.com',
-                                            address: 'Denver',
-                                            ski_pass: 'Epic',
-                                            ski_or_board: 'snow board',
-                                            exp_level: 'expert',
-                                            emergency_name: 'Christina',
-                                            emergency_number: '3945638198'
-                                           })
+                                        name: 'Ozzie',
+                                        email: 'mikeosmonson@gmail.com',
+                                        address: 'Denver',
+                                        ski_pass: 'Epic',
+                                        ski_or_board: 'snow board',
+                                        exp_level: 'expert',
+                                        emergency_name: 'Christina',
+                                        emergency_number: '3945638198'
+                                      })
       expect(result).to be_a(User)
     end
   end

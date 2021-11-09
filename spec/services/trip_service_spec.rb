@@ -1,9 +1,9 @@
 require 'rails_helper'
-#
 RSpec.describe TripService, :vcr do
   it 'posts a trip' do
     # require "pry"; binding.pry
-    result = TripService.create_trip({ name: 'Happy fun time', start_date: '11/11/1111', end_date: '22/22/2222', resort_id: 2 })
+    result = TripService.create_trip({ name: 'Happy fun time', start_date: '11/11/1111', end_date: '22/22/2222',
+                                       resort_id: 2 })
     expect(result).to be_a(Hash)
     expect(result.size).to eq(4)
     expect(result.first).to be_a(Array)
@@ -21,10 +21,10 @@ RSpec.describe TripService, :vcr do
 
   it 'updates a trip' do
     result = TripService.update_trip(48, {
-                                            name: 'This is a trip',
-                                            start_date: '2021-11-09',
-                                            end_date: '2021-11-10'
-                                            })
+                                       name: 'This is a trip',
+                                       start_date: '2021-11-09',
+                                       end_date: '2021-11-10'
+                                     })
     expect(result).to be_a(Hash)
     expect(result.size).to eq(4)
     expect(result.first).to be_a(Array)

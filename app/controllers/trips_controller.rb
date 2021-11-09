@@ -1,8 +1,5 @@
 class TripsController < ApplicationController
-
-  def new
-
-  end
+  def new; end
 
   def create
     @trip = TripFacade.create_trip(trip_params)

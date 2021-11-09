@@ -1,6 +1,5 @@
 class UserFacade
   class << self
-
     def user_auth(email, name)
       user = UserService.user_auth(email, name)
       User.new(user)
