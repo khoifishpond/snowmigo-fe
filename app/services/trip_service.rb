@@ -13,8 +13,8 @@ class TripService
       SnowmigoClient.patch_data("/api/v1/trips/#{id}", updated_attributes)[:data]
     end
 
-    # def destroy_trip(id)
-    #   SnowmigoClient.destroy_data("/api/v1/trips/#{id}")
-    # end
+    def destroy_trip(id)
+      SnowmigoClient.destroy_data("/api/v1/trips/#{id}")
+    end
   end
 end
