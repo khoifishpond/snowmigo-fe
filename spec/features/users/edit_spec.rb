@@ -4,13 +4,40 @@ describe 'user info edit page' do
   describe 'edits' do
     before :each do
       login_with_oauth
+      visit edit_user_path(5)
+    end
 
-      @user_attributes = { id: 5, attributes:
-                          { name: 'Freddie Mercury', email: 'example@gmail.com',exp_level: nil,
-                            ski_pass: nil, address: nil, ski_or_board: nil,
-                            emergency_name: nil, emergency_number: nil
-                        } }
-      visit edit_user_path(@user_attributes[:id])
+    it 'can edit a user' do
+      fill_in :name, with: 'Freddie Mercury'
+      select 'Epic', from: :ski_pass
+      select 'Advanced', from: :exp_level
+      click_button 'Update Info'
+
+      user = UserFacade.user_get(5)
+
+      expect(user.name).to eq('Freddie Mercury')
+      expect(user.ski_pass).to eq('Epic')
+      expect(user.exp_level).to eq('Advanced')
+
+      visit edit_user_path(5)
+
+      expect(page).to have_field(:name, with: 'Freddie Mercury')
+      expect(page).to have_field(:ski_pass, with: 'Epic')
+      expect(page).to have_field(:exp_level, with: 'Advanced')
+
+      fill_in :name, with: 'Squirrely Dan'
+      select 'Ikon', from: :ski_pass
+      select 'Expert', from: :exp_level
+      click_button 'Update Info'
+
+      user = UserFacade.user_get(5)
+
+      expect(user.name).to eq('Squirrely Dan')
+      expect(user.ski_pass).to eq('Ikon')
+      expect(user.exp_level).to eq('Expert')
+      expect(current_path).to eq(user_path(user.id))
+      expect(page).to have_content('Squirrely Dan')
+      expect(page).to have_content('Ikon')
     end
   end
 end

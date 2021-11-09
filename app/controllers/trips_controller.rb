@@ -1,8 +1,5 @@
 class TripsController < ApplicationController
-
-  def new
-
-  end
+  def new; end
 
   def create
     @trip = TripFacade.create_trip(trip_params)
@@ -12,20 +9,20 @@ class TripsController < ApplicationController
   def show
     @trip = TripFacade.trip_get(params[:id])
   end
+  
+  def edit
+    @trip = TripFacade.trip_get(params[:id])
+  end
 
-  # def edit
-  #   @trip = TripFacade.trip_get(params[:id])
-  # end
-  #
-  # def update
-  #   trip = TripFacade.update_trip(params[:id], trip_params)
-  #   redirect_to trip_path(trip.id)
-  # end
+  def update
+    trip = TripFacade.update_trip(params[:id], trip_params)
+    redirect_to trip_path(trip.id)
+  end
 
-  # def destroy
-  #   trip = TripFacade.destroy_trip(params[:id])
-  #   redirect_to user_path(current_user.id)
-  # end
+  def destroy
+    TripFacade.destroy_trip(params[:id])
+    redirect_to user_path(current_user.id)
+  end
 
   private
 
