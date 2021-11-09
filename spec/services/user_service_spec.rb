@@ -14,20 +14,20 @@ RSpec.describe UserService, :vcr do
 
     expect(result).to be_a(Hash)
     expect(result.size).to eq(4)
-    expect(result[:id]).to eq("4")
+    expect(result[:id]).to eq('4')
   end
 
   it 'updates user info' do
     result = UserService.user_update(4, {
-                                          name: 'Ozzie',
-                                          email: 'mikeosmonson@gmail.com',
-                                          address: 'Denver',
-                                          ski_pass: 'Epic',
-                                          ski_or_board: 'snow board',
-                                          exp_level: 'expert',
-                                          emergency_name: 'Christina',
-                                          emergency_number: '3945638198'
-                                         })
+                                       name: 'Ozzie',
+                                       email: 'mikeosmonson@gmail.com',
+                                       address: 'Denver',
+                                       ski_pass: 'Epic',
+                                       ski_or_board: 'snow board',
+                                       exp_level: 'expert',
+                                       emergency_name: 'Christina',
+                                       emergency_number: '3945638198'
+                                     })
     expect(result).to be_a(Hash)
     expect(result.size).to eq(4)
     expect(result[:attributes]).to have_key :name

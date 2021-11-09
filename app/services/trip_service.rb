@@ -1,6 +1,5 @@
 class TripService
   class << self
-
     def create_trip(trip_params)
       SnowmigoClient.post_data('/api/v1/trips', trip_params)[:data]
     end

@@ -1,7 +1,11 @@
 require 'rails_helper'
 
-describe UserPoro do
-  let(:user) { UserPoro.new({ id: 1, attributes: { name: 'Khoi', email: 'khois@email.com',exp_level: 'expert', ski_pass: 'epic', address: 'Denver', ski_or_board: 'ski', emergency_name: 'Xtina', emergency_number: '8675309' } }) }
+describe User do
+  let(:user) do
+    User.new({ id: 1,
+               attributes: { name: 'Khoi', email: 'khois@email.com', exp_level: 'expert', ski_pass: 'epic', address: 'Denver',
+                             ski_or_board: 'ski', emergency_name: 'Xtina', emergency_number: '8675309' } })
+  end
 
   it 'has attributes' do
     expect(user.name).to eq('Khoi')

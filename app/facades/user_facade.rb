@@ -1,19 +1,18 @@
 class UserFacade
   class << self
-
     def user_auth(email, name)
       user = UserService.user_auth(email, name)
-      UserPoro.new(user)
+      User.new(user)
     end
 
     def user_get(id)
       user = UserService.user_get(id)
-      UserPoro.new(user)
+      User.new(user)
     end
 
     def user_update(id, updated_attributes)
       user = UserService.user_update(id, updated_attributes)
-      UserPoro.new(user)
+      User.new(user)
     end
   end
 end

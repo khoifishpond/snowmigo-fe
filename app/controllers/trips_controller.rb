@@ -1,8 +1,5 @@
 class TripsController < ApplicationController
-
-  def new
-
-  end
+  def new; end
 
   def create
     @trip = TripFacade.create_trip(trip_params)
@@ -23,7 +20,7 @@ class TripsController < ApplicationController
   end
 
   def destroy
-    trip = TripFacade.destroy_trip(params[:id])
+    TripFacade.destroy_trip(params[:id])
     redirect_to user_path(current_user.id)
   end
 

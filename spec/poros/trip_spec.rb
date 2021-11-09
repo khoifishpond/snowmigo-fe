@@ -1,7 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe TripPoro do
-  let(:trip) { TripPoro.new({ id: 47, attributes: { name: 'trip', start_date: '08/11/2021', end_date: '25/11/2021', resort_id: 2 } }) }
+RSpec.describe Trip do
+  let(:trip) do
+    Trip.new({ id: 47, attributes: { name: 'trip', start_date: '08/11/2021', end_date: '25/11/2021', resort_id: 2 } })
+  end
   it 'has attributes' do
     expect(trip.id).to eq(47)
     expect(trip.name).to eq('trip')

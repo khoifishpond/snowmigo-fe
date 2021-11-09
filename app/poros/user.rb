@@ -1,4 +1,4 @@
-class UserPoro
+class User
   attr_reader :email, :name, :id, :address, :ski_pass, :ski_or_board, :exp_level, :emergency_name, :emergency_number
 
   def initialize(data)
