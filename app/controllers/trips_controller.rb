@@ -9,7 +9,7 @@ class TripsController < ApplicationController
   def show
     @trip = TripFacade.trip_get(params[:id])
   end
-
+  
   def edit
     @trip = TripFacade.trip_get(params[:id])
   end
