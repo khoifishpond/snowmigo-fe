@@ -23,7 +23,7 @@ class TripsController < ApplicationController
   end
 
   def destroy
-    trip = TripFacade.destroy_trip(params[:id])
+    TripFacade.destroy_trip(params[:id])
     redirect_to user_path(current_user.id)
   end
 
