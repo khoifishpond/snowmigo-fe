@@ -17,17 +17,17 @@
   </div>
   <div>
     <h6>Ski Pass</h6>
-    <%= f.select :ski_pass, options_for_select([['Epic', 'Epic'], ['Ikon', 'Ikon'], ['Other', 'Other']]), value: current_user.ski_pass %>
+    <%= f.select :ski_pass, ['', 'Epic', 'Ikon', 'Other'], selected: current_user.ski_pass %>
   </div>
   <br>
   <div>
     <h6>Ski or Snowboard?</h6>
-    <%= f.select :ski_or_board, options_for_select([['Ski', 'Ski'], ['Snowboard', 'Snowboard'], ['Both', 'Both']]), value: current_user.ski_or_board %>
+    <%= f.select :ski_or_board, ['', 'Ski', 'Snowboard', 'Both'], selected: current_user.ski_or_board %>
   </div>
   <br>
   <div>
     <h6>Experience Level</h6>
-    <%= f.select :exp_level, options_for_select([['Beginner', 'Beginner'], ['Intermediate', 'Intermediate'], ['Advanced', 'Advanced'], ['Expert', 'Expert']]), value: current_user.exp_level %>
+    <%= f.select :exp_level, ['', 'Beginner', 'Intermediate', 'Advanced', 'Expert'], selected: current_user.exp_level %>
   </div>
   <br>
     <%= f.submit "Update Info" %>
