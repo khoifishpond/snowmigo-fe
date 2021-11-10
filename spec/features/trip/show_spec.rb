@@ -30,7 +30,7 @@ RSpec.describe 'trip show page' do
       within("#resort-303001") do
         click_on 'Add to Trip'
       end
-      save_and_open_page
+      
       expect(current_path).to eq(trip_path(@trip.id))
       within("#option-303001") do
         expect(page).to have_content('Arapahoe Basin')
