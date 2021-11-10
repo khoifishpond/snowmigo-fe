@@ -23,30 +23,30 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 08 Nov 2021 17:59:34 GMT
+      - Tue, 09 Nov 2021 23:13:27 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"356dba6c2db21b4985b3eed502a7e2dd"
+      - W/"9a56d7d10a7135e55811bf530e72b926"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 48c1fc39-776b-4025-b0d8-46fec6d1a00b
+      - ec4f1178-25cf-45bc-8d1e-7b79d971a6d9
       X-Runtime:
-      - '0.016126'
+      - '0.014132'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"104","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14"},"relationships":{"resort_options":{"data":[]}}}}'
-  recorded_at: Mon, 08 Nov 2021 17:59:34 GMT
+      string: '{"data":{"id":"155","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14"},"relationships":{"resort_options":{"data":[]},"riders":{"data":[]}}}}'
+  recorded_at: Tue, 09 Nov 2021 23:13:28 GMT
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/104
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/155
     body:
       encoding: US-ASCII
       string: ''
@@ -65,25 +65,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 08 Nov 2021 17:59:33 GMT
+      - Tue, 09 Nov 2021 23:13:27 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8f4426a77b34f87b6b1f0e5f81e2a72f"
+      - W/"deaf717cf1ab5069c3e0f1202f385f81"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 41763378-8daa-4924-81b5-4c5e24494ad3
+      - b6e5af0b-97da-43df-b4c0-eb6e8ca4116f
       X-Runtime:
-      - '0.005813'
+      - '0.008939'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"104","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14"},"relationships":{"resort_options":{"data":[]}}},"included":[]}'
-  recorded_at: Mon, 08 Nov 2021 17:59:34 GMT
+      string: '{"data":{"id":"155","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14"},"relationships":{"resort_options":{"data":[]},"riders":{"data":[]}}},"included":[]}'
+  recorded_at: Tue, 09 Nov 2021 23:13:28 GMT
 recorded_with: VCR 6.0.0
