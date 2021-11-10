@@ -1,19 +1,2 @@
 <h3>Resorts</h3>
-<div id="resorts-search">
-  <%= form_with url: resorts_path, method: :get, local: true do |f| %>
-  <%= f.label :state, 'Search by State:' %>
-  <%= f.select :state, options_for_select(us_states) %>
-  <%= f.submit 'Search' %>
-<% end %>
-</div>
-<div id="resorts">
-<% if @resorts %>
-  <ul>
-    <% @resorts.each do |resort| %>
-      <li><%= link_to resort.name, resort_path(resort.id) %></li>
-    <% end %>
-  </ul>
-<% else %>
-  Please select a State to search for resorts.
-<% end %>
-</div>
+<%= render 'shared/resort_search', path: resorts_path %>
