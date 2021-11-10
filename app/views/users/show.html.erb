@@ -21,30 +21,18 @@
 <br>
 
 <div id='upcoming-trips' >
-  <%= 'Upcoming Trips' %><br/>
-
-  <%= 'You have not planned any trips' if @user.upcoming_trips.empty? %>
-
+  <h5>Upcoming Trips</h5>
+  <br>
+  <% if @user.upcoming_trips.empty? %>
+    <%= 'You have no upcoming trips' %>
+  <% else %>
     <% @user.upcoming_trips.each do |trip| %>
       <%= trip.name %>
       <%= trip.resort_name %>
       <%= trip.start_date %>
       <%= trip.end_date %>
     <% end %>
-</div>
-
-<div id='past-trips'>
-  <%= 'Past Trips' %><br/>
-
-  <%= 'You have not planned any trips' if @user.past_trips.empty? %>
-
-  <% @user.upcoming_trips.each do |trip| %>
-    <%= trip.name %>
-    <%= trip.resort_name %>
-    <%= trip.start_date %>
-    <%= trip.end_date %>
   <% end %>
-
 </div>
 
 <div id='friends'>
