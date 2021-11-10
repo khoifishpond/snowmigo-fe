@@ -5,15 +5,16 @@
   <%= f.submit 'Search' %>
 <% end %>
 </div>
+<br>
 <div id="resorts">
 <% if @resorts %>
-  <ul>
-    <div class="row text-center">
-      <% @resorts.each do |resort| %>
-      <div id="resort-<%= resort.id %>">
-        <div class="col-sm-4">
+  <% @resorts.each_slice(4) do |resort_group| %>
+    <div class="container">
+      <div class="row">
+        <% resort_group.each do |resort| %>
+        <div class="col">
           <div class="card">
-            <img class="card-img-top" src='<%= resort.logo %>' alt="Logo">
+            <img class="img-fluid" src='<%= resort.logo %>' alt="Logo">
             <div class="card-body">
               <h5 class="card-title"><%= link_to resort.name, resort_path(resort.id) %></h5>
               <% if path != resorts_path %>
@@ -22,11 +23,11 @@
             </div>
           </div>
         </div>
+        <% end %>
       </div>
-    <% end %>
-  </div>
-  </ul>
+    </div>
+  <% end %>
 <% else %>
-  Please select a State to search for resorts.
+  <p>Please select a State to search for resorts.</p>
 <% end %>
 </div>
