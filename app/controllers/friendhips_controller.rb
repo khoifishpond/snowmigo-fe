@@ -7,6 +7,5 @@ class FriendshipsController < ApplicationController
     else
       flash[:error] = 'Invalid email. Please try again.'
     end
-    
   end
 end

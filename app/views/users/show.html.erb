@@ -27,11 +27,11 @@
     <%= f.submit 'Add Friend' %>
   <% end %>
 
-  <% if current_user.friends.empty? %>
-    You currently have no friends. Type in their email to get started!
+  <% if @user.friends.empty? %>
+    You currently have no friends.
   <% else %>
     <ul>
-      <% current_user.friends.each do |friend| %>
+      <% @user.friends.each do |friend| %>
         <li><%= friend.name %></li>
       <% end %>
     </ul>
