@@ -20,6 +20,37 @@
 </div>
 <br>
 
-<div id='upcoming-trips'></div>
+<div id='upcoming-trips' >
+  <%= 'Upcoming Trips' %><br/>
 
-<div id='past-trips'></div>
+  <%= 'You have not planned any trips' if @user.upcoming_trips.empty? %>
+
+    <% @user.upcoming_trips.each do |trip| %>
+      <%= trip.name %>
+      <%= trip.resort_name %>
+      <%= trip.start_date %>
+      <%= trip.end_date %>
+    <% end %>
+</div>
+
+<div id='past-trips'>
+  <%= 'Past Trips' %><br/>
+
+  <%= 'You have not planned any trips' if @user.past_trips.empty? %>
+
+  <% @user.upcoming_trips.each do |trip| %>
+    <%= trip.name %>
+    <%= trip.resort_name %>
+    <%= trip.start_date %>
+    <%= trip.end_date %>
+  <% end %>
+
+</div>
+
+<div id='friends'>
+  <%= 'Friends' %><br/>
+  <%= 'You have not added any friends yet!' if @user.friends.empty? %>
+  <% @user.friends.each do |friend| %>
+    <%= friend.name %>
+  <% end %>
+</div>
