@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/khoifishpond/snowmigo-fe.svg?branch=main)](https://travis-ci.org/khoifishpond/snowmigo-fe)
+
 # Snowmigo FE
   <p>
     The front-end half of a Consultancy project during weeks four and five during Mod 3 of Turing. 
@@ -54,6 +56,7 @@
 #### Tools
 <p>
   <img src="https://img.shields.io/badge/Atom-66595C.svg?&style=flaste&logo=atom&logoColor=white" />
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?logo=visual%20studio%20code&logoColor=ffffff" />
   <img src="https://img.shields.io/badge/Git-F05032.svg?&style=flaste&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-181717.svg?&style=flaste&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Heroku-430098.svg?&style=flaste&logo=heroku&logoColor=white" />
@@ -67,12 +70,17 @@
   <img src="https://img.shields.io/badge/pry-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />  
   <img src="https://img.shields.io/badge/simplecov-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />  
   <img src="https://img.shields.io/badge/faker-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
-  <img src="https://img.shields.io/badge/shoulda--matchers-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" /> </br>
+  <img src="https://img.shields.io/badge/shoulda--matchers-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
+  <img src="https://img.shields.io/badge/capybara-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
+  <img src="https://img.shields.io/badge/omniauth google oauth2-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" /> </br>
+  <img src="https://img.shields.io/badge/figaro-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
+  <img src="https://img.shields.io/badge/orderly-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
   <img src="https://img.shields.io/badge/launchy-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />  
   <img src="https://img.shields.io/badge/faraday-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
-  <img src="https://img.shields.io/badge/bcrypt-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
   <img src="https://img.shields.io/badge/factory--bot-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
-  <img src="https://img.shields.io/badge/webmock-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />  
+  <img src="https://img.shields.io/badge/webmock-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
+  <img src="https://img.shields.io/badge/vcr-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
+  <img src="https://img.shields.io/badge/travis-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
 </p>
 
 #### Development Principles
@@ -80,7 +88,7 @@
   <img src="https://img.shields.io/badge/OOP-b81818.svg?&style=flaste&logo=OOP&logoColor=white" />
   <img src="https://img.shields.io/badge/TDD-b87818.svg?&style=flaste&logo=TDD&logoColor=white" />
   <img src="https://img.shields.io/badge/MVC-b8b018.svg?&style=flaste&logo=MVC&logoColor=white" />
-  <img src="https://img.shields.io/badge/REST-33b818.svg?&style=flaste&logo=REST&logoColor=white" />  
+  <img src="https://img.shields.io/badge/REST-33b818.svg?&style=flaste&logo=REST&logoColor=white" />
 </p>
 
 
@@ -91,57 +99,43 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone git@github.com/khoifishpond/snowmigo-fe.git
    ```
-3. Install NPM packages
+3. Run bundle
    ```sh
-   npm install
+   bundle install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Run migrations
+   ```sh
+   rails db:{drop,create,migrate,seed}
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+<!-- DEPLOYMENT -->
+### Deployment
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Visit [Herkou](https://snowmigo.herokuapp.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [] Feature 1
-- [] Feature 2
-- [] Feature 3
-    - [] Nested Feature
+- [x] Implement Google OAuth </br></br>
+  <img src="https://user-images.githubusercontent.com/58535045/141173676-86c7266b-1e7d-42aa-b4de-ec0365f6c7d6.png" />
+- [x] Search resorts by State </br></br>
+  <img src="https://user-images.githubusercontent.com/58535045/141174882-5c8c289c-72d0-4496-a329-9e98f4bd087a.png" />
+- [x] Plan a trip! </br></br>
+  <img src="https://user-images.githubusercontent.com/58535045/141175129-f75fc87a-e462-4221-a0d3-224645a44e1c.png" />
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/khoifishpond/snowmigo-fe/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -166,27 +160,25 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+<p>
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</p>
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+- [Laura Court](https://www.linkedin.com/in/andrew-massey-b06662194/)
+- [Erika Kischuk](https://www.linkedin.com/in/erika-kischuk)
+- [Henry Schmid](https://www.linkedin.com/in/henry-schmid)
+- [Ozzie Osmonson](https://www.linkedin.com/in/ozzie-osmonson/)
+- [Khoi Nguyen](https://www.linkedin.com/in/khoifishpond/)
+
+<p>
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+</p>
+
+- [Laura Court](https://github.com/lmcourt)
+- [Erika Kischuk](https://github.com/eakischuk)
+- [Henry Schmid](https://github.com/hschmid516)
+- [Ozzie Osmonson](https://github.com/ozzman84)
+- [Khoi Nguyen](https://github.com/khoifishpond)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/hschmid516/snowmigo-api/pulse#new-issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
