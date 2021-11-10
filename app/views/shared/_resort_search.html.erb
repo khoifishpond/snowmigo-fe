@@ -10,17 +10,17 @@
   <ul>
     <div class="row text-center">
       <% @resorts.each do |resort| %>
+      <div class="col-sm">
       <div id="resort-<%= resort.id %>">
-        <div class="col-sm-4">
           <div class="card">
-            <img class="card-img-top" src='<%= resort.logo %>' alt="Logo">
-            <div class="card-body">
-              <h5 class="card-title"><%= link_to resort.name, resort_path(resort.id) %></h5>
+            <img class="card-img-top-thumbnail object-fit: cover" src='<%= resort.logo %>' alt="Logo">
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title mt-auto"><%= link_to resort.name, resort_path(resort.id) %></h6>
               <% if path != resorts_path %>
                 <%= link_to 'Add to Trip', resort_options_path(resort_id: resort.id, trip_id: @trip.id, name: resort.name), method: :post, class: "btn btn-primary"%>
               <% end %>
             </div>
-          </div>
+          </div><br>
         </div>
       </div>
     <% end %>
