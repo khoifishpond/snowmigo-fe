@@ -21,25 +21,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 23:13:36 GMT
+      - Wed, 10 Nov 2021 00:33:21 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fc77c4aaa63a4ce49a9b6aabfbdad96e"
+      - W/"c02491c2fcd7175dfc05e45b530c860f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 30e620fc-a2f6-45b0-afad-d4d4febb89c4
+      - bee5e223-32ce-47af-9985-4f354c1a5c18
       X-Runtime:
-      - '0.012205'
+      - '0.014107'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"47","type":"trip","attributes":{"name":"Cool Trip Name","resort_id":null,"resort_name":null,"start_date":null,"end_date":"2021-11-25"},"relationships":{"resort_options":{"data":[]},"riders":{"data":[]}}},"included":[]}'
-  recorded_at: Tue, 09 Nov 2021 23:13:37 GMT
+      string: '{"data":{"id":"47","type":"trip","attributes":{"name":"Cool Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25"},"relationships":{"resort_options":{"data":[]},"riders":{"data":[]}}},"included":[]}'
+  recorded_at: Wed, 10 Nov 2021 00:33:22 GMT
 recorded_with: VCR 6.0.0
