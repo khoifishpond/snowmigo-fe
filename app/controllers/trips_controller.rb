@@ -3,7 +3,10 @@ class TripsController < ApplicationController
 
   def create
     @trip = TripFacade.create_trip(trip_params)
-    redirect_to trip_path(@trip.id)
+    unless @trip.nil?
+      flash[:success] = 'Trip created successfully'
+      redirect_to trip_path(@trip.id)
+    end
   end
 
   def show
