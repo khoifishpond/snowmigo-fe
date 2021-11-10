@@ -10,16 +10,18 @@ RSpec.describe 'New trip', :vcr do
                                end_date: '14/12/2021',
                                resort_id: 2 }
                } })
-    end
-    
-    it 'creates a trip' do
-      visit new_trip_path
-      fill_in :start_date, with: '12/12/2021'
-      fill_in :end_date, with: '14/12/2021'
-      fill_in :name, with: 'Happy fun time'
-      click_on 'Create trip!'
 
-      expect(current_path).to eq(trip_path(trip.id))
+    context 'Successful Create'
+      it 'creates a trip' do
+        visit new_trip_path
+        fill_in :start_date, with: '12/12/2021'
+        fill_in :end_date, with: '14/12/2021'
+        fill_in :name, with: 'Happy fun time'
+        click_on 'Create trip!'
+
+        expect(current_path).to eq(trip_path(trip.id))
+        expect(page).to have_content('Trip created successfully')
+      end
     end
   end
 end
