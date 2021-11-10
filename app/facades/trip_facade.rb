@@ -22,5 +22,9 @@ class TripFacade
     def create_resort_option(option_params)
       TripService.create_resort_option(option_params)
     end
+
+    def vote(trip_id, user_id)
+      TripService.vote(trip_id, user_id)
+    end
   end
 end
