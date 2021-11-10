@@ -1,15 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe 'User Dashboard', :vcr do
-  describe 'Requires a user' do
-    # for when we use our require user method
-    # it 'redirects if no user' do
-    #   visit user_path
-    #
-    #   expect(current_path).to eq(root_path)
-    #   expect(page).to have_content('Please login to access your account')
-    # end
-  end
+  # describe 'Requires a user' do
+  #   # for when we use our require user method
+  # #   it 'redirects if no user' do
+  # #     visit user_path
+  # #
+  # #     expect(current_path).to eq(root_path)
+  # #     expect(page).to have_content('Please login to access your account')
+  # #   end
+  # end
 
   describe 'As a verified User' do
     describe 'With Successful Login' do
@@ -31,9 +31,9 @@ RSpec.describe 'User Dashboard', :vcr do
         }
       end
 
-      # it 'Flash Message shows success' do
-      #   expect(page).to have_content('Login Successful')
-      # end
+      it 'Flash Message shows success' do
+        expect(page).to have_content('Login Successful')
+      end
 
       it 'displays user info' do
         expect(page).to have_content(@user_attributes[:attributes][:name])
@@ -57,9 +57,9 @@ RSpec.describe 'User Dashboard', :vcr do
             expect(current_path).to eq(root_path)
           end
 
-          # it 'Flash message shows logout' do
-          #   expect(page).to have_content('Logout successful')
-          # end
+          it 'Flash message shows logout' do
+            expect(page).to have_content('Logout successful')
+          end
         end
       end
     end
