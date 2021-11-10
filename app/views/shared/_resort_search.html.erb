@@ -1,0 +1,32 @@
+<div id="resorts-search">
+  <%= form_with url: path, method: :get, local: true do |f| %>
+  <%= f.label :state, 'Search by State:' %>
+  <%= f.select :state, options_for_select(us_states) %>
+  <%= f.submit 'Search' %>
+<% end %>
+</div>
+<div id="resorts">
+<% if @resorts %>
+  <ul>
+    <div class="row text-center">
+      <% @resorts.each do |resort| %>
+      <div id="resort-<%= resort.id %>">
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src='<%= resort.logo %>' alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title"><%= link_to resort.name, resort_path(resort.id) %></h5>
+              <% if path != resorts_path %>
+                <%= link_to 'Add to Trip', resort_options_path(resort_id: resort.id, trip_id: @trip.id, name: resort.name), method: :post, class: "btn btn-primary"%>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  </ul>
+<% else %>
+  Please select a State to search for resorts.
+<% end %>
+</div>

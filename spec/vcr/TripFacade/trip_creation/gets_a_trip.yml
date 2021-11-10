@@ -21,25 +21,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 08 Nov 2021 17:59:29 GMT
+      - Tue, 09 Nov 2021 23:13:22 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"5225fc6a6ff5034720fcf7193c7612c8"
+      - W/"ada0d920184be24c4bc4a131fab64c3b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6c778cbd-2135-4f7b-bb2e-f006c7d5ab2e
+      - c114fa46-ae2a-47e7-82e2-0166b2a6d965
       X-Runtime:
-      - '0.008032'
+      - '0.012954'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"25","type":"trip","attributes":{"name":"Happy time","resort_id":3,"resort_name":null,"start_date":"1111-11-11","end_date":null},"relationships":{"resort_options":{"data":[]}}},"included":[]}'
-  recorded_at: Mon, 08 Nov 2021 17:59:30 GMT
+      string: '{"data":{"id":"25","type":"trip","attributes":{"name":"Happy time","resort_id":3,"resort_name":null,"start_date":"1111-11-11","end_date":null},"relationships":{"resort_options":{"data":[]},"riders":{"data":[]}}},"included":[]}'
+  recorded_at: Tue, 09 Nov 2021 23:13:23 GMT
 recorded_with: VCR 6.0.0

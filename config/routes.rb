@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   get 'auth/failure', to: redirect('/')
   delete '/logout', controller: :sessions, action: :destroy
   resources :users, only: %i[show edit update]
-  resources :trips
+  resources :trips do
+    resources :vote
+  end
   resources :resorts, only: [:index, :show]
   resources :friendships, only: :create
+  resources :resort_options, only: :create
 end

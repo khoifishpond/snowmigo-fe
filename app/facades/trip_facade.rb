@@ -18,5 +18,9 @@ class TripFacade
     def destroy_trip(id)
       TripService.destroy_trip(id)
     end
+
+    def create_resort_option(option_params)
+      TripService.create_resort_option(option_params)
+    end
   end
 end

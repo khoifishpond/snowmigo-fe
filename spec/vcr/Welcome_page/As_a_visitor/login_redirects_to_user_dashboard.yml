@@ -23,27 +23,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 03:50:05 GMT
+      - Tue, 09 Nov 2021 23:13:35 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4cb883f777fe1a04fdff067d26760f7b"
+      - W/"21400433f0ed0ea6ec697676f363a63c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d5113b4f-288c-4ef3-a436-5f0fa9e26297
+      - 36baf0bf-79f3-4752-abe8-76f78fbed542
       X-Runtime:
-      - '0.009049'
+      - '0.010430'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Epic","address":"","ski_or_board":"","emergency_name":"","emergency_number":""},"relationships":{"trips":{"data":[]}}}}'
-  recorded_at: Tue, 09 Nov 2021 03:50:05 GMT
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Ikon","address":"","ski_or_board":"","emergency_name":"","emergency_number":""},"relationships":{"trips":{"data":[]},"friendships":{"data":[]}}}}'
+  recorded_at: Tue, 09 Nov 2021 23:13:36 GMT
 - request:
     method: get
     uri: http://snowmigo-be.herokuapp.com/api/v1/users/5
@@ -65,27 +65,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 03:50:05 GMT
+      - Tue, 09 Nov 2021 23:13:35 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"63f25c3e41c6ec7990c5aa6556018061"
+      - W/"183ad3eeb5ae67e9efcfd9dfd7994b34"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d06ab8d9-9413-4140-96eb-64c5ae9df28f
+      - 689ae6e8-b865-471b-93e3-2ca0052e3857
       X-Runtime:
-      - '0.006237'
+      - '0.010839'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Epic","address":"","ski_or_board":"","emergency_name":"","emergency_number":""},"relationships":{"trips":{"data":[]}}},"included":[]}'
-  recorded_at: Tue, 09 Nov 2021 03:50:05 GMT
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Ikon","address":"","ski_or_board":"","emergency_name":"","emergency_number":""},"relationships":{"trips":{"data":[]},"friendships":{"data":[]}}},"included":[]}'
+  recorded_at: Tue, 09 Nov 2021 23:13:36 GMT
 - request:
     method: get
     uri: http://snowmigo-be.herokuapp.com/api/v1/users/5
@@ -107,25 +107,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 03:50:05 GMT
+      - Tue, 09 Nov 2021 23:13:36 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"63f25c3e41c6ec7990c5aa6556018061"
+      - W/"183ad3eeb5ae67e9efcfd9dfd7994b34"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1fa78291-da41-491c-8cdf-bde73a88fdb4
+      - 4ab69b59-bf50-46fd-9422-6a721938ba44
       X-Runtime:
-      - '0.006046'
+      - '0.008949'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Epic","address":"","ski_or_board":"","emergency_name":"","emergency_number":""},"relationships":{"trips":{"data":[]}}},"included":[]}'
-  recorded_at: Tue, 09 Nov 2021 03:50:05 GMT
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Ikon","address":"","ski_or_board":"","emergency_name":"","emergency_number":""},"relationships":{"trips":{"data":[]},"friendships":{"data":[]}}},"included":[]}'
+  recorded_at: Tue, 09 Nov 2021 23:13:36 GMT
 recorded_with: VCR 6.0.0

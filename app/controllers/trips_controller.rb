@@ -8,8 +8,9 @@ class TripsController < ApplicationController
 
   def show
     @trip = TripFacade.trip_get(params[:id])
+    @resorts = (ResortFacade.resorts_by_state(params[:state]) if params[:state].present?)
   end
-  
+
   def edit
     @trip = TripFacade.trip_get(params[:id])
   end
