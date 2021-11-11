@@ -4,7 +4,7 @@ describe 'user info edit page' do
   describe 'edits' do
     before :each do
       login_with_oauth
-      visit edit_user_path(5)
+      visit edit_user_path(10)
     end
 
     it 'can edit a user' do
@@ -13,13 +13,13 @@ describe 'user info edit page' do
       select 'Advanced', from: :exp_level
       click_button 'Update Info'
 
-      user = UserFacade.user_get(5)
+      user = UserFacade.user_get(10)
 
       expect(user.name).to eq('Freddie Mercury')
       expect(user.ski_pass).to eq('Epic')
       expect(user.exp_level).to eq('Advanced')
 
-      visit edit_user_path(5)
+      visit edit_user_path(10)
 
       expect(page).to have_field(:name, with: 'Freddie Mercury')
       expect(page).to have_field(:ski_pass, with: 'Epic')
@@ -30,7 +30,7 @@ describe 'user info edit page' do
       select 'Expert', from: :exp_level
       click_button 'Update Info'
 
-      user = UserFacade.user_get(5)
+      user = UserFacade.user_get(10)
 
       expect(user.name).to eq('Squirrely Dan')
       expect(user.ski_pass).to eq('Ikon')
