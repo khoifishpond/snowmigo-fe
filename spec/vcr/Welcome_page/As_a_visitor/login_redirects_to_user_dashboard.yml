@@ -17,50 +17,67 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 201
-      message: Created
+      code: 200
+      message: OK
     headers:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 02:40:42 GMT
+      - Thu, 11 Nov 2021 05:02:20 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f9ed63b74a2111f6ddca64dba267d402"
+      - W/"92169a09092f14e97463df9f7f5ccc85"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 99703eb3-b685-4ae4-9a7a-2b2994619abc
+      - 1088025e-ce9f-406b-acb9-d50b410befe2
       X-Runtime:
-      - '0.047373'
+      - '0.188601'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"","ski_or_board":"","emergency_name":"","emergency_number":"","trips":[{"data":{"id":"4","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"4","type":"rider","attributes":{"user_id":7,"trip_id":4,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"5","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"5","type":"rider","attributes":{"user_id":7,"trip_id":5,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"6","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"6","type":"rider","attributes":{"user_id":7,"trip_id":6,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"4","type":"resort_option","attributes":{"trip_id":6,"resort_id":303001,"resort_name":"Arapahoe
-        Basin","vote_count":0}}}]}}},{"data":{"id":"7","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"7","type":"rider","attributes":{"user_id":7,"trip_id":7,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"5","type":"resort_option","attributes":{"trip_id":7,"resort_id":303001,"resort_name":"Arapahoe
-        Basin","vote_count":1}}}]}}},{"data":{"id":"9","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"9","type":"rider","attributes":{"user_id":7,"trip_id":9,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"6","type":"resort_option","attributes":{"trip_id":9,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}},{"data":{"id":"14","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"12","type":"rider","attributes":{"user_id":7,"trip_id":14,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"7","type":"resort_option","attributes":{"trip_id":14,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}}],"friends":[]}}}'
-  recorded_at: Thu, 11 Nov 2021 02:40:43 GMT
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:20 GMT
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/users/7
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
     body:
       encoding: US-ASCII
       string: ''
@@ -79,44 +96,61 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 02:40:42 GMT
+      - Thu, 11 Nov 2021 05:02:20 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f9ed63b74a2111f6ddca64dba267d402"
+      - W/"92169a09092f14e97463df9f7f5ccc85"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 21dfe9e2-d7d6-4ee8-9d55-a40b7fa61cb3
+      - e4250b31-d126-4a03-a00e-2d529c0154b8
       X-Runtime:
-      - '0.084526'
+      - '0.149790'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"","ski_or_board":"","emergency_name":"","emergency_number":"","trips":[{"data":{"id":"4","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"4","type":"rider","attributes":{"user_id":7,"trip_id":4,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"5","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"5","type":"rider","attributes":{"user_id":7,"trip_id":5,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"6","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"6","type":"rider","attributes":{"user_id":7,"trip_id":6,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"4","type":"resort_option","attributes":{"trip_id":6,"resort_id":303001,"resort_name":"Arapahoe
-        Basin","vote_count":0}}}]}}},{"data":{"id":"7","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"7","type":"rider","attributes":{"user_id":7,"trip_id":7,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"5","type":"resort_option","attributes":{"trip_id":7,"resort_id":303001,"resort_name":"Arapahoe
-        Basin","vote_count":1}}}]}}},{"data":{"id":"9","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"9","type":"rider","attributes":{"user_id":7,"trip_id":9,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"6","type":"resort_option","attributes":{"trip_id":9,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}},{"data":{"id":"14","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"12","type":"rider","attributes":{"user_id":7,"trip_id":14,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"7","type":"resort_option","attributes":{"trip_id":14,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}}],"friends":[]}}}'
-  recorded_at: Thu, 11 Nov 2021 02:40:43 GMT
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:21 GMT
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/users/7
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
     body:
       encoding: US-ASCII
       string: ''
@@ -135,39 +169,1078 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 02:40:43 GMT
+      - Thu, 11 Nov 2021 05:02:21 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f9ed63b74a2111f6ddca64dba267d402"
+      - W/"92169a09092f14e97463df9f7f5ccc85"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0a6cbf88-9d71-4899-875f-0f3c6edeec80
+      - 59c400ac-8abe-491c-9293-5f3fd98dabe8
       X-Runtime:
-      - '0.038403'
+      - '0.281547'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"","ski_or_board":"","emergency_name":"","emergency_number":"","trips":[{"data":{"id":"4","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"4","type":"rider","attributes":{"user_id":7,"trip_id":4,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"5","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"5","type":"rider","attributes":{"user_id":7,"trip_id":5,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"6","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"6","type":"rider","attributes":{"user_id":7,"trip_id":6,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"4","type":"resort_option","attributes":{"trip_id":6,"resort_id":303001,"resort_name":"Arapahoe
-        Basin","vote_count":0}}}]}}},{"data":{"id":"7","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"7","type":"rider","attributes":{"user_id":7,"trip_id":7,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"5","type":"resort_option","attributes":{"trip_id":7,"resort_id":303001,"resort_name":"Arapahoe
-        Basin","vote_count":1}}}]}}},{"data":{"id":"9","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"9","type":"rider","attributes":{"user_id":7,"trip_id":9,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"6","type":"resort_option","attributes":{"trip_id":9,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}},{"data":{"id":"14","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"12","type":"rider","attributes":{"user_id":7,"trip_id":14,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"7","type":"resort_option","attributes":{"trip_id":14,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}}],"friends":[]}}}'
-  recorded_at: Thu, 11 Nov 2021 02:40:43 GMT
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:21 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:21 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 813054b5-01bd-4018-80ed-78cbef839e29
+      X-Runtime:
+      - '0.180065'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:22 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:21 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - eff4d1c5-37be-49a2-813a-95c969e3b4e7
+      X-Runtime:
+      - '0.144379'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:22 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:22 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c921e1a1-14db-449b-b57e-eff7057bdc64
+      X-Runtime:
+      - '0.139634'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:22 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:22 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6a19ad3c-bba5-4873-bdad-b72a32655bda
+      X-Runtime:
+      - '0.099424'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:23 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:22 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3ea4cfad-e664-46d2-aee6-f68688b77ce0
+      X-Runtime:
+      - '0.166840'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:23 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:22 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - efab2fe9-fd93-4d80-a6fa-09cd1045ff6b
+      X-Runtime:
+      - '0.210632'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:23 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:23 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 716e7d91-dea3-4476-9751-b07c0e6f940d
+      X-Runtime:
+      - '0.215664'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:24 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:24 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1fc40046-3bfe-4007-b24d-cb2893c03e88
+      X-Runtime:
+      - '0.201856'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:24 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:24 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b77bfb58-cda6-4b8e-b8b4-2a08c1044ec6
+      X-Runtime:
+      - '0.209399'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:24 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:24 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5a9a5ccc-af4f-41d0-96e7-5232d59fafaf
+      X-Runtime:
+      - '0.115618'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:25 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:25 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f63661db-e135-49ba-ad7b-cdba0ab4a373
+      X-Runtime:
+      - '0.220023'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:25 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:24 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 16b81a9f-be11-4548-93ac-875593a036a1
+      X-Runtime:
+      - '0.147730'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:25 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:25 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d44f6ebf-3858-4458-a0e9-1d157edf5294
+      X-Runtime:
+      - '0.147574'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:26 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 05:02:26 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"92169a09092f14e97463df9f7f5ccc85"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b0cf8fc0-0926-4c13-be5d-942b712d9e5f
+      X-Runtime:
+      - '0.187655'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"123
+        Queen Street","ski_or_board":"Ski","emergency_name":"Laura Court","emergency_number":"123-456-7890","trips":[{"data":{"id":"11","type":"trip","attributes":{"name":"Future
+        Trip","resort_id":null,"resort_name":null,"start_date":"2022-05-27","end_date":"2022-12-15","vote_status":"open","riders":[{"data":{"id":"34","type":"rider","attributes":{"user_id":10,"trip_id":11,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"1","type":"trip","attributes":{"name":"Cool
+        Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}},{"data":{"id":"33","type":"rider","attributes":{"user_id":10,"trip_id":1,"host":null,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}},{"data":{"id":"40","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"35","type":"rider","attributes":{"user_id":10,"trip_id":40,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"57","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"36","type":"rider","attributes":{"user_id":10,"trip_id":57,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"58","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"37","type":"rider","attributes":{"user_id":10,"trip_id":58,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"59","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"38","type":"rider","attributes":{"user_id":10,"trip_id":59,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"61","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"39","type":"rider","attributes":{"user_id":10,"trip_id":61,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"62","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"40","type":"rider","attributes":{"user_id":10,"trip_id":62,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"63","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"41","type":"rider","attributes":{"user_id":10,"trip_id":63,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"42","type":"rider","attributes":{"user_id":10,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"66","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"43","type":"rider","attributes":{"user_id":10,"trip_id":66,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"19","type":"resort_option","attributes":{"trip_id":66,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"67","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"44","type":"rider","attributes":{"user_id":10,"trip_id":67,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"20","type":"resort_option","attributes":{"trip_id":67,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"73","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"49","type":"rider","attributes":{"user_id":10,"trip_id":73,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 05:02:26 GMT
 recorded_with: VCR 6.0.0

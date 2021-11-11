@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   private
 
   def current_user
-    @current_user ||= UserFacade.user_get(session[:user_id]) if session[:user_id]
+    current_user ||= UserFacade.user_get(session[:user_id]) if session[:user_id]
   end
 
   # def all_users
