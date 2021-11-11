@@ -9,7 +9,7 @@ RSpec.describe 'trip show page' do
         name: 'Happy fun time',
         start_date: '08/11/2021',
         end_date: '25/11/2021',
-        user_id: '19'
+        user_id: '7'
       }
       @trip = TripFacade.create_trip(trip_params)
       visit trip_path(@trip.id)
@@ -68,12 +68,12 @@ RSpec.describe 'trip show page' do
       trip = TripFacade.create_trip(name: 'Delete Trip',
                                     start_date: '08/11/2021',
                                     end_date: '25/11/2021',
-                                    user_id: '19')
+                                    user_id: '7')
       visit trip_path(trip.id)
 
       click_link 'Delete trip'
 
-      expect(current_path).to eq(user_path(19))
+      expect(current_path).to eq(user_path(7))
     end
   end
 end

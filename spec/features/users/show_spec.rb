@@ -13,36 +13,22 @@ RSpec.describe 'User Dashboard', :vcr do
 
   describe 'As a verified User' do
     describe 'With Successful Login' do
-      before do
+      before :each do
         login_with_oauth
-
-        @user_attributes = {
-          id: 5,
-          attributes: {
-            name: 'Freddie Mercury',
-            email: 'example@gmail.com',
-            exp_level: nil,
-            ski_pass: nil,
-            address: nil,
-            ski_or_board: nil,
-            emergency_name: nil,
-            emergency_number: nil
-          }
-        }
+        @user = UserFacade.user_get(7)
       end
-
       # it 'Flash Message shows success' do
       #   expect(page).to have_content('Login Successful')
       # end
 
       it 'displays user info' do
-        expect(page).to have_content(@user_attributes[:attributes][:name])
+        expect(page).to have_content(@user.name)
       end
 
       it 'has a button to edit user info' do
         click_on 'Edit info'
 
-        expect(current_path).to eq(edit_user_path(@user_attributes[:id]))
+        expect(current_path).to eq(edit_user_path(@user.id))
       end
 
       describe 'Logout' do
