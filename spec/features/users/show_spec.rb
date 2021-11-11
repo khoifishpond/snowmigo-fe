@@ -32,17 +32,17 @@ RSpec.describe 'User Dashboard' do
 
       it 'returns Upcoming Trips' do
         within("#upcoming-trips") do
-          expect(page).to have_content(@user.trips.first[:data][:attributes][:name])
-          expect(page).to have_content(@user.trips.first[:data][:attributes][:start_date])
-          expect(page).to have_content(@user.trips.first[:data][:attributes][:end_date])
+          expect(page).to have_content(@user.trips[0][:data][:attributes][:name])
+          expect(page).to have_content(@user.trips[0][:data][:attributes][:start_date])
+          expect(page).to have_content(@user.trips[0][:data][:attributes][:end_date])
         end
       end
 
       it 'returns past Trips' do
         within("#past-trips") do
-          expect(page).to have_content(@user.trips[1][:data][:attributes][:name])
-          expect(page).to have_content(@user.trips[1][:data][:attributes][:start_date])
-          expect(page).to have_content(@user.trips[1][:data][:attributes][:end_date])
+          expect(page).to have_content(@user.trips[3][:data][:attributes][:name])
+          expect(page).to have_content(@user.trips[3][:data][:attributes][:start_date])
+          expect(page).to have_content(@user.trips[3][:data][:attributes][:end_date])
         end
       end
 
