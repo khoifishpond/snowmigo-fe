@@ -1,13 +1,29 @@
 <div id='trip-info'>
   <h2><%= @trip.name %></h2>
-  <h6>From
+  <p><b>Dates:</b> From
     <%= @trip.format_start_date %>
     to
-    <%= @trip.format_end_date %></h6>
+    <%= @trip.format_end_date %></p>
   <%= link_to "Update trip info", edit_trip_path(@trip.id) %>
   <%= link_to "Delete trip", trip_path(@trip.id), method: :delete %>
 </div>
-<h2>Resort Options:</h2>
+<h3>Add Friends to Trip:</h3>
+<% @user.friends.map do |friend| %>
+  <div id="friend-<%= friend[:data][:attributes][:friend_id] %>">
+    <p><%= friend[:data][:attributes][:friend_name] %><%= button_to "Add", trips_riders_path, params: {user_id: friend[:data][:attributes][:friend_id], trip_id: @trip.id} %></p>
+  </div>
+<% end %>
+<h3>Friends:</h3>
+<% @trip.riders.each do |rider| %>
+<div id="rider-<%= rider[:data][:attributes][:user_id] %>">
+  <ul>
+    <li>Name: <%= rider[:data][:attributes][:rider_name] %></li>
+    <li>Budget: <%= rider[:data][:attributes][:budget] %></li>
+  </ul>
+</div>
+<% end %>
+
+<h3>Resort Options:</h3>
 <div id="options">
   <% if @trip.options %>
     <ul>
