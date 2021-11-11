@@ -1,6 +1,6 @@
 <img src='<%= @resort.logo %>' ,="," alt='<%= @resort.name %>'>
 <h3><%= @resort.name %></h3>
-<p>Mask Requirements:
+<p>Mask Required:
   <%= @resort.mask_required %></p>
 <div id="<%= @resort.id %>-snow">
   <ul>
@@ -11,14 +11,22 @@
       <%= @resort.base_depth %>
       in</li>
     <li>Snow Condition:
-      <%= @resort.snow_condition %></li>
+      <% if @resort.snow_condition == '' %>
+        <p>No snow</p>
+      <% else %>
+        <%= @resort.snow_condition %></li>
+      <% end %>
   </ul>
 </div>
 <div id="<%= @resort.id %>-features">
   <ul>
     <strong>Resort Features</strong>
     <li>Open Lifts:
-      <%= @resort.open_lifts %></li>
+      <% if @resort.open_lifts == nil %>
+        <p>0</p>
+      <% else %>
+        <%= @resort.open_lifts %></li>
+      <% end %>
     <li>Open Trails:
       <%= @resort.open_trails %></li>
     <li><%= link_to 'Trail Map', @resort.trail_map %></li>
@@ -32,7 +40,11 @@
         <img src="<%= @resort.morning_weather[:weather_icon] %>" alt="<%= @resort.morning_weather[:weather] %>">
         <ul>
           <li>Snowfall:
+            <% if @resort.morning_weather[:snowfall] == nil %>
+            <p>0 in</p>
+            <% else %>
             <%= @resort.morning_weather[:snowfall] %></li>
+            <% end %>
           <li>Temperature:
             <%= @resort.morning_weather[:temp] %>
             Fahrenheit</li>
@@ -47,7 +59,11 @@
         <img src="<%= @resort.noon_weather[:weather_icon] %>" alt="<%= @resort.noon_weather[:weather] %>">
         <ul>
           <li>Snowfall:
-            <%= @resort.noon_weather[:snowfall] %></li>
+            <% if @resort.noon_weather[:snowfall] == nil %>
+              <p>0 in</p>
+            <% else %>
+              <%= @resort.noon_weather[:snowfall] %></li>
+            <% end %>
           <li>Temperature:
             <%= @resort.noon_weather[:temp] %>
             Fahrenheit</li>
@@ -62,7 +78,11 @@
         <img src="<%= @resort.afternoon_weather[:weather_icon] %>" alt="<%= @resort.afternoon_weather[:weather] %>">
         <ul>
           <li>Snowfall:
-            <%= @resort.afternoon_weather[:snowfall] %></li>
+            <% if @resort.morning_weather[:snowfall] == nil %>
+              <p>0 in</p>
+            <% else %>
+              <%= @resort.afternoon_weather[:snowfall] %></li>
+            <% end %>
           <li>Temperature:
             <%= @resort.afternoon_weather[:temp] %>
             Fahrenheit</li>
