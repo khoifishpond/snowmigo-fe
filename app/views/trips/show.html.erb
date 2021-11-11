@@ -7,6 +7,11 @@
   <%= link_to "Update trip info", edit_trip_path(@trip.id) %>
   <%= link_to "Delete trip", trip_path(@trip.id), method: :delete %>
 </div>
+<h2>Add Friends to Trip:</h2>
+<% @user.friends.map do |friend| %>
+  <p><%= friend[:data][:attributes][:friend_name] %><%= button_to "Add", trips_riders_path, params: {user_id: friend[:data][:attributes][:friend_id], trip_id: @user.id} %></p>
+<% end %>
+
 <h2>Resort Options:</h2>
 <div id="options">
   <% if @trip.options %>
