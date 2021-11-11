@@ -5,72 +5,21 @@ RSpec.describe 'User Dashboard' do
     describe 'With Successful Login' do
       before :each do
         login_with_oauth
-
-        @user = {
-          id: 5,
-          attributes: {
-            name: 'Freddie Mercury',
-            email: 'example@gmail.com',
-            exp_level: nil,
-            ski_pass: nil,
-            address: nil,
-            ski_or_board: nil,
-            emergency_name: nil,
-            emergency_number: nil,
-            trips: [
-              {
-                id: '1',
-                resort_id: 2,
-                start_date: '2010-12-23',
-                end_date: '2010-12-27',
-                created_at: '2021-11-10T02:31:25.947Z',
-                name: 'Christmas Trip',
-                resort_name: 'Vail'
-              },
-              {
-                id: '2',
-                resort_id: 2,
-                start_date: '2011-12-30',
-                end_date: '2012-01-04',
-                created_at: '2021-11-10T02:31:25.947Z',
-                name: 'New Years Trip',
-                resort_name: 'Keystone'
-              }
-            ],
-            friends: [
-              {
-                data: {
-                  id: 5,
-                  type: 'friendship',
-                  attributes: {
-                    user_id: 1,
-                    friend_id: 2,
-                    friend_name: 'Count Dooku'
-                  }
-                }
-              }
-            ]
-          }
-        }
+        @user = UserFacade.user_get(7)
       end
-
-      it 'Flash Message shows successsful login' do
-        expect(page).to have_content('Login Successful')
-      end
+      # it 'Flash Message shows success' do
+      #   expect(page).to have_content('Login Successful')
+      # end
 
       #Display Info
       it 'displays user info' do
-        expect(page).to have_content(@user[:attributes][:name])
+        expect(page).to have_content(@user.name)
       end
 
       it 'has a button to edit user info' do
         click_on 'Edit info'
 
-        expect(current_path).to eq(edit_user_path(@user[:id]))
-      end
-      #No upcoming trips
-      it 'returns message with no Upcoming Trips' do
-        expect(page).to have_content('No Upcoming Trips')
+        expect(current_path).to eq(edit_user_path(@user.id))
       end
 
 

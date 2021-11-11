@@ -2,7 +2,8 @@ require 'rails_helper'
 
 describe 'edit page', :vcr do
   it 'can update a trip' do
-    trip = TripFacade.trip_get(113)
+    login_with_oauth
+    trip = TripFacade.trip_get(1)
     visit edit_trip_path(trip.id)
 
     expect(page).to have_field(:name, with: trip.name.to_s)

@@ -21,19 +21,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 23:13:21 GMT
+      - Thu, 11 Nov 2021 01:42:10 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"981e10807453bba9a9196f02003e33df"
+      - W/"f6a3977efae71d74644287b7a0322f1b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e9b34955-0499-45db-b3fe-14ad23aa53a0
+      - 49335488-1bd3-4817-91fd-6a869169574f
       X-Runtime:
-      - '0.013309'
+      - '0.017813'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,36 +41,36 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"303001","type":"state_resort","attributes":{"name":"Arapahoe
-        Basin"}},{"id":"999816020","type":"state_resort","attributes":{"name":"Ashcroft
-        Ski Touring"}},{"id":"303004","type":"state_resort","attributes":{"name":"Aspen
-        Highlands"}},{"id":"303003","type":"state_resort","attributes":{"name":"Aspen
-        Mountain"}},{"id":"999816021","type":"state_resort","attributes":{"name":"Aspen
-        Snowmass Nordic Trail System"}},{"id":"303005","type":"state_resort","attributes":{"name":"Beaver
-        Creek"}},{"id":"720025","type":"state_resort","attributes":{"name":"Bluebird
-        Backcountry"}},{"id":"303007","type":"state_resort","attributes":{"name":"Breckenridge"}},{"id":"303027","type":"state_resort","attributes":{"name":"Buttermilk"}},{"id":"719003","type":"state_resort","attributes":{"name":"Cooper/Chicago
-        Ridge"}},{"id":"303009","type":"state_resort","attributes":{"name":"Copper
-        Mountain Resort"}},{"id":"303010","type":"state_resort","attributes":{"name":"Crested
-        Butte Mountain Resort"}},{"id":"999812026","type":"state_resort","attributes":{"name":"Crested
-        Butte Nordic Center"}},{"id":"720001","type":"state_resort","attributes":{"name":"Echo
-        Mountain"}},{"id":"303011","type":"state_resort","attributes":{"name":"Eldora
-        Mountain Resort"}},{"id":"303018","type":"state_resort","attributes":{"name":"Granby
-        Ranch"}},{"id":"720024","type":"state_resort","attributes":{"name":"Hesperus
-        Ski Area"}},{"id":"303013","type":"state_resort","attributes":{"name":"Howelsen
-        Hill Ski Area"}},{"id":"303026","type":"state_resort","attributes":{"name":"Irwin
-        Catskiing by Eleven"}},{"id":"303030","type":"state_resort","attributes":{"name":"Kendall
-        Mountain"}},{"id":"303014","type":"state_resort","attributes":{"name":"Keystone
-        Resort"}},{"id":"303015","type":"state_resort","attributes":{"name":"Loveland
-        Ski Area"}},{"id":"719002","type":"state_resort","attributes":{"name":"Monarch
-        Mountain"}},{"id":"303016","type":"state_resort","attributes":{"name":"Powderhorn
-        Mountain Resort"}},{"id":"303017","type":"state_resort","attributes":{"name":"Purgatory
-        Resort"}},{"id":"303387","type":"state_resort","attributes":{"name":"Silverton
-        Mountain"}},{"id":"999804032","type":"state_resort","attributes":{"name":"Snow
-        Mountain Ranch"}},{"id":"303020","type":"state_resort","attributes":{"name":"Snowmass"}},{"id":"303021","type":"state_resort","attributes":{"name":"Steamboat"}},{"id":"303019","type":"state_resort","attributes":{"name":"Sunlight
-        Mountain Resort"}},{"id":"303022","type":"state_resort","attributes":{"name":"Telluride
-        Ski Resort"}},{"id":"303023","type":"state_resort","attributes":{"name":"Vail
-        Mountain Resort"}},{"id":"999816034","type":"state_resort","attributes":{"name":"Vail
-        Nordic Center"}},{"id":"303024","type":"state_resort","attributes":{"name":"Winter
-        Park Resort"}},{"id":"303025","type":"state_resort","attributes":{"name":"Wolf
-        Creek Ski Area"}}]}'
-  recorded_at: Tue, 09 Nov 2021 23:13:22 GMT
+        Basin","logo":"http://snocountry.com/ski_area_logos/303001logo.jpg"}},{"id":"999816020","type":"state_resort","attributes":{"name":"Ashcroft
+        Ski Touring","logo":"http://snocountry.com/ski_area_logos/999816020logo.jpg"}},{"id":"303004","type":"state_resort","attributes":{"name":"Aspen
+        Highlands","logo":"http://snocountry.com/ski_area_logos/303004logo.jpg"}},{"id":"303003","type":"state_resort","attributes":{"name":"Aspen
+        Mountain","logo":"http://snocountry.com/ski_area_logos/303003logo.jpg"}},{"id":"999816021","type":"state_resort","attributes":{"name":"Aspen
+        Snowmass Nordic Trail System","logo":"http://snocountry.com/ski_area_logos/999816021logo.jpg"}},{"id":"303005","type":"state_resort","attributes":{"name":"Beaver
+        Creek","logo":"http://snocountry.com/ski_area_logos/303005logo.jpg"}},{"id":"720025","type":"state_resort","attributes":{"name":"Bluebird
+        Backcountry","logo":"http://snocountry.com/ski_area_logos/720025logo.jpg"}},{"id":"303007","type":"state_resort","attributes":{"name":"Breckenridge","logo":"http://snocountry.com/ski_area_logos/303007logo.jpg"}},{"id":"303027","type":"state_resort","attributes":{"name":"Buttermilk","logo":"http://snocountry.com/ski_area_logos/303027logo.jpg"}},{"id":"719003","type":"state_resort","attributes":{"name":"Cooper/Chicago
+        Ridge","logo":"http://snocountry.com/ski_area_logos/719003logo.jpg"}},{"id":"303009","type":"state_resort","attributes":{"name":"Copper
+        Mountain Resort","logo":"http://snocountry.com/ski_area_logos/303009logo.jpg"}},{"id":"303010","type":"state_resort","attributes":{"name":"Crested
+        Butte Mountain Resort","logo":"http://snocountry.com/ski_area_logos/303010logo.jpg"}},{"id":"999812026","type":"state_resort","attributes":{"name":"Crested
+        Butte Nordic Center","logo":"http://snocountry.com/ski_area_logos/999812026logo.jpg"}},{"id":"720001","type":"state_resort","attributes":{"name":"Echo
+        Mountain","logo":"http://snocountry.com/ski_area_logos/720001logo.jpg"}},{"id":"303011","type":"state_resort","attributes":{"name":"Eldora
+        Mountain Resort","logo":"http://snocountry.com/ski_area_logos/303011logo.jpg"}},{"id":"303018","type":"state_resort","attributes":{"name":"Granby
+        Ranch","logo":"http://snocountry.com/ski_area_logos/303018logo.jpg"}},{"id":"720024","type":"state_resort","attributes":{"name":"Hesperus
+        Ski Area","logo":"http://snocountry.com/ski_area_logos/720024logo.jpg"}},{"id":"303013","type":"state_resort","attributes":{"name":"Howelsen
+        Hill Ski Area","logo":"http://snocountry.com/ski_area_logos/303013logo.jpg"}},{"id":"303026","type":"state_resort","attributes":{"name":"Irwin
+        Catskiing by Eleven","logo":"http://snocountry.com/ski_area_logos/303026logo.jpg"}},{"id":"303030","type":"state_resort","attributes":{"name":"Kendall
+        Mountain","logo":"http://snocountry.com/ski_area_logos/303030logo.jpg"}},{"id":"303014","type":"state_resort","attributes":{"name":"Keystone
+        Resort","logo":"http://snocountry.com/ski_area_logos/303014logo.jpg"}},{"id":"303015","type":"state_resort","attributes":{"name":"Loveland
+        Ski Area","logo":"http://snocountry.com/ski_area_logos/303015logo.jpg"}},{"id":"719002","type":"state_resort","attributes":{"name":"Monarch
+        Mountain","logo":"http://snocountry.com/ski_area_logos/719002logo.jpg"}},{"id":"303016","type":"state_resort","attributes":{"name":"Powderhorn
+        Mountain Resort","logo":"http://snocountry.com/ski_area_logos/303016logo.jpg"}},{"id":"303017","type":"state_resort","attributes":{"name":"Purgatory
+        Resort","logo":"http://snocountry.com/ski_area_logos/303017logo.jpg"}},{"id":"303387","type":"state_resort","attributes":{"name":"Silverton
+        Mountain","logo":"http://snocountry.com/ski_area_logos/303387logo.jpg"}},{"id":"999804032","type":"state_resort","attributes":{"name":"Snow
+        Mountain Ranch","logo":"http://snocountry.com/ski_area_logos/999804032logo.jpg"}},{"id":"303020","type":"state_resort","attributes":{"name":"Snowmass","logo":"http://snocountry.com/ski_area_logos/303020logo.jpg"}},{"id":"303021","type":"state_resort","attributes":{"name":"Steamboat","logo":"http://snocountry.com/ski_area_logos/303021logo.jpg"}},{"id":"303019","type":"state_resort","attributes":{"name":"Sunlight
+        Mountain Resort","logo":"http://snocountry.com/ski_area_logos/303019logo.jpg"}},{"id":"303022","type":"state_resort","attributes":{"name":"Telluride
+        Ski Resort","logo":"http://snocountry.com/ski_area_logos/303022logo.jpg"}},{"id":"303023","type":"state_resort","attributes":{"name":"Vail
+        Mountain Resort","logo":"http://snocountry.com/ski_area_logos/303023logo.jpg"}},{"id":"999816034","type":"state_resort","attributes":{"name":"Vail
+        Nordic Center","logo":"http://snocountry.com/ski_area_logos/999816034logo.jpg"}},{"id":"303024","type":"state_resort","attributes":{"name":"Winter
+        Park Resort","logo":"http://snocountry.com/ski_area_logos/303024logo.jpg"}},{"id":"303025","type":"state_resort","attributes":{"name":"Wolf
+        Creek Ski Area","logo":"http://snocountry.com/ski_area_logos/303025logo.jpg"}}]}'
+  recorded_at: Thu, 11 Nov 2021 01:42:11 GMT
 recorded_with: VCR 6.0.0

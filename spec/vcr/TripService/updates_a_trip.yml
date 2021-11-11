@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: patch
-    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/48
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/3
     body:
       encoding: UTF-8
       string: '{"name":"This is a trip","start_date":"2021-11-09","end_date":"2021-11-10"}'
@@ -23,25 +23,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 23:13:37 GMT
+      - Thu, 11 Nov 2021 02:43:41 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b10a08c6a72848dca6dc458e746d180a"
+      - W/"c4e3f1d360ae55d3ea7b11b0a3b59177"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 97ffc601-35d3-4932-988f-b5b2fc92b7d7
+      - 933b096c-1a24-48aa-bfe0-1eaabbefa8a9
       X-Runtime:
-      - '0.008989'
+      - '0.014232'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"48","type":"trip","attributes":{"name":"This is a trip","resort_id":2,"resort_name":null,"start_date":"2021-11-09","end_date":"2021-11-10"},"relationships":{"resort_options":{"data":[]},"riders":{"data":[]}}}}'
-  recorded_at: Tue, 09 Nov 2021 23:13:37 GMT
+      string: '{"data":{"id":"3","type":"trip","attributes":{"name":"This is a trip","resort_id":null,"resort_name":null,"start_date":"2021-11-09","end_date":"2021-11-10","vote_status":"open","riders":[{"data":{"id":"3","type":"rider","attributes":{"user_id":5,"trip_id":3,"host":false,"driver":false,"budget":30,"rider_name":"Jyn
+        Erso"}}}],"resort_options":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 02:43:41 GMT
 recorded_with: VCR 6.0.0

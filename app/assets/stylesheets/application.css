@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+ .card {
+   object-fit: scale-down ;
+   width: 150px;
+   height: 220px;
+ }
