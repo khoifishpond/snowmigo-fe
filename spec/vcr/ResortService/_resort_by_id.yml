@@ -21,19 +21,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 23:13:36 GMT
+      - Thu, 11 Nov 2021 01:42:31 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fad34cc4d0ded5426ef7c7accaaf5dac"
+      - W/"58aa645cb903ff985bbec74f5b0559e9"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8fef9c99-6447-4aa7-91f6-2f4e7654b439
+      - d7f977ac-65b0-4e79-960f-180cbafe35b8
       X-Runtime:
-      - '0.422097'
+      - '0.415944'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,8 +41,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"303001","type":"resort","attributes":{"name":"Arapahoe
-        Basin","new_snow":"","base_depth":"18","open_trails":"3/147","open_lifts":"2/9","snow_condition":"Machine
-        Groomed","mask_required":"1","trail_map":"http://feeds.snocountry.net/trailmapDisplay.php?permcode=303001","logo":"http://snocountry.com/ski_area_logos/303001logo.jpg","chance_of_snow":"0","hourly_weather":{"morning":{"temp":"33","weather":"Partly
-        cloudy","weather_icon":"http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0002_sunny_intervals.png","wind":"7","snowfall":null},"noon":{"temp":"36","weather":"Sunny","weather_icon":"http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png","wind":"14","snowfall":null},"afternoon":{"temp":"34","weather":"Sunny","weather_icon":"http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png","wind":"16","snowfall":null}}}}]}'
-  recorded_at: Tue, 09 Nov 2021 23:13:37 GMT
+        Basin","new_snow":"2","base_depth":"18","open_trails":"3/147","open_lifts":"2/9","snow_condition":"Machine
+        Groomed","mask_required":"1","trail_map":"http://feeds.snocountry.net/trailmapDisplay.php?permcode=303001","logo":"http://snocountry.com/ski_area_logos/303001logo.jpg","chance_of_snow":"74","hourly_weather":{"morning":{"temp":"18","weather":"Patchy
+        heavy snow","weather_icon":"http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0012_heavy_snow_showers.png","wind":"19","snowfall":null},"noon":{"temp":"20","weather":"Patchy
+        snow possible","weather_icon":"http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0013_sleet_showers.png","wind":"22","snowfall":null},"afternoon":{"temp":"17","weather":"Patchy
+        snow possible","weather_icon":"http://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0013_sleet_showers.png","wind":"26","snowfall":null}}}}]}'
+  recorded_at: Thu, 11 Nov 2021 01:42:32 GMT
 recorded_with: VCR 6.0.0

@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://snowmigo-be.herokuapp.com/api/v1/trips
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users
     body:
       encoding: UTF-8
-      string: '{"name":"Happy fun time","start_date":"12/12/2021","end_date":"14/12/2021","resort_id":null,"resort_name":null}'
+      string: '{"email":"example@gmail.com","name":"Freddie Mercury"}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -17,36 +17,36 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 201
-      message: Created
+      code: 200
+      message: OK
     headers:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 23:13:27 GMT
+      - Thu, 11 Nov 2021 01:42:16 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9a56d7d10a7135e55811bf530e72b926"
+      - W/"d5e37f3310b26095c692b842d6d8b5dc"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ec4f1178-25cf-45bc-8d1e-7b79d971a6d9
+      - 7c233c7c-1866-4d8d-90a6-700b75db5149
       X-Runtime:
-      - '0.014132'
+      - '0.007852'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"155","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14"},"relationships":{"resort_options":{"data":[]},"riders":{"data":[]}}}}'
-  recorded_at: Tue, 09 Nov 2021 23:13:28 GMT
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null,"trips":[],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 01:42:16 GMT
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/155
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/7
     body:
       encoding: US-ASCII
       string: ''
@@ -65,25 +65,241 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 23:13:27 GMT
+      - Thu, 11 Nov 2021 01:42:15 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"deaf717cf1ab5069c3e0f1202f385f81"
+      - W/"d5e37f3310b26095c692b842d6d8b5dc"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b6e5af0b-97da-43df-b4c0-eb6e8ca4116f
+      - 6d62fc38-255b-4207-bf75-06697f0a8e2e
       X-Runtime:
-      - '0.008939'
+      - '0.006750'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"155","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14"},"relationships":{"resort_options":{"data":[]},"riders":{"data":[]}}},"included":[]}'
-  recorded_at: Tue, 09 Nov 2021 23:13:28 GMT
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null,"trips":[],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 01:42:16 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 01:42:16 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d5e37f3310b26095c692b842d6d8b5dc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e43ad468-f41e-4f16-a3d9-466c2fa402d0
+      X-Runtime:
+      - '0.008965'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null,"trips":[],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 01:42:16 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 01:42:15 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d5e37f3310b26095c692b842d6d8b5dc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2d57eb9b-5d21-4991-ab35-91fd91913836
+      X-Runtime:
+      - '0.007904'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null,"trips":[],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 01:42:16 GMT
+- request:
+    method: post
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"name":"Happy fun time","start_date":"12/12/2021","end_date":"14/12/2021","resort_id":null,"resort_name":null,"user_id":"7"}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 01:42:16 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e6de333d67f719356529d1cab60800c5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e7606105-b0bd-4db4-967a-e985f6fbecf6
+      X-Runtime:
+      - '0.027171'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"4","type":"rider","attributes":{"user_id":7,"trip_id":4,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 01:42:16 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 01:42:15 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e6de333d67f719356529d1cab60800c5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e35da120-2f95-4819-aeb6-b0af72de4020
+      X-Runtime:
+      - '0.007809'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"4","type":"rider","attributes":{"user_id":7,"trip_id":4,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 01:42:16 GMT
+- request:
+    method: get
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Nov 2021 01:42:16 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"085027de4fc7dc8a757adcb0d13fba98"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2b687d6c-7604-465d-b8f5-05d3cccefee9
+      X-Runtime:
+      - '0.013697'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null,"trips":[{"data":{"id":"4","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"4","type":"rider","attributes":{"user_id":7,"trip_id":4,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 01:42:17 GMT
 recorded_with: VCR 6.0.0
