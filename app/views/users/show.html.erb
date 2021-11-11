@@ -20,20 +20,14 @@
 </div>
 <br>
 
-<div id='upcoming-trips' >
-  <h5>Upcoming Trips</h5>
-  <br>
-  <% if @user.upcoming_trips.empty? %>
-    <%= 'You have no upcoming trips' %>
-  <% else %>
-    <% @user.upcoming_trips.each do |trip| %>
-      <%= trip.name %>
-      <%= trip.resort_name %>
-      <%= trip.start_date %>
-      <%= trip.end_date %>
+
+
+<div id='add-friend'>
+    <% form_with url: friendships_path, local: true do |f| %>
+      <%= f.text_field :friends, placeholder: 'name@example.com' %>
+      <%= f.submit 'Add Friend' %>
     <% end %>
-  <% end %>
-</div>
+<div/>
 
 <div id='friends'>
   <%= 'Friends' %><br/>
