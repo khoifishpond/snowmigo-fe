@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/khoifishpond/snowmigo-fe.svg?branch=main)](https://travis-ci.org/khoifishpond/snowmigo-fe)
+[![Build Status](https://travis-ci.org/khoifishpond/snowmigo-fe.svg?branch=main)](https://travis-ci.org/khoifishpond/snowmigo)
 
 # Snowmigo FE
-  <p>
-    The front-end half of a Consultancy project during weeks four and five during Mod 3 of Turing. 
-  </p>
+
+The front-end half of a Consultancy project during weeks four and five during Mod 3 of Turing. For back-end, please visit [Snowmigo](https://github.com/hschmid516/snowmigo-api).
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -22,7 +22,7 @@
       </ul>
     </li>
     <li><a href="#deployment">Deployment</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#features">Features</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -69,7 +69,7 @@
   <img src="https://img.shields.io/badge/faker-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
   <img src="https://img.shields.io/badge/shoulda--matchers-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
   <img src="https://img.shields.io/badge/capybara-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
-  <img src="https://img.shields.io/badge/omniauth google oauth2-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" /> </br>
+  <img src="https://img.shields.io/badge/omniauth_google_oauth2-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" /> </br>
   <img src="https://img.shields.io/badge/figaro-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
   <img src="https://img.shields.io/badge/orderly-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
   <img src="https://img.shields.io/badge/launchy-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />  
@@ -123,7 +123,7 @@ Visit [Herkou](https://snowmigo.herokuapp.com)
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Features
 
 - [x] Implement Google OAuth </br></br>
   <img src="https://user-images.githubusercontent.com/58535045/141173676-86c7266b-1e7d-42aa-b4de-ec0365f6c7d6.png" />
@@ -135,7 +135,6 @@ Visit [Herkou](https://snowmigo.herokuapp.com)
 See the [open issues](https://github.com/khoifishpond/snowmigo-fe/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
@@ -161,21 +160,21 @@ Don't forget to give the project a star! Thanks again!
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </p>
 
-- [Laura Court](https://www.linkedin.com/in/andrew-massey-b06662194/)
-- [Erika Kischuk](https://www.linkedin.com/in/erika-kischuk)
 - [Henry Schmid](https://www.linkedin.com/in/henry-schmid)
-- [Ozzie Osmonson](https://www.linkedin.com/in/ozzie-osmonson/)
+- [Erika Kischuk](https://www.linkedin.com/in/erika-kischuk)
+- [Laura Court](https://www.linkedin.com/in/andrew-massey-b06662194/)
 - [Khoi Nguyen](https://www.linkedin.com/in/khoifishpond/)
+- [Ozzie Osmonson](https://www.linkedin.com/in/ozzie-osmonson/)
 
 <p>
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
-- [Laura Court](https://github.com/lmcourt)
-- [Erika Kischuk](https://github.com/eakischuk)
 - [Henry Schmid](https://github.com/hschmid516)
-- [Ozzie Osmonson](https://github.com/ozzman84)
+- [Erika Kischuk](https://github.com/eakischuk)
+- [Laura Court](https://github.com/lmcourt)
 - [Khoi Nguyen](https://github.com/khoifishpond)
+- [Ozzie Osmonson](https://github.com/ozzman84)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
