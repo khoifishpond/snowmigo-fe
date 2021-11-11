@@ -1,14 +1,14 @@
 class Trip
-  attr_reader :id, :start_date, :end_date, :resort_id, :name, :resort_options, :vote_status, :riders
+  attr_reader :id, :start_date, :end_date, :resort_id, :name, :options, :vote_status, :riders
 
   def initialize(info)
     @id = info[:id]
     @name = info[:attributes][:name]
     @start_date = info[:attributes][:start_date]
     @end_date = info[:attributes][:end_date]
+    @vote_status = info[:attributes][:vote_status]
     @resort_id = info[:attributes][:resort_id]
-    @resort_name = info[:attributes][:resort_name]
-    # @riders = info[:riders]
+    @riders = info[:attributes][:riders]
     @options = info[:attributes][:resort_options]
   end
 

@@ -45,4 +45,8 @@ RSpec.describe Resort do
   it 'shows no if mask enum is 0' do
     expect(@resort.mask('0')).to eq('No')
   end
+
+  it 'shows 0 if snow there is no snow' do
+    expect(@resort.no_new_snow('')).to eq('0')
+  end
 end

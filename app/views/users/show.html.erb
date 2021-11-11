@@ -20,19 +20,32 @@
 </div>
 <br>
 
-
-
-<div id='add-friend'>
-    <% form_with url: friendships_path, local: true do |f| %>
-      <%= f.text_field :friends, placeholder: 'name@example.com' %>
-      <%= f.submit 'Add Friend' %>
+<div id='upcoming-trips'>
+  <% if current_user.upcoming_trips.empty? %>
+    <p>You have no upcoming trips. Get a life </p>
+  <% else %>
+    <% current_user.upcoming_trips.each do |trip| %>
+    <%= trip[:data][:attributes][:name] %>
+    <%= trip[:data][:attributes][:start_date] %>
+    <%= trip[:data][:attributes][:end_date] %>
     <% end %>
 <div/>
 
-<div id='friends'>
-  <%= 'Friends' %><br/>
-  <%= 'You have not added any friends yet!' if @user.friends.empty? %>
-  <% @user.friends.each do |friend| %>
-    <%= friend.name %>
+<div id='past-trips'>
+  <% if current_user.past_trips.empty? %>
+  <p>Go on some trips!</p>
+  <% else %>
+    <% current_user.past_trips.each do |trip| %>
+    <%= trip[:data][:attributes][:name] %>
+    <%= trip[:data][:attributes][:start_date] %>
+    <%= trip[:data][:attributes][:end_date] %>
+    <% end %>
   <% end %>
 </div>
+
+<div id='add-friend'>
+  <% form_with url: friendships_path, local: true do |f| %>
+  <%= f.text_field :friends, placeholder: 'name@example.com' %>
+  <%= f.submit 'Add Friend' %>
+  <% end %>
+<div/>
