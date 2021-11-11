@@ -1,5 +1,6 @@
 class User
-  attr_reader :email, :name, :id, :address, :ski_pass, :ski_or_board, :exp_level, :emergency_name, :emergency_number
+  attr_reader :email, :name, :id, :address, :ski_pass, :ski_or_board,
+              :exp_level, :emergency_name, :emergency_number, :friends
 
   def initialize(data)
     @id = data[:id]
@@ -11,5 +12,6 @@ class User
     @exp_level = data[:attributes][:exp_level]
     @emergency_name = data[:attributes][:emergency_name]
     @emergency_number = data[:attributes][:emergency_number]
+    @friends = data[:attributes][:friends]
   end
 end
