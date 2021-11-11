@@ -12,7 +12,6 @@ RSpec.describe 'User Dashboard' do
         expect(page).to have_content('Login Successful')
       end
 
-      #Display Info
       it 'displays user name' do
         expect(page).to have_content(@user.name)
       end
@@ -31,43 +30,37 @@ RSpec.describe 'User Dashboard' do
         expect(current_path).to eq(edit_user_path(@user.id))
       end
 
-      # it 'returns message with no Upcoming Trips' do
-      #   expect(page).to have_content('No Upcoming Trips')
-      # end
-      #
-      # it 'returns message with no friends added' do
-      #   expect(page).to have_content('You have not added any friends yet!')
-      # end
+      it 'returns Upcoming Trips' do
+        within("#upcoming-trips") do
+          expect(page).to have_content(@user.trips.first[:data][:attributes][:name])
+          expect(page).to have_content(@user.trips.first[:data][:attributes][:start_date])
+          expect(page).to have_content(@user.trips.first[:data][:attributes][:end_date])
+        end
+      end
 
-      # it 'returns Upcoming Trips' do
-      #   within("#upcoming-trips") do
-      #     # save_and_open_page
-      #     require "pry"; binding.pry
-      #     expect(page).to have_content('Christmas Trip')
-      #     # expect(page).to have_content(@user[[:resort_name])
-      #     # expect(page).to have_content(trip[:start_date])
-      #     # expect(page).to have_content(trip[:end_date])
-      #   end
-      # end
+      it 'returns past Trips' do
+        within("#past-trips") do
+          expect(page).to have_content(@user.trips[1][:data][:attributes][:name])
+          expect(page).to have_content(@user.trips[1][:data][:attributes][:start_date])
+          expect(page).to have_content(@user.trips[1][:data][:attributes][:end_date])
+        end
+      end
+
+      context 'Logout' do
+      it 'has a logout button' do
+        expect(page).to have_link('Logout')
+      end
+
+        it 'Will log the User out' do
+          click_link 'Logout'
+          expect(current_path).to eq(root_path)
+        end
+
+        it 'Flash message shows logout' do
+          click_link 'Logout'
+          expect(page).to have_content('Logout successful')
+        end
+      end
     end
   end
-
-  # describe 'Logout' do
-  #   it 'has a logout button' do
-  #     allow(ApplicationController).receive(:current_user).and_return(@user_attributes)
-  #     expect(page).to have_link('Logout')
-  #   end
-  #
-  #   context 'Successful' do
-  #     it 'Will log the User out' do
-  #       click_link 'Logout'
-  #       expect(current_path).to eq(root_path)
-  #     end
-  #
-  #     it 'Flash message shows logout' do
-  #       click_link 'Logout'
-  #       expect(page).to have_content('Logout successful')
-  #     end
-  #   end
-  # end
 end
