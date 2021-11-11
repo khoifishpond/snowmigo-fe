@@ -20,25 +20,14 @@
 </div>
 <br>
 
-<div id='upcoming-trips' >
-  <h5>Upcoming Trips</h5>
-  <br>
-  <% if @user.upcoming_trips.empty? %>
-    <%= 'You have no upcoming trips' %>
-  <% else %>
-    <% @user.upcoming_trips.each do |trip| %>
-      <%= trip.name %>
-      <%= trip.resort_name %>
-      <%= trip.start_date %>
-      <%= trip.end_date %>
-    <% end %>
-  <% end %>
-</div>
 
-<div id='friends'>
-  <%= 'Friends' %><br/>
-  <%= 'You have not added any friends yet!' if @user.friends.empty? %>
-  <% @user.friends.each do |friend| %>
-    <%= friend.name %>
+<div id='upcoming-trips'>
+
+  <% if current_user.upcoming_trips.empty? %>
+    <p>You have no upcoming trips. Get a life </p>
+  <% else %>
+    <% current_user.upcoming_trips.each do |trip| %>
+      <%= trip[:data][:attributes][:name] %>
+    <% end %>
   <% end %>
 </div>
