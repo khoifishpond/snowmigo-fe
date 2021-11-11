@@ -2,7 +2,6 @@ class User
   attr_reader :email, :name, :id, :address, :ski_pass, :ski_or_board, :exp_level, :emergency_name, :emergency_number, :trips, :friends
 
   def initialize(data)
-    # require "pry"; binding.pry
     @id = data[:id]
     @name = data[:attributes][:name]
     @email = data[:attributes][:email]
@@ -18,13 +17,14 @@ class User
 
   def past_trips
     @trips.filter_map do |trip|
-      trip if trip[:end_date] < Date.today.to_s
+      trip if trip[:data][:attributes][:end_date].to_date < Date.today
     end
   end
 
   def upcoming_trips
-    @trips.filter_map do |trip|
-      trip if trip[:end_date] >= Date.today.to_s
+    wip = @trips.filter_map do |trip|
+      # require "pry"; binding.pry
+      trip if trip[:data][:attributes][:end_date].to_date >= Date.today
     end
   end
 end
