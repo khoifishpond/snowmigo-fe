@@ -20,6 +20,27 @@
 </div>
 <br>
 
-<div id='upcoming-trips'></div>
 
-<div id='past-trips'></div>
+<div id='upcoming-trips'>
+  <% if current_user.upcoming_trips.empty? %>
+    <p>You have no upcoming trips. Get a life </p>
+  <% else %>
+    <% current_user.upcoming_trips.each do |trip| %>
+    <%= trip[:data][:attributes][:name] %>
+    <%= trip[:data][:attributes][:start_date] %>
+    <%= trip[:data][:attributes][:end_date] %>
+    <% end %>
+  <% end %>
+</div>
+
+<div id='past-trips'>
+  <% if current_user.past_trips.empty? %>
+  <p>Go on some trips!</p>
+  <% else %>
+    <% current_user.past_trips.each do |trip| %>
+    <%= trip[:data][:attributes][:name] %>
+    <%= trip[:data][:attributes][:start_date] %>
+    <%= trip[:data][:attributes][:end_date] %>
+    <% end %>
+  <% end %>
+</div>

@@ -27,24 +27,24 @@ RSpec.describe 'resort show page' do
     within("##{@resort_id}-weather") do
       expect(page).to have_content('Morning:')
       within('#morning-weather') do
-        expect(page).to have_css("img[alt*='Partly cloudy']")
+        expect(page).to have_css("img[alt*='Patchy heavy snow']")
         expect(page).to have_content('Snowfall:')
-        expect(page).to have_content('Temperature: 33 Fahrenheit')
-        expect(page).to have_content('Wind: 7 mph')
+        expect(page).to have_content('Temperature: 18 Fahrenheit')
+        expect(page).to have_content('Wind: 19 mph')
       end
       expect(page).to have_content('Noon:')
       within('#noon-weather') do
-        expect(page).to have_css("img[alt*='Sunny']")
+        expect(page).to have_css("img[alt*='Patchy snow possible']")
         expect(page).to have_content('Snowfall:')
-        expect(page).to have_content('Temperature: 36 Fahrenheit')
-        expect(page).to have_content('Wind: 14 mph')
+        expect(page).to have_content('Temperature: 20 Fahrenheit')
+        expect(page).to have_content('Wind: 22 mph')
       end
       expect(page).to have_content('Afternoon:')
       within('#afternoon-weather') do
-        expect(page).to have_css("img[alt*='Sunny']")
+        expect(page).to have_css("img[alt*='Patchy snow possible']")
         expect(page).to have_content('Snowfall:')
-        expect(page).to have_content('Temperature: 34 Fahrenheit')
-        expect(page).to have_content('Wind: 16 mph')
+        expect(page).to have_content('Temperature: 17 Fahrenheit')
+        expect(page).to have_content('Wind: 26 mph')
       end
     end
   end

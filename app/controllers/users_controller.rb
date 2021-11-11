@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
   def show
-    @user = UserFacade.user_get(params[:id])
+    current_user
+    # require "pry"; binding.pry
     # use response codes to get flash messages
   end
 
   def edit
-    @user = current_user
+    current_user
   end
 
   def update
