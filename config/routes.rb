@@ -10,6 +10,9 @@ Rails.application.routes.draw do
     patch '/vote', to: 'trips/votes#update'
     patch '/vote_status', to: 'trips/votes#update_status'
   end
+  namespace :trips do
+    resources :riders, only: :create
+  end
   resources :resorts, only: [:index, :show]
   resources :friendships, only: :create
   resources :resort_options, only: :create
