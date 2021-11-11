@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/47
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/1
     body:
       encoding: US-ASCII
       string: ''
@@ -21,25 +21,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 10 Nov 2021 00:33:21 GMT
+      - Thu, 11 Nov 2021 02:43:41 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"c02491c2fcd7175dfc05e45b530c860f"
+      - W/"4018de837848039dbb70be9dfd169197"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bee5e223-32ce-47af-9985-4f354c1a5c18
+      - 99221251-8c09-4ffa-b750-71c1ffd38672
       X-Runtime:
-      - '0.014107'
+      - '0.017889'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"47","type":"trip","attributes":{"name":"Cool Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25"},"relationships":{"resort_options":{"data":[]},"riders":{"data":[]}}},"included":[]}'
-  recorded_at: Wed, 10 Nov 2021 00:33:22 GMT
+      string: '{"data":{"id":"1","type":"trip","attributes":{"name":"Cool Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
+        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
+        Erso"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}}'
+  recorded_at: Thu, 11 Nov 2021 02:43:41 GMT
 recorded_with: VCR 6.0.0

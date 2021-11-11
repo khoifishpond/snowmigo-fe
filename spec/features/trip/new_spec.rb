@@ -2,26 +2,17 @@ require 'rails_helper'
 
 RSpec.describe 'New trip', :vcr do
   describe 'creating a trip' do
-    let(:trip) do
-      Trip.new({ data: {
-                 id: 155,
-                 attributes: { name: 'Happy fun time',
-                               start_date: '12/12/2021',
-                               end_date: '14/12/2021',
-                               resort_id: 2 }
-               } })
+    it 'creates a trip' do
+      login_with_oauth
+      visit new_trip_path
+      fill_in :start_date, with: '12/12/2021'
+      fill_in :end_date, with: '14/12/2021'
+      fill_in :name, with: 'Happy fun time'
+      click_on 'Create trip!'
 
-    context 'Successful Create'
-      it 'creates a trip' do
-        visit new_trip_path
-        fill_in :start_date, with: '12/12/2021'
-        fill_in :end_date, with: '14/12/2021'
-        fill_in :name, with: 'Happy fun time'
-        click_on 'Create trip!'
-
-        expect(current_path).to eq(trip_path(trip.id))
-        expect(page).to have_content('Trip created successfully')
-      end
+      expect(page).to have_content('Dec 12, 2021')
+      expect(page).to have_content('Dec 14, 2021')
+      expect(page).to have_content('Happy fun time')
     end
   end
 end

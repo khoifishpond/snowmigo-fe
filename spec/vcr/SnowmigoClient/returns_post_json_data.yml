@@ -23,25 +23,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 23:13:21 GMT
+      - Thu, 11 Nov 2021 01:42:10 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8a83f22c6a674d91280a5a7808615fca"
+      - W/"41e9a95066bf520ada3d6a92e9af9fb1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f2b042e6-9de9-4c21-9897-5e52bc0f000a
+      - a6c79133-3c8e-4e3a-80ef-e649f36f350e
       X-Runtime:
-      - '0.015613'
+      - '0.089475'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Michael Osmonson","email":"mikeosmonson@gmail.com","exp_level":"Beginner","ski_pass":"Ikon","address":"Denver","ski_or_board":"Ski","emergency_name":"Christina","emergency_number":"3945638198"},"relationships":{"trips":{"data":[]},"friendships":{"data":[]}}}}'
-  recorded_at: Tue, 09 Nov 2021 23:13:22 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":null,"email":"mikeosmonson@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null,"trips":[],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 01:42:10 GMT
 recorded_with: VCR 6.0.0

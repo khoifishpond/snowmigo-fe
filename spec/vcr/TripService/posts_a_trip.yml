@@ -5,7 +5,7 @@ http_interactions:
     uri: http://snowmigo-be.herokuapp.com/api/v1/trips
     body:
       encoding: UTF-8
-      string: '{"name":"Happy fun time","start_date":"11/11/1111","end_date":"22/22/2222","resort_id":2}'
+      string: '{"name":"Happy fun time","start_date":"11/11/1111","end_date":"22/22/2222","resort_id":"2","user_id":"7"}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -23,25 +23,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 23:13:36 GMT
+      - Thu, 11 Nov 2021 02:43:40 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"a14e1cb259df26b74ceb692f5e8dc31d"
+      - W/"bcb575e054f16e2f6022b6d46b41ad63"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - afe851b8-98ef-4b99-b020-abc9ef1a70fc
+      - 6d4e5fb7-69bf-4201-8e49-fee28442218e
       X-Runtime:
-      - '0.010764'
+      - '0.030364'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"159","type":"trip","attributes":{"name":"Happy fun time","resort_id":2,"resort_name":null,"start_date":"1111-11-11","end_date":null},"relationships":{"resort_options":{"data":[]},"riders":{"data":[]}}}}'
-  recorded_at: Tue, 09 Nov 2021 23:13:37 GMT
+      string: '{"data":{"id":"18","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"16","type":"rider","attributes":{"user_id":7,"trip_id":18,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"9","type":"resort_option","attributes":{"trip_id":18,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}}'
+  recorded_at: Thu, 11 Nov 2021 02:43:41 GMT
 recorded_with: VCR 6.0.0

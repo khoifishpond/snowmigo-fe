@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'user info edit page' do
+describe 'user info edit page', :vcr do
   describe 'edits' do
     before :each do
       login_with_oauth
@@ -8,11 +8,6 @@ describe 'user info edit page' do
     end
 
     it 'can edit a user' do
-      fill_in :name, with: 'Freddie Mercury'
-      select 'Epic', from: :ski_pass
-      select 'Advanced', from: :exp_level
-      click_button 'Update Info'
-
       user = UserFacade.user_get(10)
 
       expect(user.name).to eq('Freddie Mercury')
@@ -38,6 +33,13 @@ describe 'user info edit page' do
       expect(current_path).to eq(user_path(user.id))
       expect(page).to have_content('Squirrely Dan')
       expect(page).to have_content('Ikon')
+
+      visit edit_user_path(7)
+
+      fill_in :name, with: 'Freddie Mercury'
+      select 'Epic', from: :ski_pass
+      select 'Advanced', from: :exp_level
+      click_button 'Update Info'
     end
   end
 end
