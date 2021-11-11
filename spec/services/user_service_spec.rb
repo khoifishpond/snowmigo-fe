@@ -4,7 +4,7 @@ RSpec.describe UserService, :vcr do
   it 'has a users' do
     result = UserService.user_auth('mikeosmonson@gmail.com', 'mike')
     expect(result).to be_a(Hash)
-    expect(result.size).to eq(4)
+    expect(result.size).to eq(3)
     expect(result.first).to be_a(Array)
     expect(result[:attributes][:email]).to eq('mikeosmonson@gmail.com')
   end
@@ -13,7 +13,7 @@ RSpec.describe UserService, :vcr do
     result = UserService.user_get(4)
 
     expect(result).to be_a(Hash)
-    expect(result.size).to eq(4)
+    expect(result.size).to eq(3)
     expect(result[:id]).to eq('4')
   end
 
@@ -29,7 +29,7 @@ RSpec.describe UserService, :vcr do
                                        emergency_number: '3945638198'
                                      })
     expect(result).to be_a(Hash)
-    expect(result.size).to eq(4)
+    expect(result.size).to eq(3)
     expect(result[:attributes]).to have_key :name
     expect(result[:attributes]).to have_key :email
     expect(result[:attributes]).to have_key :address

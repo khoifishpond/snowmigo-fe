@@ -3,14 +3,14 @@ class Trip
               :options
 
   def initialize(info)
-    @id = info[:data][:id]
-    @name = info[:data][:attributes][:name]
-    @start_date = info[:data][:attributes][:start_date]
-    @end_date = info[:data][:attributes][:end_date]
-    # @riders = info[:data][:relationships][:riders]
-    @resort_id = info[:data][:attributes][:resort_id]
-    @resort_name = info[:data][:attributes][:resort_name]
-    @option_info = info[:included]
+    @id = info[:id]
+    @name = info[:attributes][:name]
+    @start_date = info[:attributes][:start_date]
+    @end_date = info[:attributes][:end_date]
+    @resort_id = info[:attributes][:resort_id]
+    @resort_name = info[:attributes][:resort_name]
+    # @riders = info[:riders]
+    @options = info[:attributes][:resort_options]
   end
 
   def format_start_date
@@ -19,11 +19,5 @@ class Trip
 
   def format_end_date
     @end_date.to_date.strftime('%b %-d, %Y')
-  end
-
-  def options
-    @option_info.map do |option|
-      option[:attributes]
-    end
   end
 end

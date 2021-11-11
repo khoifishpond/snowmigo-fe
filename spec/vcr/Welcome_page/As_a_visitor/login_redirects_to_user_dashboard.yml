@@ -23,30 +23,44 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 23:13:35 GMT
+      - Thu, 11 Nov 2021 02:40:42 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"21400433f0ed0ea6ec697676f363a63c"
+      - W/"f9ed63b74a2111f6ddca64dba267d402"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 36baf0bf-79f3-4752-abe8-76f78fbed542
+      - 99703eb3-b685-4ae4-9a7a-2b2994619abc
       X-Runtime:
-      - '0.010430'
+      - '0.047373'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Ikon","address":"","ski_or_board":"","emergency_name":"","emergency_number":""},"relationships":{"trips":{"data":[]},"friendships":{"data":[]}}}}'
-  recorded_at: Tue, 09 Nov 2021 23:13:36 GMT
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"","ski_or_board":"","emergency_name":"","emergency_number":"","trips":[{"data":{"id":"4","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"4","type":"rider","attributes":{"user_id":7,"trip_id":4,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"5","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"5","type":"rider","attributes":{"user_id":7,"trip_id":5,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"6","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"6","type":"rider","attributes":{"user_id":7,"trip_id":6,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"4","type":"resort_option","attributes":{"trip_id":6,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"7","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"7","type":"rider","attributes":{"user_id":7,"trip_id":7,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"5","type":"resort_option","attributes":{"trip_id":7,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"9","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"9","type":"rider","attributes":{"user_id":7,"trip_id":9,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"6","type":"resort_option","attributes":{"trip_id":9,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}},{"data":{"id":"14","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"12","type":"rider","attributes":{"user_id":7,"trip_id":14,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"7","type":"resort_option","attributes":{"trip_id":14,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 02:40:43 GMT
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/users/5
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/7
     body:
       encoding: US-ASCII
       string: ''
@@ -65,30 +79,44 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 23:13:35 GMT
+      - Thu, 11 Nov 2021 02:40:42 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"183ad3eeb5ae67e9efcfd9dfd7994b34"
+      - W/"f9ed63b74a2111f6ddca64dba267d402"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 689ae6e8-b865-471b-93e3-2ca0052e3857
+      - 21dfe9e2-d7d6-4ee8-9d55-a40b7fa61cb3
       X-Runtime:
-      - '0.010839'
+      - '0.084526'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Ikon","address":"","ski_or_board":"","emergency_name":"","emergency_number":""},"relationships":{"trips":{"data":[]},"friendships":{"data":[]}}},"included":[]}'
-  recorded_at: Tue, 09 Nov 2021 23:13:36 GMT
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"","ski_or_board":"","emergency_name":"","emergency_number":"","trips":[{"data":{"id":"4","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"4","type":"rider","attributes":{"user_id":7,"trip_id":4,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"5","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"5","type":"rider","attributes":{"user_id":7,"trip_id":5,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"6","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"6","type":"rider","attributes":{"user_id":7,"trip_id":6,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"4","type":"resort_option","attributes":{"trip_id":6,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"7","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"7","type":"rider","attributes":{"user_id":7,"trip_id":7,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"5","type":"resort_option","attributes":{"trip_id":7,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"9","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"9","type":"rider","attributes":{"user_id":7,"trip_id":9,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"6","type":"resort_option","attributes":{"trip_id":9,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}},{"data":{"id":"14","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"12","type":"rider","attributes":{"user_id":7,"trip_id":14,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"7","type":"resort_option","attributes":{"trip_id":14,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 02:40:43 GMT
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/users/5
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/7
     body:
       encoding: US-ASCII
       string: ''
@@ -107,25 +135,39 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 23:13:36 GMT
+      - Thu, 11 Nov 2021 02:40:43 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"183ad3eeb5ae67e9efcfd9dfd7994b34"
+      - W/"f9ed63b74a2111f6ddca64dba267d402"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4ab69b59-bf50-46fd-9422-6a721938ba44
+      - 0a6cbf88-9d71-4899-875f-0f3c6edeec80
       X-Runtime:
-      - '0.008949'
+      - '0.038403'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Ikon","address":"","ski_or_board":"","emergency_name":"","emergency_number":""},"relationships":{"trips":{"data":[]},"friendships":{"data":[]}}},"included":[]}'
-  recorded_at: Tue, 09 Nov 2021 23:13:36 GMT
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Advanced","ski_pass":"Epic","address":"","ski_or_board":"","emergency_name":"","emergency_number":"","trips":[{"data":{"id":"4","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"4","type":"rider","attributes":{"user_id":7,"trip_id":4,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"5","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"5","type":"rider","attributes":{"user_id":7,"trip_id":5,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"6","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"6","type":"rider","attributes":{"user_id":7,"trip_id":6,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"4","type":"resort_option","attributes":{"trip_id":6,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":0}}}]}}},{"data":{"id":"7","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"7","type":"rider","attributes":{"user_id":7,"trip_id":7,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"5","type":"resort_option","attributes":{"trip_id":7,"resort_id":303001,"resort_name":"Arapahoe
+        Basin","vote_count":1}}}]}}},{"data":{"id":"9","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"9","type":"rider","attributes":{"user_id":7,"trip_id":9,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"6","type":"resort_option","attributes":{"trip_id":9,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}},{"data":{"id":"14","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"12","type":"rider","attributes":{"user_id":7,"trip_id":14,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
+        Mercury"}}}],"resort_options":[{"data":{"id":"7","type":"resort_option","attributes":{"trip_id":14,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}}],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 02:40:43 GMT
 recorded_with: VCR 6.0.0

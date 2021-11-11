@@ -21,25 +21,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 09 Nov 2021 23:13:21 GMT
+      - Thu, 11 Nov 2021 01:42:10 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f7125394044772454f594c0f7f19b5d7"
+      - W/"c8ad621852ff80bedaf441cc97d5d769"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a747c153-ab27-4095-8bb2-4baa1e1807bc
+      - caff2f94-c169-48a6-ba0a-bfe8eebabbbc
       X-Runtime:
-      - '0.011132'
+      - '0.007537'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Michael Osmonson","email":"mikeosmonson@gmail.com","exp_level":"Beginner","ski_pass":"Ikon","address":"Denver","ski_or_board":"Ski","emergency_name":"Christina","emergency_number":"3945638198"},"relationships":{"trips":{"data":[]},"friendships":{"data":[]}}},"included":[]}'
-  recorded_at: Tue, 09 Nov 2021 23:13:22 GMT
+      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Luke Skywalker","email":"carie@grimes-schroeder.co","exp_level":"8","ski_pass":"Epic","address":"42981
+        Tremblay Gateway, Kochland, OH 96944","ski_or_board":"1","emergency_name":"Samwise
+        Gamgee","emergency_number":"2813308004","trips":[],"friends":[]}}}'
+  recorded_at: Thu, 11 Nov 2021 01:42:10 GMT
 recorded_with: VCR 6.0.0

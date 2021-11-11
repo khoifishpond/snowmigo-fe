@@ -3,10 +3,12 @@ Rails.application.routes.draw do
   root 'welcome#show'
   get 'auth/google_oauth2/callback', controller: :sessions, action: :create
   get 'auth/failure', to: redirect('/')
+  get '/logout', controller: :sessions, action: :destroy
   delete '/logout', controller: :sessions, action: :destroy
   resources :users, only: %i[show edit update]
   resources :trips do
-    resources :vote
+    patch '/vote', to: 'trips/votes#update'
+    patch '/vote_status', to: 'trips/votes#update_status'
   end
   resources :resorts, only: [:index, :show]
   resources :friendships, only: :create

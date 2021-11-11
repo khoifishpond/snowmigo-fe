@@ -33,7 +33,8 @@ class TripsController < ApplicationController
       start_date: params[:start_date],
       end_date: params[:end_date],
       resort_id: params[:resort_id],
-      resort_name: params[:resort_name]
+      resort_name: params[:resort_name],
+      user_id: params[:user_id]
     }
   end
 end
