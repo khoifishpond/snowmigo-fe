@@ -5,14 +5,18 @@ RSpec.describe 'User Dashboard' do
     describe 'With Successful Login' do
       before :each do
         login_with_oauth
-        @user = UserFacade.user_get(10)
+
+        # @user = UserFacade.user_get(10)
+
       end
+      let(:user) { UserFacade.user_get(10) }
+      let(:user_id) { user.id }
 
       it 'Flash Message shows successsful login' do
         expect(page).to have_content('Login Successful')
       end
 
-      xit 'displays user name' do
+      it 'displays user name' do
         expect(page).to have_content(@user.name)
       end
 
@@ -46,10 +50,15 @@ RSpec.describe 'User Dashboard' do
         end
       end
 
-      context 'Logout' do
-      it 'has a logout button' do
-        expect(page).to have_link('Logout')
+      it 'returns friends' do
+        save_and_open_page
+        expect(page).to have_content('')
       end
+
+      context 'Logout' do
+        it 'has a logout button' do
+          expect(page).to have_link('Logout')
+        end
 
         it 'Will log the User out' do
           click_link 'Logout'
