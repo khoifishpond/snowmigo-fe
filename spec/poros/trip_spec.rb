@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Trip do
   let(:trip) do
-    Trip.new({ data: { id: 47,
+    Trip.new( { id: 47,
                        attributes: { name: 'trip',
                                      start_date: '08/11/2021',
                                      end_date: '25/11/2021',
@@ -32,8 +32,7 @@ RSpec.describe Trip do
                                         }
                                       }]
                                    }
-                      }
-              })
+                      })
   end
   it 'has attributes' do
     expect(trip.id).to eq(47)
@@ -43,7 +42,7 @@ RSpec.describe Trip do
     expect(trip.vote_status).to eq("open")
     expect(trip.resort_id).to eq(2)
     expect(trip.riders.first[:data][:attributes][:rider_name]).to eq('Khoi')
-    expect(trip.resort_options.first[:data][:attributes][:resort_name]).to eq('Granby')
+    expect(trip.options.first[:data][:attributes][:resort_name]).to eq('Granby')
   end
 
   it 'formats the start date' do
