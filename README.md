@@ -32,7 +32,7 @@ The front-end half of a Consultancy project during weeks four and five during Mo
 <!-- ABOUT THE PROJECT -->
 ## About The Project
   <p>
-    The goal of this project is to create a successful web application from a student-led project idea. Our team created an app that will allow users to authenticate with a third-party service and consume two other APIs. This application is responsible for authentication via OAuth.
+    The goal of this project was to create a successful web application from a student-led project idea. Our team created an app that will allow users to authenticate with a third-party service and consume two other APIs. This application has features that include using Google OAuth, viewing a Mountain Resort's information, and the weather forecast of the day.
   </p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -102,13 +102,9 @@ The front-end half of a Consultancy project during weeks four and five during Mo
    ```sh
    git clone git@github.com/khoifishpond/snowmigo-fe.git
    ```
-3. Run bundle
+2. Run bundle
    ```sh
    bundle install
-   ```
-4. Run migrations
-   ```sh
-   rails db:{drop,create,migrate,seed}
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
