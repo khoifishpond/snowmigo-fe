@@ -8,7 +8,7 @@ RSpec.describe 'trip show page' do
         name: 'Happy fun time',
         start_date: '08/11/2021',
         end_date: '25/11/2021',
-        user_id: '10'
+        user_id: '2'
       }
       @trip = TripFacade.create_trip(trip_params)
       visit trip_path(@trip.id)
@@ -61,12 +61,12 @@ RSpec.describe 'trip show page' do
     end
 
     it 'can add friends to trip' do
-      within("#friend-1") do
+      within("#friend-11") do
         click_button 'Add'
       end
 
-      within("#rider-1") do
-        expect(page).to have_content('Mace Windu')
+      within("#rider-11") do
+        expect(page).to have_content('Greedo')
       end
     end
 
@@ -79,7 +79,7 @@ RSpec.describe 'trip show page' do
 
       click_link 'Delete trip'
 
-      expect(current_path).to eq(user_path(10))
+      expect(current_path).to eq(user_path(2))
     end
 
     it 'can close a vote' do

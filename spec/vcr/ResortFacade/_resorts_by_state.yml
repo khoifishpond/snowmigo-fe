@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 01:42:10 GMT
+      - Fri, 12 Nov 2021 05:00:57 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 49335488-1bd3-4817-91fd-6a869169574f
+      - 58c4e823-101b-4bf6-8839-63b174a517f7
       X-Runtime:
-      - '0.017813'
+      - '0.018150'
       Transfer-Encoding:
       - chunked
       Via:
@@ -72,5 +72,5 @@ http_interactions:
         Nordic Center","logo":"http://snocountry.com/ski_area_logos/999816034logo.jpg"}},{"id":"303024","type":"state_resort","attributes":{"name":"Winter
         Park Resort","logo":"http://snocountry.com/ski_area_logos/303024logo.jpg"}},{"id":"303025","type":"state_resort","attributes":{"name":"Wolf
         Creek Ski Area","logo":"http://snocountry.com/ski_area_logos/303025logo.jpg"}}]}'
-  recorded_at: Thu, 11 Nov 2021 01:42:11 GMT
+  recorded_at: Fri, 12 Nov 2021 05:00:57 GMT
 recorded_with: VCR 6.0.0

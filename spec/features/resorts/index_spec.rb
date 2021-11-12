@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'resorts index page' do
+RSpec.describe 'resorts index page', :vcr do
   before(:each) do
     login_with_oauth
     visit resorts_path
