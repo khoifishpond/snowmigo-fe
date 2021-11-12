@@ -1,96 +1,128 @@
-<img src='<%= @resort.logo %>' ,="," alt='<%= @resort.name %>'>
-<h3><%= @resort.name %></h3>
-<p>Mask Required:
-  <%= @resort.mask_required %></p>
-<div id="<%= @resort.id %>-snow">
-  <ul>
-    <strong>Snow Conditions</strong>
-    <li>New Snow:<%= @resort.new_snow %>
-      in</li>
-    <li>Base Depth:
-      <%= @resort.base_depth %>
-      in</li>
-    <li>Snow Condition:
-      <% if @resort.snow_condition == '' %>
-        <p>No snow</p>
-      <% else %>
-        <%= @resort.snow_condition %></li>
-      <% end %>
-  </ul>
-</div>
-<div id="<%= @resort.id %>-features">
-  <ul>
-    <strong>Resort Features</strong>
-    <li>Open Lifts:
-      <% if @resort.open_lifts == nil %>
-        <p>0</p>
-      <% else %>
-        <%= @resort.open_lifts %></li>
-      <% end %>
-    <li>Open Trails:
-      <%= @resort.open_trails %></li>
-    <li><%= link_to 'Trail Map', @resort.trail_map %></li>
-  </ul>
-</div>
-<div id="<%= @resort.id %>-weather">
-  <ul>
-    <strong>Today's Weather</strong>
-    <li>Morning:<br>
-      <div id="morning-weather">
-        <img src="<%= @resort.morning_weather[:weather_icon] %>" alt="<%= @resort.morning_weather[:weather] %>">
-        <ul>
-          <li>Snowfall:
-            <% if @resort.morning_weather[:snowfall] == nil %>
-            <p>0 in</p>
-            <% else %>
-            <%= @resort.morning_weather[:snowfall] %></li>
-            <% end %>
-          <li>Temperature:
-            <%= @resort.morning_weather[:temp] %>
-            Fahrenheit</li>
-          <li>Wind:
-            <%= @resort.morning_weather[:wind] %>
-            mph</li>
-        </ul>
+<body class="resort_show">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <br>
+        <div class="card" style="width: 18rem;">
+          <img src="<%= @resort.logo %>" class="card-img-top" alt="<%= @resort.name %>">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="background-color: #E7ECEF;">
+              <h5 class="card-title"><%= @resort.name %></h5>
+              <p class="card-text">Mask Required: <%= @resort.mask_required %></p>
+            </li>
+            <li class="list-group-item" style="background-color: #E7ECEF;">
+              <div id="<%= @resort.id %>-snow">
+                <ul>
+                  <strong>Snow Conditions</strong>
+                  <li>New Snow:<%= @resort.new_snow %>
+                    in</li>
+                  <li>Base Depth:
+                    <%= @resort.base_depth %>
+                    in</li>
+                  <li>Snow Condition:
+                    <% if @resort.snow_condition == '' %>
+                      <p>No snow</p>
+                    <% else %>
+                      <%= @resort.snow_condition %></li>
+                    <% end %>
+                </ul>
+              </div>
+            </li>
+            <li class="list-group-item" style="background-color: #E7ECEF;">
+              <div id="<%= @resort.id %>-features">
+                <ul>
+                  <strong>Resort Features</strong>
+                  <li>Open Lifts:
+                    <% if @resort.open_lifts == nil %>
+                      <p>0</p>
+                    <% else %>
+                      <%= @resort.open_lifts %></li>
+                    <% end %>
+                  <li>Open Trails:
+                    <%= @resort.open_trails %></li>
+                  <li><%= link_to 'Trail Map', @resort.trail_map %></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </li>
-    <li>Noon:<br>
-      <div id="noon-weather">
-        <img src="<%= @resort.noon_weather[:weather_icon] %>" alt="<%= @resort.noon_weather[:weather] %>">
-        <ul>
-          <li>Snowfall:
-            <% if @resort.noon_weather[:snowfall] == nil %>
-              <p>0 in</p>
-            <% else %>
-              <%= @resort.noon_weather[:snowfall] %></li>
-            <% end %>
-          <li>Temperature:
-            <%= @resort.noon_weather[:temp] %>
-            Fahrenheit</li>
-          <li>Wind:
-            <%= @resort.noon_weather[:wind] %>
-            mph</li>
-        </ul>
+        <div class="col-5">
+          <div id="<%= @resort.id %>-weather">
+            <br>
+            <br>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Today's Forecast</th>
+                <th scope="col">       </th>
+                <th scope="col">Snowfall</th>
+                <th scope="col">Temp</th>
+                <th scope="col">Wind</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <img src="<%= @resort.morning_weather[:weather_icon] %>" alt="<%= @resort.morning_weather[:weather] %>">
+                </td>
+                <td>
+                    <% if @resort.morning_weather[:snowfall] == nil %>
+                    <p>0 in</p>
+                    <% else %>
+                    <%= @resort.morning_weather[:snowfall] %>
+                    <% end %>
+                </td>
+                <td>
+                    <%= @resort.morning_weather[:temp] %> Fahrenheit
+                </td>
+                <td>
+                  <%= @resort.morning_weather[:wind] %> mph
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Noon</th>
+                <td>
+                  <img src="<%= @resort.noon_weather[:weather_icon] %>" alt="<%= @resort.noon_weather[:weather] %>">
+                </td>
+                <td>
+                    <% if @resort.noon_weather[:snowfall] == nil %>
+                    <p>0 in</p>
+                    <% else %>
+                    <%= @resort.noon_weather[:snowfall] %>
+                    <% end %>
+                </td>
+                <td>
+                    <%= @resort.noon_weather[:temp] %> Fahrenheit
+                </td>
+                <td>
+                  <%= @resort.noon_weather[:wind] %> mph
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <img src="<%= @resort.afternoon_weather[:weather_icon] %>" alt="<%= @resort.afternoon_weather[:weather] %>">
+                </td>
+                <td>
+                    <% if @resort.afternoon_weather[:snowfall] == nil %>
+                    <p>0 in</p>
+                    <% else %>
+                    <%= @resort.afternoon_weather[:snowfall] %>
+                    <% end %>
+                </td>
+                <td>
+                    <%= @resort.afternoon_weather[:temp] %> Fahrenheit
+                </td>
+                <td>
+                  <%= @resort.afternoon_weather[:wind] %> mph
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </li>
-    <li>Afternoon:<br>
-      <div id="afternoon-weather">
-        <img src="<%= @resort.afternoon_weather[:weather_icon] %>" alt="<%= @resort.afternoon_weather[:weather] %>">
-        <ul>
-          <li>Snowfall:
-            <% if @resort.morning_weather[:snowfall] == nil %>
-              <p>0 in</p>
-            <% else %>
-              <%= @resort.afternoon_weather[:snowfall] %></li>
-            <% end %>
-          <li>Temperature:
-            <%= @resort.afternoon_weather[:temp] %>
-            Fahrenheit</li>
-          <li>Wind:
-            <%= @resort.afternoon_weather[:wind] %>
-            mph</li>
-        </ul>
-      </div>
-    </li>
-  </ul>
-</div>
+    </div>
+  </div>
+</body>
