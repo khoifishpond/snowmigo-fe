@@ -1,65 +1,73 @@
 <body class="users">
-<h1>Welcome <%= current_user.name %></h1>
-
-<div id='box'>
-<div id='user-info'>
-  <ul>
-    <li>Location
-      <%= current_user.address %></li>
-    <li>Pass Type
-      <%= current_user.ski_pass %></li>
-    <li>Board or ski
-      <%= current_user.ski_or_board %></li>
-    <li>Experience Level
-      <%= current_user.exp_level %></li>
-    <li>Emergency Contact Name
-      <%= current_user.emergency_name %></li>
-    <li>Emergency Contact Number
-      <%= number_to_phone(current_user.emergency_number, area_code: true) %></li>
-  </ul>
-  <%= link_to "Edit info", edit_user_path(current_user.id) %>
-</div>
-</div>
-<br>
-
-<div id='past-trips'>
-  <p><h3>Past Trips</h3><p/>
-
-  <% if current_user.past_trips.empty? %>
-    <p>Go on some trips!<p/>
-  <% else %>
-    <% current_user.past_trips.each do |trip| %>
-      <%= trip[:data][:attributes][:name] %><br/>
-      <%= trip[:data][:attributes][:start_date] %><br/>
-      <%= trip[:data][:attributes][:end_date] %><br/>
-    <% end %>
-  <% end %>
-</div>
-
-<div id='upcoming-trips'>
-  <p><h3>Upcoming Trips</h3><p/>
-  <% if current_user.upcoming_trips.empty? %>
-    <p>You have no upcoming trips. Get a life </p>
-  <% else %>
-    <% current_user.upcoming_trips.each do |trip| %>
-      <%= trip[:data][:attributes][:name] %>
-      <%= trip[:data][:attributes][:start_date] %>
-      <%= trip[:data][:attributes][:end_date] %>
-    <% end %>
-  <% end %>
-<div/>
-
-
-<div id='friend'>
-  <%= form_with url: friendships_path, local: true do |f| %>
-    <%= f.text_field :email, placeholder: 'name@example.com' %>
-    <%= f.submit 'Add Friend' %>
-  <% end %>
-
-  <h3>Friends<h3/>
-    <% current_user.friends.each do |friend| %>
-      <%=  friend[:data][:attributes][:friend_name] %>
-    <% end %>
-  <%= 'No friends added currently!' if current_user.friends.empty? %>
-<div/>
+  <div class="container px-0">
+    <div class="row gx-5">
+      <div class="col">
+       <div class="p-3" id="profile-card">
+         <br>
+          <div class="card" id='user-info' style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"><%= current_user.name %></h5>
+              <p class="card-text"></p>
+            </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Location: <%= current_user.address %></li>
+            <li class="list-group-item">Pass Type: <%= current_user.ski_pass %></li>
+            <li class="list-group-item">Board or ski: <%= current_user.ski_or_board %></li>
+            <li class="list-group-item">Experience Level: <%= current_user.exp_level %></li>
+            <li class="list-group-item">Emergency Contact Name: <%= current_user.emergency_name %></li>
+            <li class="list-group-item">Emergency Contact Number: <%= number_to_phone(current_user.emergency_number, area_code: true) %></li>
+            <li class="list-group-item"><%= link_to "Edit info", edit_user_path(current_user.id) %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3">
+        <br>
+        <div class="container" id="hosted-events">
+          <div id='friend'>
+            <h3>Friends<h3/>
+            <%= form_with url: friendships_path, local: true do |f| %>
+              <%= f.text_field :email, placeholder: 'name@example.com' %>
+              <%= f.submit 'Add Friend' %>
+            <% end %>
+              <% current_user.friends.each do |friend| %>
+                <%=  friend[:data][:attributes][:friend_name] %>
+              <% end %>
+            <%= 'No friends added currently!' if current_user.friends.empty? %>
+          </div>
+          <br>
+          </div>
+        </div>
+      </div>
+    <div class="col">
+      <div class="p-3">
+        <div id='upcoming-trips'>
+          <p><h3>Upcoming Trips</h3><p/>
+          <% if current_user.upcoming_trips.empty? %>
+            <p>You have no upcoming trips.</p>
+          <% else %>
+            <% current_user.upcoming_trips.each do |trip| %><br>
+              <%= link_to "#{trip[:data][:attributes][:name]}", trip_path(trip[:data][:id]) %><br>
+              <%= trip[:data][:attributes][:start_date] %><br>
+              <%= trip[:data][:attributes][:end_date] %><br>
+            <% end %>
+          <% end %>
+        </div>
+        <div id='past-trips'>
+          <p><h3>Past Trips</h3><p/>
+          <% if current_user.past_trips.empty? %>
+            <p>Go on some trips!<p/>
+          <% else %>
+            <% current_user.past_trips.each do |trip| %>
+              <%= link_to "#{trip[:data][:attributes][:name]}", trip_path(trip[:data][:id]) %><br/>
+              <%= trip[:data][:attributes][:start_date] %><br/>
+              <%= trip[:data][:attributes][:end_date] %><br/>
+            <% end %>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
