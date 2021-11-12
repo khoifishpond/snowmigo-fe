@@ -27,6 +27,10 @@ class TripFacade
       TripService.vote(trip_id, user_id)
     end
 
+    def close_vote(trip_id, status_params)
+      TripService.close_vote(trip_id, status_params)
+    end
+
     def create_rider(rider_params)
       rider = TripService.create_rider(rider_params)
       Rider.new(rider)

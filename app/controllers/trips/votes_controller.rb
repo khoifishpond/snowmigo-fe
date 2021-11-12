@@ -7,4 +7,12 @@ class Trips::VotesController < ApplicationController
     TripFacade.vote(params[:trip_id], vote_params)
     redirect_to trip_path(params[:trip_id])
   end
+
+  def update_status
+    status_params = {
+      open: params[:open]
+    }
+    TripFacade.close_vote(params[:trip_id], status_params)
+    redirect_to trip_path(params[:trip_id])
+  end
 end
