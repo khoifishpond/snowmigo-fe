@@ -23,5 +23,13 @@ class TripService
     def vote(trip_id, vote_params)
       SnowmigoClient.patch_data("/api/v1/trips/#{trip_id}/vote", vote_params)
     end
+
+    def close_vote(trip_id, status_params)
+      SnowmigoClient.patch_data("/api/v1/trips/#{trip_id}/vote_status", status_params)
+    end
+
+    def create_rider(rider_params)
+      SnowmigoClient.post_data('/api/v1/riders', rider_params)[:data]
+    end
   end
 end

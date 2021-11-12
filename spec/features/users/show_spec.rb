@@ -12,7 +12,7 @@ RSpec.describe 'User Dashboard' do
         expect(page).to have_content('Login Successful')
       end
 
-      xit 'displays user name' do
+      it 'displays user name' do
         expect(page).to have_content(@user.name)
       end
 

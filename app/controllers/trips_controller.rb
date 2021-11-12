@@ -10,8 +10,10 @@ class TripsController < ApplicationController
   end
 
   def show
+    @user = UserFacade.user_get(current_user.id)
     @trip = TripFacade.trip_get(params[:id])
     @resorts = (ResortFacade.resorts_by_state(params[:state]) if params[:state].present?)
+    @resort = ResortFacade.resort_by_id(@trip.resort_id) if @trip.resort_id
   end
 
   def edit

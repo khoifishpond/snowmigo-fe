@@ -1,38 +1,75 @@
 <div id='trip-info'>
   <h2><%= @trip.name %></h2>
-  <h6>From
+  <p>
+    <b>Dates:</b>
+    From
     <%= @trip.format_start_date %>
     to
-    <%= @trip.format_end_date %></h6>
+    <%= @trip.format_end_date %></p>
   <%= link_to "Update trip info", edit_trip_path(@trip.id) %>
   <%= link_to "Delete trip", trip_path(@trip.id), method: :delete %>
 </div>
-<h2>Resort Options:</h2>
-<div id="options">
-  <% if @trip.options %>
+<h3>Add Friends to Trip:</h3>
+<% @user.friends_to_add(@trip.added_friends).each do |friend| %>
+  <div id="friend-<%= friend[1] %>">
+    <h6 id="add_friend"><%= friend[0] %></h6>
+    <h6><%= button_to "Add", trips_riders_path, params: {user_id: friend[1], trip_id: @trip.id} %></h6>
+  </div>
+<% end %>
+<h3>Added Friends:</h3>
+<% @trip.riders.each do |rider| %>
+  <div id="rider-<%= rider[:data][:attributes][:user_id] %>">
     <ul>
-      <div class="row text-center">
-        <% @trip.options.each do |option| %>
-          <div id="option-<%= option[:data][:attributes][:resort_id] %>">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title"><%= link_to option[:data][:attributes][:resort_name], resort_path(option[:data][:attributes][:resort_id]) %></h5>
-                  <p class="card-text">Number of Votes: <%= option[:data][:attributes][:vote_count] %></p>
-                  <% if option[:data][:attributes][:vote_count] == 0 %>
-                    <%= link_to 'Vote', trip_vote_path(trip_id: @trip.id, resort_id: option[:data][:attributes][:resort_id], user_id: current_user.id), method: :patch, class: "btn btn-primary"%>
-                  <% end %>
+      <li><%= rider[:data][:attributes][:rider_name] %></li>
+    </ul>
+  </div>
+<% end %>
+<% if @trip.vote_status == 'open' %>
+  <h3>Resort Options:</h3>
+  <div id="options">
+    <% if @trip.options %>
+      <ul>
+        <div class="row text-center">
+          <% @trip.options.each do |option| %>
+            <div id="option-<%= option[:data][:attributes][:resort_id] %>">
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><%= link_to option[:data][:attributes][:resort_name], resort_path(option[:data][:attributes][:resort_id]) %></h5>
+                    <p class="card-text">Number of Votes:
+                      <%= option[:data][:attributes][:vote_count] %></p>
+                    <% if @trip.user_vote(@user.id) != option[:data][:attributes][:resort_id] %>
+                      <%= link_to 'Vote', trip_vote_path(trip_id: @trip.id, resort_id: option[:data][:attributes][:resort_id], user_id: current_user.id), method: :patch, class: "btn btn-primary"%>
+                    <% end %>
+                  </div>
                 </div>
               </div>
             </div>
+          <% end %>
+        </div>
+      </ul>
+      <% if @trip.host?(@user.id) %>
+        <%= link_to 'Close Voting', trip_vote_status_path(trip_id: @trip.id, open: false), method: :patch, class: "btn btn-primary"%>
+      <% end %>
+    <% else %>
+      Please add resorts below.
+    <% end %>
+  </div>
+<% else %>
+  <h3>Resort Chosen:</h3>
+    <div class="row text-center">
+      <div class="col-sm-8">
+        <div id="chosen_option">
+        <div class="card">
+          <img class="card-img-top-thumbnail object-fit: cover" src='<%= @resort.logo %>' alt="Logo">
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to @resort.name, resort_path(@resort.id) %></h5>
           </div>
-        <% end %>
+        </div>
       </div>
-    </ul>
-  <% else %>
-    Please add resorts below.
-  <% end %>
-</div>
+    </div>
+  </div>
+<% end %>
 
-<h2>Add Resorts:</h2>
+<h3>Add Resorts:</h3>
 <%= render 'shared/resort_search', path: trip_path(@trip.id) %>

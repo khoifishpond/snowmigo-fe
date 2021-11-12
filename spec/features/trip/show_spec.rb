@@ -1,4 +1,3 @@
-
 require 'rails_helper'
 
 RSpec.describe 'trip show page' do
@@ -60,11 +59,18 @@ RSpec.describe 'trip show page' do
         expect(page).to_not have_link("Vote")
       end
     end
-  end
 
-  describe '#destroy' do
+    it 'can add friends to trip' do
+      within("#friend-1") do
+        click_button 'Add'
+      end
+
+      within("#rider-1") do
+        expect(page).to have_content('Mace Windu')
+      end
+    end
+
     it 'can delete a trip' do
-      login_with_oauth
       trip = TripFacade.create_trip(name: 'Delete Trip',
                                     start_date: '08/11/2021',
                                     end_date: '25/11/2021',

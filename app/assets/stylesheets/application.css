@@ -19,7 +19,12 @@
    height: 220px;
  }
 
- .nav-image {
-   width: 3;
-   height: 30;
- }
+h6 {
+  display: inline-block;
+margin: 0;
+}
+
+.nav-image {
+  width: 3;
+  height: 30;
+}
