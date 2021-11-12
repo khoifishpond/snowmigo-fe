@@ -27,6 +27,11 @@ describe 'user info edit page', :vcr do
       expect(user.ski_pass).to eq('Ikon')
       expect(current_path).to eq(user_path(user.id))
       expect(page).to have_content('Ikon')
+
+      visit edit_user_path(2)
+
+      select 'Epic', from: :ski_pass
+      click_button 'Update Info'
     end
   end
 end
