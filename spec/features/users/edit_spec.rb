@@ -8,7 +8,12 @@ describe 'user info edit page', :vcr do
     end
 
     it 'can edit a user' do
+      select 'Epic', from: :ski_pass
+      click_button 'Update Info'
+
       user = UserFacade.user_get(2)
+      visit edit_user_path(2)
+
       expect(user.name).to eq('Freddie Mercury')
       expect(user.ski_pass).to eq('Epic')
       expect(user.exp_level).to eq('Advanced')
