@@ -17,32 +17,29 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 201
-      message: Created
+      code: 400
+      message: Bad Request
     headers:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 02:43:40 GMT
+      - Fri, 12 Nov 2021 05:02:38 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"bcb575e054f16e2f6022b6d46b41ad63"
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - 6d4e5fb7-69bf-4201-8e49-fee28442218e
+      - 1170f984-b94d-4656-937a-9fdcbe1f0684
       X-Runtime:
-      - '0.030364'
+      - '0.005805'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"18","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"16","type":"rider","attributes":{"user_id":7,"trip_id":18,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"9","type":"resort_option","attributes":{"trip_id":18,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}}'
-  recorded_at: Thu, 11 Nov 2021 02:43:41 GMT
+      string: '{"error":"400 Bad Request"}'
+  recorded_at: Fri, 12 Nov 2021 05:02:39 GMT
 recorded_with: VCR 6.0.0

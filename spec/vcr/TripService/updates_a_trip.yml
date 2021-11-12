@@ -17,32 +17,29 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 02:43:41 GMT
+      - Fri, 12 Nov 2021 05:02:38 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"c4e3f1d360ae55d3ea7b11b0a3b59177"
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - 933b096c-1a24-48aa-bfe0-1eaabbefa8a9
+      - ab9a67e9-9fb6-470d-a79a-4153dd00949d
       X-Runtime:
-      - '0.014232'
+      - '0.004315'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"3","type":"trip","attributes":{"name":"This is a trip","resort_id":null,"resort_name":null,"start_date":"2021-11-09","end_date":"2021-11-10","vote_status":"open","riders":[{"data":{"id":"3","type":"rider","attributes":{"user_id":5,"trip_id":3,"host":false,"driver":false,"budget":30,"rider_name":"Jyn
-        Erso"}}}],"resort_options":[]}}}'
-  recorded_at: Thu, 11 Nov 2021 02:43:41 GMT
+      string: '{"error":"404 Not Found"}'
+  recorded_at: Fri, 12 Nov 2021 05:02:39 GMT
 recorded_with: VCR 6.0.0

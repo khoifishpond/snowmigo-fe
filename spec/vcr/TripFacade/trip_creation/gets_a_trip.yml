@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/2
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/5
     body:
       encoding: US-ASCII
       string: ''
@@ -21,25 +21,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 02:11:59 GMT
+      - Fri, 12 Nov 2021 05:06:51 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"7954d319777957630c5affd793d4b174"
+      - W/"962b3c9dd51ac12f5baf9e41d70bdcdd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3f634a2b-0037-4e5b-acd3-438b1af418c1
+      - ebf8f2f6-5277-4d3d-b0c2-c7d9c93f1eb8
       X-Runtime:
-      - '0.015007'
+      - '0.008350'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2","type":"trip","attributes":{"name":"This is a trip","resort_id":null,"resort_name":null,"start_date":"2021-11-09","end_date":"2021-11-10","vote_status":"open","riders":[],"resort_options":[{"data":{"id":"3","type":"resort_option","attributes":{"trip_id":2,"resort_id":93,"resort_name":"Bong","vote_count":0}}}]}}}'
-  recorded_at: Thu, 11 Nov 2021 02:12:00 GMT
+      string: '{"data":{"id":"5","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[],"resort_options":[]}}}'
+  recorded_at: Fri, 12 Nov 2021 05:06:51 GMT
 recorded_with: VCR 6.0.0

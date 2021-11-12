@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/users/7
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/3
     body:
       encoding: US-ASCII
       string: ''
@@ -21,45 +21,34 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 02:06:26 GMT
+      - Fri, 12 Nov 2021 05:12:14 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"2a9d5599c6e9efd8fbbe58af0eb9aeb0"
+      - W/"2f86bf3bb0720de5804ab7e8be4539a0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d45856ce-fe23-40d7-aef4-1fc7831acb58
+      - 352b6c59-a3b9-47f3-b09b-ff8a28eb22f5
       X-Runtime:
-      - '0.037209'
+      - '0.009130'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Freddie Mercury","email":"example@gmail.com","exp_level":"Expert","ski_pass":"Ikon","address":"","ski_or_board":"","emergency_name":"","emergency_number":"","trips":[{"data":{"id":"4","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-12-12","end_date":"2021-12-14","vote_status":"open","riders":[{"data":{"id":"4","type":"rider","attributes":{"user_id":7,"trip_id":4,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"5","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"5","type":"rider","attributes":{"user_id":7,"trip_id":5,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[]}}},{"data":{"id":"6","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"6","type":"rider","attributes":{"user_id":7,"trip_id":6,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"4","type":"resort_option","attributes":{"trip_id":6,"resort_id":303001,"resort_name":"Arapahoe
-        Basin","vote_count":0}}}]}}},{"data":{"id":"7","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"7","type":"rider","attributes":{"user_id":7,"trip_id":7,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"5","type":"resort_option","attributes":{"trip_id":7,"resort_id":303001,"resort_name":"Arapahoe
-        Basin","vote_count":1}}}]}}},{"data":{"id":"9","type":"trip","attributes":{"name":"Happy
-        fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"9","type":"rider","attributes":{"user_id":7,"trip_id":9,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"6","type":"resort_option","attributes":{"trip_id":9,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}}],"friends":[]}}}'
-  recorded_at: Thu, 11 Nov 2021 02:06:27 GMT
+      string: '{"data":{"id":"3","type":"user","attributes":{"name":"Obi-Wan Kenobi","email":"lashaunda.ortiz@abernathy.co","exp_level":"8","ski_pass":"Epic","address":"Suite
+        142 16290 Zieme Mill, North Duaneville, AL 97901","ski_or_board":"6","emergency_name":"Beregond","emergency_number":"2813308004","trips":[],"friends":[{"data":{"id":"1","type":"friendship","attributes":{"user_id":3,"friend_id":4,"friend_name":"Greedo"}}}]}}}'
+  recorded_at: Fri, 12 Nov 2021 05:12:14 GMT
 - request:
     method: post
     uri: http://snowmigo-be.herokuapp.com/api/v1/trips
     body:
       encoding: UTF-8
-      string: '{"name":"Happy fun time","start_date":"11/11/1111","end_date":"22/22/2222","resort_id":2,"user_id":"7"}'
+      string: '{"name":"Happy fun time","start_date":"11/11/1111","end_date":"22/22/2222","resort_id":2,"user_id":3}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -71,32 +60,29 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 201
-      message: Created
+      code: 400
+      message: Bad Request
     headers:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 02:06:27 GMT
+      - Fri, 12 Nov 2021 05:12:14 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"17ee44fad52feb06402cb2261ef1f229"
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - 7ae516ca-1a5d-44c8-84fe-6a7dc0faa6da
+      - b7a425d2-2799-4ac1-a4bb-d08523d05dc5
       X-Runtime:
-      - '0.031585'
+      - '0.005960'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"14","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"12","type":"rider","attributes":{"user_id":7,"trip_id":14,"host":true,"driver":null,"budget":null,"rider_name":"Freddie
-        Mercury"}}}],"resort_options":[{"data":{"id":"7","type":"resort_option","attributes":{"trip_id":14,"resort_id":2,"resort_name":null,"vote_count":0}}}]}}}'
-  recorded_at: Thu, 11 Nov 2021 02:06:27 GMT
+      string: '{"error":"400 Bad Request"}'
+  recorded_at: Fri, 12 Nov 2021 05:12:14 GMT
 recorded_with: VCR 6.0.0

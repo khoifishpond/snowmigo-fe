@@ -15,33 +15,29 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 02:43:41 GMT
+      - Fri, 12 Nov 2021 05:02:39 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"4018de837848039dbb70be9dfd169197"
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - 99221251-8c09-4ffa-b750-71c1ffd38672
+      - 6cac0351-c961-4b8c-ad09-a7177538054d
       X-Runtime:
-      - '0.017889'
+      - '0.003952'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"trip","attributes":{"name":"Cool Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
-        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
-        Erso"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}}'
-  recorded_at: Thu, 11 Nov 2021 02:43:41 GMT
+      string: '{"error":"404 Not Found"}'
+  recorded_at: Fri, 12 Nov 2021 05:02:39 GMT
 recorded_with: VCR 6.0.0
