@@ -1,6 +1,6 @@
 class User
   attr_reader :email, :name, :id, :address, :ski_pass, :ski_or_board,
-              :exp_level, :emergency_name, :emergency_number, :trips
+              :exp_level, :emergency_name, :emergency_number, :trips, :friends
 
   def initialize(data)
     @id = data[:id]
