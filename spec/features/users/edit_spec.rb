@@ -19,19 +19,14 @@ describe 'user info edit page', :vcr do
       expect(page).to have_field(:ski_pass, with: 'Epic')
       expect(page).to have_field(:exp_level, with: 'Advanced')
 
-      select 'Ikon', from: :ski_pass
+      select 'Epic', from: :ski_pass
       click_button 'Update Info'
 
       user = UserFacade.user_get(2)
 
-      expect(user.ski_pass).to eq('Ikon')
+      expect(user.ski_pass).to eq('Epic')
       expect(current_path).to eq(user_path(user.id))
-      expect(page).to have_content('Ikon')
-
-      visit edit_user_path(2)
-
-      select 'Epic', from: :ski_pass
-      click_button 'Update Info'
+      expect(page).to have_content('Epic')
     end
   end
 end
