@@ -11,7 +11,7 @@
 </div>
 <h3>Add Friends to Trip:</h3>
 <% @user.friends_to_add(@trip.added_friends).each do |friend| %>
-  <div id="friend-<%= friend[0] %>">
+  <div id="friend-<%= friend[1] %>">
     <h6 id="add_friend"><%= friend[0] %></h6>
     <h6><%= button_to "Add", trips_riders_path, params: {user_id: friend[1], trip_id: @trip.id} %></h6>
   </div>
