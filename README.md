@@ -13,6 +13,7 @@ The front-end half of a Consultancy project during weeks four and five during Mo
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </li>
     <li>
@@ -24,7 +25,6 @@ The front-end half of a Consultancy project during weeks four and five during Mo
     <li><a href="#deployment">Deployment</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -34,6 +34,33 @@ The front-end half of a Consultancy project during weeks four and five during Mo
   <p>
     The goal of this project was to create a successful web application from a student-led project idea. Our team created an app that will allow users to authenticate with a third-party service and consume two other APIs. This application has features that include using Google OAuth, viewing a Mountain Resort's information, and the weather forecast of the day.
   </p>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+<!-- CONTACT -->
+## Contact
+
+<p>
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</p>
+
+- [Henry Schmid](https://www.linkedin.com/in/henry-schmid)
+- [Erika Kischuk](https://www.linkedin.com/in/erika-kischuk)
+- [Laura Court](https://www.linkedin.com/in/andrew-massey-b06662194/)
+- [Khoi Nguyen](https://www.linkedin.com/in/khoifishpond/)
+- [Ozzie Osmonson](https://www.linkedin.com/in/ozzie-osmonson/)
+
+<p>
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+</p>
+
+- [Henry Schmid](https://github.com/hschmid516)
+- [Erika Kischuk](https://github.com/eakischuk)
+- [Laura Court](https://github.com/lmcourt)
+- [Khoi Nguyen](https://github.com/khoifishpond)
+- [Ozzie Osmonson](https://github.com/ozzman84)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -148,31 +175,5 @@ Don't forget to give the project a star! Thanks again!
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- CONTACT -->
-## Contact
-
-<p>
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</p>
-
-- [Henry Schmid](https://www.linkedin.com/in/henry-schmid)
-- [Erika Kischuk](https://www.linkedin.com/in/erika-kischuk)
-- [Laura Court](https://www.linkedin.com/in/andrew-massey-b06662194/)
-- [Khoi Nguyen](https://www.linkedin.com/in/khoifishpond/)
-- [Ozzie Osmonson](https://www.linkedin.com/in/ozzie-osmonson/)
-
-<p>
-  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
-</p>
-
-- [Henry Schmid](https://github.com/hschmid516)
-- [Erika Kischuk](https://github.com/eakischuk)
-- [Laura Court](https://github.com/lmcourt)
-- [Khoi Nguyen](https://github.com/khoifishpond)
-- [Ozzie Osmonson](https://github.com/ozzman84)
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
