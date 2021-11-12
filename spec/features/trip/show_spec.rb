@@ -81,6 +81,24 @@ RSpec.describe 'trip show page' do
 
       expect(current_path).to eq(user_path(10))
     end
+
+    it 'can close a vote' do
+      within('#resorts-search') do
+        select 'Colorado', from: 'state'
+        click_on 'Search'
+      end
+
+      within("#resort-303001") do
+        click_link 'Add to Trip'
+      end
+
+      within("#option-303001") do
+        click_link 'Vote'
+      end
+
+      click_link 'Close Voting'
+      expect(page).to_not have_button('Close Voting')
+    end
   end
 end
 
