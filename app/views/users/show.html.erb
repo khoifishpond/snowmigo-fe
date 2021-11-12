@@ -1,5 +1,4 @@
-<h1>Welcome
-  <%= current_user.name %></h1>
+<h1>Welcome <%= current_user.name %></h1>
 
 <div id='user-info'>
   <ul>
@@ -20,7 +19,22 @@
 </div>
 <br>
 
+<div id='past-trips'>
+  <p><h3>Past Trips</h3><p/>
+
+  <% if current_user.past_trips.empty? %>
+    <p>Go on some trips!<p/>
+  <% else %>
+    <% current_user.past_trips.each do |trip| %>
+      <%= trip[:data][:attributes][:name] %><br/>
+      <%= trip[:data][:attributes][:start_date] %><br/>
+      <%= trip[:data][:attributes][:end_date] %><br/>
+    <% end %>
+  <% end %>
+</div>
+
 <div id='upcoming-trips'>
+  <p><h3>Upcoming Trips</h3><p/>
   <% if current_user.upcoming_trips.empty? %>
     <p>You have no upcoming trips. Get a life </p>
   <% else %>
@@ -32,17 +46,6 @@
   <% end %>
 <div/>
 
-<div id='past-trips'>
-  <% if current_user.past_trips.empty? %>
-  <p>Go on some trips!</p>
-  <% else %>
-    <% current_user.past_trips.each do |trip| %>
-      <%= trip[:data][:attributes][:name] %>
-      <%= trip[:data][:attributes][:start_date] %>
-      <%= trip[:data][:attributes][:end_date] %>
-    <% end %>
-  <% end %>
-</div>
 
 <div id='friend'>
   <%= form_with url: friendships_path, local: true do |f| %>

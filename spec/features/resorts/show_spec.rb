@@ -14,7 +14,7 @@ RSpec.describe 'resort show page' do
     expect(page).to have_content('Snow Conditions')
     within("##{@resort_id}-snow") do
       expect(page).to have_content('New Snow:')
-      expect(page).to have_content('Base Depth: 18 in')
+      expect(page).to have_content('Snow Conditions New Snow:4 in Base Depth: 21 in Snow Condition: Powder')
       expect(page).to have_content('Snow Condition: Machine Groomed')
     end
     expect(page).to have_content('Resort Features')
