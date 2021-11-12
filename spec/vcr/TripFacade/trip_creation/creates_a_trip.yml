@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/users/3
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/9
     body:
       encoding: US-ASCII
       string: ''
@@ -21,34 +21,35 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 12 Nov 2021 05:12:14 GMT
+      - Fri, 12 Nov 2021 06:20:17 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"2f86bf3bb0720de5804ab7e8be4539a0"
+      - W/"a5865b5c2fc9f7199a253798f08a0b1f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 352b6c59-a3b9-47f3-b09b-ff8a28eb22f5
+      - 50909dbc-3029-439e-986e-e750e055c870
       X-Runtime:
-      - '0.009130'
+      - '0.031116'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"3","type":"user","attributes":{"name":"Obi-Wan Kenobi","email":"lashaunda.ortiz@abernathy.co","exp_level":"8","ski_pass":"Epic","address":"Suite
-        142 16290 Zieme Mill, North Duaneville, AL 97901","ski_or_board":"6","emergency_name":"Beregond","emergency_number":"2813308004","trips":[],"friends":[{"data":{"id":"1","type":"friendship","attributes":{"user_id":3,"friend_id":4,"friend_name":"Greedo"}}}]}}}'
-  recorded_at: Fri, 12 Nov 2021 05:12:14 GMT
+      string: '{"data":{"id":"9","type":"user","attributes":{"name":"Michael Osmonson","email":"mikeosmonson@gmail.com","exp_level":null,"ski_pass":null,"address":null,"ski_or_board":null,"emergency_name":null,"emergency_number":null,"trips":[{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"47","type":"rider","attributes":{"user_id":9,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Michael
+        Osmonson","vote":null}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Fri, 12 Nov 2021 06:20:17 GMT
 - request:
     method: post
     uri: http://snowmigo-be.herokuapp.com/api/v1/trips
     body:
       encoding: UTF-8
-      string: '{"name":"Happy fun time","start_date":"11/11/1111","end_date":"22/22/2222","resort_id":2,"user_id":3}'
+      string: '{"name":"Happy fun time","start_date":"2021-11-08","end_date":"2021-11-25","user_id":9}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -60,29 +61,32 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 201
+      message: Created
     headers:
       Server:
       - Cowboy
       Date:
-      - Fri, 12 Nov 2021 05:12:14 GMT
+      - Fri, 12 Nov 2021 06:20:18 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
+      Etag:
+      - W/"862ef19d680727bf721de88e09e5ce85"
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b7a425d2-2799-4ac1-a4bb-d08523d05dc5
+      - 8cac4a4d-9953-4602-af68-e37bc634e984
       X-Runtime:
-      - '0.005960'
+      - '0.055749'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"error":"400 Bad Request"}'
-  recorded_at: Fri, 12 Nov 2021 05:12:14 GMT
+      string: '{"data":{"id":"68","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"50","type":"rider","attributes":{"user_id":9,"trip_id":68,"host":true,"driver":null,"budget":null,"rider_name":"Michael
+        Osmonson","vote":null}}}],"resort_options":[]}}}'
+  recorded_at: Fri, 12 Nov 2021 06:20:18 GMT
 recorded_with: VCR 6.0.0

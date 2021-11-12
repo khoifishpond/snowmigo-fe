@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/1
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/6
     body:
       encoding: US-ASCII
       string: ''
@@ -15,29 +15,34 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
       Server:
       - Cowboy
       Date:
-      - Fri, 12 Nov 2021 05:02:39 GMT
+      - Fri, 12 Nov 2021 06:33:12 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
+      Etag:
+      - W/"5b318e3a811f6b4ad067e3c053b9e099"
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6cac0351-c961-4b8c-ad09-a7177538054d
+      - 369c109c-26b8-4a74-b499-70390b21b5be
       X-Runtime:
-      - '0.003952'
+      - '0.014335'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"error":"404 Not Found"}'
-  recorded_at: Fri, 12 Nov 2021 05:02:39 GMT
+      string: '{"data":{"id":"6","type":"trip","attributes":{"name":"Nihil consequatur
+        nobis.","resort_id":null,"resort_name":null,"start_date":"2025-11-02","end_date":"2025-12-12","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":2,"trip_id":6,"host":false,"driver":false,"budget":48,"rider_name":"Freddie
+        Mercury","vote":null}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":7,"trip_id":6,"host":false,"driver":false,"budget":45,"rider_name":"Chirrut
+        Imwe","vote":null}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":6,"resort_id":46,"resort_name":"Carmela","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":6,"resort_id":24,"resort_name":"Selena","vote_count":0}}}]}}}'
+  recorded_at: Fri, 12 Nov 2021 06:33:12 GMT
 recorded_with: VCR 6.0.0

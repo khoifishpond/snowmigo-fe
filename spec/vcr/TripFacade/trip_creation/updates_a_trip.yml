@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: patch
-    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/5
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/7
     body:
       encoding: UTF-8
       string: '{"name":"Happy time","start_date":"11/11/1111","end_date":"22/22/2222","resort_id":3}'
@@ -23,25 +23,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 12 Nov 2021 05:06:50 GMT
+      - Fri, 12 Nov 2021 06:17:27 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"6148b762b43d94c6bc132224430c937f"
+      - W/"5ff74da406ac5f8ae1b1666dd243c453"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ab6af922-cf93-4c90-a477-0ab39b4511a9
+      - 1c7ae919-701f-40ac-a35f-efedc0e489c2
       X-Runtime:
-      - '0.010193'
+      - '0.018846'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"trip","attributes":{"name":"Happy time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[],"resort_options":[]}}}'
-  recorded_at: Fri, 12 Nov 2021 05:06:51 GMT
+      string: '{"data":{"id":"7","type":"trip","attributes":{"name":"Happy time","resort_id":null,"resort_name":null,"start_date":"1111-11-11","end_date":null,"vote_status":"open","riders":[{"data":{"id":"3","type":"rider","attributes":{"user_id":2,"trip_id":7,"host":false,"driver":false,"budget":58,"rider_name":"Freddie
+        Mercury","vote":null}}}],"resort_options":[{"data":{"id":"3","type":"resort_option","attributes":{"trip_id":7,"resort_id":84,"resort_name":"Leigh","vote_count":0}}}]}}}'
+  recorded_at: Fri, 12 Nov 2021 06:17:27 GMT
 recorded_with: VCR 6.0.0

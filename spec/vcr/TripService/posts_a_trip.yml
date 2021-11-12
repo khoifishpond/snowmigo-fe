@@ -5,7 +5,7 @@ http_interactions:
     uri: http://snowmigo-be.herokuapp.com/api/v1/trips
     body:
       encoding: UTF-8
-      string: '{"name":"Happy fun time","start_date":"11/11/1111","end_date":"22/22/2222","resort_id":"2","user_id":"7"}'
+      string: '{"name":"Happy fun time","start_date":"2021-11-08","end_date":"2021-11-25","user_id":9}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -17,29 +17,31 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 201
+      message: Created
     headers:
       Server:
       - Cowboy
       Date:
-      - Fri, 12 Nov 2021 05:02:38 GMT
+      - Fri, 12 Nov 2021 06:31:51 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
+      Etag:
+      - W/"63c4528e5858593b742b4c6716afd4bb"
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1170f984-b94d-4656-937a-9fdcbe1f0684
+      - 0cc64bc1-a76a-4d91-a905-37217cb85bd0
       X-Runtime:
-      - '0.005805'
+      - '0.044410'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"error":"400 Bad Request"}'
-  recorded_at: Fri, 12 Nov 2021 05:02:39 GMT
+      string: '{"data":{"id":"69","type":"trip","attributes":{"name":"Happy fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"51","type":"rider","attributes":{"user_id":9,"trip_id":69,"host":true,"driver":null,"budget":null,"rider_name":"Ozzie","vote":null}}}],"resort_options":[]}}}'
+  recorded_at: Fri, 12 Nov 2021 06:31:51 GMT
 recorded_with: VCR 6.0.0
