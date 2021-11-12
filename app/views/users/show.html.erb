@@ -44,11 +44,15 @@
   <% end %>
 </div>
 
-<div id='add-friend'>
+<div id='friend'>
   <%= form_with url: friendships_path, local: true do |f| %>
-    <%= f.text_field :friends, placeholder: 'name@example.com' %>
+    <%= f.text_field :email, placeholder: 'name@example.com' %>
     <%= f.submit 'Add Friend' %>
   <% end %>
+
   <h3>Friends<h3/>
+    <% current_user.friends.each do |friend| %>
+      <%=  friend[:data][:attributes][:friend_name] %>
+    <% end %>
   <%= 'No friends added currently!' if current_user.friends.empty? %>
 <div/>

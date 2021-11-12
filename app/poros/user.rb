@@ -23,7 +23,6 @@ class User
 
   def upcoming_trips
     wip = @trips.filter_map do |trip|
-      # require "pry"; binding.pry
       trip if trip[:data][:attributes][:end_date].to_date >= Date.today
     end
   end

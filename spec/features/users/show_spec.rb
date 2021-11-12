@@ -6,11 +6,8 @@ RSpec.describe 'User Dashboard' do
       before :each do
         login_with_oauth
 
-        # @user = UserFacade.user_get(10)
-
+        @user = UserFacade.user_get(10)
       end
-      let(:user) { UserFacade.user_get(10) }
-      let(:user_id) { user.id }
 
       it 'Flash Message shows successsful login' do
         expect(page).to have_content('Login Successful')
@@ -50,11 +47,6 @@ RSpec.describe 'User Dashboard' do
         end
       end
 
-      it 'returns friends' do
-        save_and_open_page
-        expect(page).to have_content('')
-      end
-
       context 'Logout' do
         it 'has a logout button' do
           expect(page).to have_link('Logout')
@@ -70,6 +62,24 @@ RSpec.describe 'User Dashboard' do
           expect(page).to have_content('Logout successful')
         end
       end
+    end
+  end
+
+  describe 'User Friends', :vcr do
+    before :each do
+      login_with_oauth
+      @user11 = UserFacade.user_get(11)
+    end
+
+    it 'returns friends' do
+      expect(page).to have_content('Mace Windu')
+    end
+
+    it 'can add friends' do
+      fill_in :email, with: @user11.email
+      click_on 'Add Friend'
+
+      expect(page).to have_content(@user11.name)
     end
   end
 end

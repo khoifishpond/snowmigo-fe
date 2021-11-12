@@ -1,6 +1,6 @@
 class FriendshipFacade
   def self.get_friend(params)
-    friendship = Friendship.friends_by_email(params)
-    Friendship.new(friendship)
+    friendship = FriendshipService.friendship_by_email(params)
+    Friend.new(friendship)
   end
 end
