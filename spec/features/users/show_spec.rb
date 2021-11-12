@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe 'User Dashboard' do
-  describe 'As a verified User' do
+RSpec.describe 'User Dashboard'do
+  describe 'As a verified User', :vcr  do
     describe 'With Successful Login' do
       before :each do
         login_with_oauth
@@ -41,9 +41,9 @@ RSpec.describe 'User Dashboard' do
 
       it 'returns past Trips' do
         within("#past-trips") do
-          expect(page).to have_content(@user.trips[3][:data][:attributes][:name])
-          expect(page).to have_content(@user.trips[3][:data][:attributes][:start_date])
-          expect(page).to have_content(@user.trips[3][:data][:attributes][:end_date])
+          expect(page).to have_content("Cool Trip Name")
+          expect(page).to have_content("2021-11-02")
+          expect(page).to have_content("2021-11-08")
         end
       end
 
