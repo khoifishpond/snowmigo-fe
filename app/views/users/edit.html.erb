@@ -1,34 +1,38 @@
-<%= form_with url: user_path(current_user), method: :patch, local: true do |f| %>
-<div class="form-floating mb-3">
-  <%= f.text_field :name, class: "form-control", id: "floatingInput2", value: current_user.name %>
-  <%= f.label :name %>
-</div>
-<div class="form-floating mb-3">
-  <%= f.text_field :address, class: "form-control", id: "floatingInput2", value: current_user.address %>
-  <%= f.label :address %>
-</div>
-<div class="form-floating mb-3">
-  <%= f.text_field :emergency_name, class: "form-control", id: "floatingInput2", value: current_user.emergency_name %>
-  <%= f.label :emergency_name %>
-</div>
-<div class="form-floating mb-3">
-  <%= f.text_field :emergency_number, class: "form-control", id: "floatingInput2", value: current_user.emergency_number %>
-  <%= f.label :emergency_number %>
-</div>
-<div>
-  <h6>Ski Pass</h6>
-  <%= f.select :ski_pass, ['', 'Epic', 'Ikon', 'Other'], selected: current_user.ski_pass %>
-</div>
-<br>
-<div>
-  <h6>Ski or Snowboard?</h6>
-  <%= f.select :ski_or_board, ['', 'Ski', 'Snowboard', 'Both'], selected: current_user.ski_or_board %>
-</div>
-<br>
-<div>
-  <h6>Experience Level</h6>
-  <%= f.select :exp_level, ['', 'Beginner', 'Intermediate', 'Advanced', 'Expert'], selected: current_user.exp_level %>
-</div>
-<br>
-<%= f.submit "Update Info" %>
-<% end %>
+<body class='edit'>
+  <div id='box'>
+    <%= form_with url: user_path(current_user), method: :patch, local: true do |f| %>
+    <div class="form-floating mb-3">
+      <%= f.text_field :name, class: "form-control", id: "floatingInput2", value: current_user.name %>
+      <%= f.label :name %>
+    </div>
+    <div class="form-floating mb-3">
+      <%= f.text_field :address, class: "form-control", id: "floatingInput2", value: current_user.address %>
+      <%= f.label :address %>
+    </div>
+    <div class="form-floating mb-3">
+      <%= f.text_field :emergency_name, class: "form-control", id: "floatingInput2", value: current_user.emergency_name %>
+      <%= f.label :emergency_name %>
+    </div>
+    <div class="form-floating mb-3">
+      <%= f.text_field :emergency_number, class: "form-control", id: "floatingInput2", value: current_user.emergency_number %>
+      <%= f.label :emergency_number %>
+    </div>
+    <div>
+      <h6>Ski Pass</h6>
+      <%= f.select :ski_pass, ['', 'Epic', 'Ikon', 'Other'], selected: current_user.ski_pass %>
+    </div>
+    <br>
+    <div>
+      <h6>Ski or Snowboard?</h6>
+      <%= f.select :ski_or_board, ['', 'Ski', 'Snowboard', 'Both'], selected: current_user.ski_or_board %>
+    </div>
+    <br>
+    <div>
+      <h6>Experience Level</h6>
+      <%= f.select :exp_level, ['', 'Beginner', 'Intermediate', 'Advanced', 'Expert'], selected: current_user.exp_level %>
+    </div>
+    <br>
+    <%= f.submit "Update Info" %>
+    <% end %>
+  </div>
+</body>
