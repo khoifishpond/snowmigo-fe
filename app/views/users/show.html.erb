@@ -1,5 +1,7 @@
+<body class="users">
 <h1>Welcome <%= current_user.name %></h1>
 
+<div id='box'>
 <div id='user-info'>
   <ul>
     <li>Location
@@ -16,6 +18,7 @@
       <%= number_to_phone(current_user.emergency_number, area_code: true) %></li>
   </ul>
   <%= link_to "Edit info", edit_user_path(current_user.id) %>
+</div>
 </div>
 <br>
 
@@ -59,3 +62,4 @@
     <% end %>
   <%= 'No friends added currently!' if current_user.friends.empty? %>
 <div/>
+</body>
