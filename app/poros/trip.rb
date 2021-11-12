@@ -19,4 +19,22 @@ class Trip
   def format_end_date
     @end_date.to_date.strftime('%b %-d, %Y')
   end
+
+  def added_friends
+    @riders.map do |rider|
+      rider[:data][:attributes][:user_id]
+    end
+  end
+
+  def host?(user_id)
+    @riders.any? do |rider|
+      rider[:data][:attributes][:user_id].to_s == user_id
+    end
+  end
+
+  def user_vote(user_id)
+    @riders.filter_map do |rider|
+      rider[:data][:attributes][:vote]
+    end.first
+  end
 end

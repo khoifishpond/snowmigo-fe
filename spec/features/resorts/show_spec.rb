@@ -14,8 +14,8 @@ RSpec.describe 'resort show page' do
     expect(page).to have_content('Snow Conditions')
     within("##{@resort_id}-snow") do
       expect(page).to have_content('New Snow:')
-      expect(page).to have_content('Base Depth: 18 in')
-      expect(page).to have_content('Snow Condition: Machine Groomed')
+      expect(page).to have_content('Snow Conditions New Snow:4 in Base Depth: 21 in')
+      expect(page).to have_content('Snow Condition: Powder')
     end
     expect(page).to have_content('Resort Features')
     within("##{@resort_id}-features") do
@@ -27,24 +27,24 @@ RSpec.describe 'resort show page' do
     within("##{@resort_id}-weather") do
       expect(page).to have_content('Morning:')
       within('#morning-weather') do
-        expect(page).to have_css("img[alt*='Patchy heavy snow']")
+        expect(page).to have_css("img[alt*='Patchy moderate snow']")
         expect(page).to have_content('Snowfall:')
-        expect(page).to have_content('Temperature: 18 Fahrenheit')
-        expect(page).to have_content('Wind: 19 mph')
+        expect(page).to have_content('Temperature: 17 Fahrenheit')
+        expect(page).to have_content('Wind: 29 mph')
       end
       expect(page).to have_content('Noon:')
       within('#noon-weather') do
-        expect(page).to have_css("img[alt*='Patchy snow possible']")
+        expect(page).to have_css("img[alt*='Partly cloudy']")
         expect(page).to have_content('Snowfall:')
         expect(page).to have_content('Temperature: 20 Fahrenheit')
-        expect(page).to have_content('Wind: 22 mph')
+        expect(page).to have_content('Wind: 32 mph')
       end
       expect(page).to have_content('Afternoon:')
       within('#afternoon-weather') do
         expect(page).to have_css("img[alt*='Patchy snow possible']")
         expect(page).to have_content('Snowfall:')
-        expect(page).to have_content('Temperature: 17 Fahrenheit')
-        expect(page).to have_content('Wind: 26 mph')
+        expect(page).to have_content('Temperature: 21 Fahrenheit')
+        expect(page).to have_content('Wind: 28 mph')
       end
     end
   end

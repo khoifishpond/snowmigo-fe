@@ -43,3 +43,13 @@
   align-items: center;
   justify-content: center;
 }
+
+h6 {
+  display: inline-block;
+  margin: 0;
+}
+
+.nav-image {
+  width: 3;
+  height: 30;
+}

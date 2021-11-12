@@ -1,5 +1,6 @@
 class User
-  attr_reader :email, :name, :id, :address, :ski_pass, :ski_or_board, :exp_level, :emergency_name, :emergency_number, :trips, :friends
+  attr_reader :email, :name, :id, :address, :ski_pass, :ski_or_board,
+              :exp_level, :emergency_name, :emergency_number, :trips, :friends
 
   def initialize(data)
     @id = data[:id]
@@ -22,9 +23,14 @@ class User
   end
 
   def upcoming_trips
-    wip = @trips.filter_map do |trip|
-      # require "pry"; binding.pry
+    @trips.filter_map do |trip|
       trip if trip[:data][:attributes][:end_date].to_date >= Date.today
+    end
+  end
+
+  def friends_to_add(riders)
+    @friends.filter_map do |friend|
+      [friend[:data][:attributes][:friend_name], friend[:data][:attributes][:friend_id]] if !riders.include?(friend[:data][:attributes][:friend_id])
     end
   end
 end

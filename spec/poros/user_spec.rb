@@ -39,9 +39,25 @@ describe User do
                       }
                     }
                   }
-                ]
-              }
-            })
+                ],
+                friends: [
+                  data: {
+                  id: 5,
+                  attributes: {
+                    friend_name: 'Henry',
+                    friend_id: 5,
+                    email: 'email@gmail.com',
+                    exp_level: 'expert',
+                    ski_pass: 'epic',
+                    address: 'Denver',
+                    ski_or_board: 'ski',
+                    emergency_name: 'Mom',
+                    emergency_number: '2078675309',
+                  }
+                }
+              ]
+            }
+          })
   end
 
   it 'has attributes' do
@@ -68,5 +84,9 @@ describe User do
     expect(user.past_trips.first[:data][:attributes][:start_date]).to eq('2011-12-30')
     expect(user.past_trips.first[:data][:attributes][:end_date]).to eq('2012-01-04')
     expect(user.upcoming_trips.count).to eq(1)
+  end
+
+  it 'gets friends to be added' do
+    expect(user.friends_to_add(['Khoi'])).to eq([['Henry', 5]])
   end
 end

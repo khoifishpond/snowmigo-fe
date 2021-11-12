@@ -16,6 +16,7 @@ RSpec.describe Trip do
                                                     host: false,
                                                     driver: false,
                                                     budget: 42,
+                                                    vote: 100,
                                                     rider_name: "Khoi"
                                                   }
                                                 }
@@ -51,5 +52,17 @@ RSpec.describe Trip do
 
   it 'formats the end date' do
     expect(trip.format_end_date).to eq('Nov 25, 2021')
+  end
+
+  it 'finds added friends' do
+    expect(trip.added_friends).to eq([1])
+  end
+
+  it 'checks if user is host' do
+    expect(trip.host?(1)).to eq(false)
+  end
+
+  it 'gets resort id for vote' do
+    expect(trip.user_vote(1)).to eq(100)
   end
 end

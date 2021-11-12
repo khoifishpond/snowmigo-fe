@@ -1,10 +1,11 @@
 require 'rails_helper'
 
-RSpec.describe 'User Dashboard' do
-  describe 'As a verified User' do
+RSpec.describe 'User Dashboard'do
+  describe 'As a verified User', :vcr  do
     describe 'With Successful Login' do
       before :each do
         login_with_oauth
+
         @user = UserFacade.user_get(10)
       end
 
@@ -40,16 +41,16 @@ RSpec.describe 'User Dashboard' do
 
       it 'returns past Trips' do
         within("#past-trips") do
-          expect(page).to have_content(@user.trips[3][:data][:attributes][:name])
-          expect(page).to have_content(@user.trips[3][:data][:attributes][:start_date])
-          expect(page).to have_content(@user.trips[3][:data][:attributes][:end_date])
+          expect(page).to have_content("Cool Trip Name")
+          expect(page).to have_content("2021-11-02")
+          expect(page).to have_content("2021-11-08")
         end
       end
 
       context 'Logout' do
-      it 'has a logout button' do
-        expect(page).to have_link('Logout')
-      end
+        it 'has a logout button' do
+          expect(page).to have_link('Logout')
+        end
 
         it 'Will log the User out' do
           click_link 'Logout'
@@ -61,6 +62,24 @@ RSpec.describe 'User Dashboard' do
           expect(page).to have_content('Logout successful')
         end
       end
+    end
+  end
+
+  describe 'User Friends', :vcr do
+    before :each do
+      login_with_oauth
+      @user11 = UserFacade.user_get(11)
+    end
+
+    it 'returns friends' do
+      expect(page).to have_content('Mace Windu')
+    end
+
+    it 'can add friends' do
+      fill_in :email, with: @user11.email
+      click_on 'Add Friend'
+
+      expect(page).to have_content(@user11.name)
     end
   end
 end
