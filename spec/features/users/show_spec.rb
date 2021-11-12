@@ -6,7 +6,7 @@ RSpec.describe 'User Dashboard'do
       before :each do
         login_with_oauth
 
-        @user = UserFacade.user_get(10)
+        @user = UserFacade.user_get(2)
       end
 
       it 'Flash Message shows successsful login' do
@@ -41,9 +41,9 @@ RSpec.describe 'User Dashboard'do
 
       it 'returns past Trips' do
         within("#past-trips") do
-          expect(page).to have_content("Cool Trip Name")
-          expect(page).to have_content("2021-11-02")
-          expect(page).to have_content("2021-11-08")
+          expect(page).to have_content("Tempora est illo.")
+          expect(page).to have_content("2020-11-02")
+          expect(page).to have_content("2020-12-12")
         end
       end
 
@@ -68,11 +68,11 @@ RSpec.describe 'User Dashboard'do
   describe 'User Friends', :vcr do
     before :each do
       login_with_oauth
-      @user11 = UserFacade.user_get(11)
+      @user11 = UserFacade.user_get(3)
     end
 
     it 'returns friends' do
-      expect(page).to have_content('Mace Windu')
+      expect(page).to have_content('Greedo')
     end
 
     it 'can add friends' do

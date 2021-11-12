@@ -10,7 +10,7 @@ RSpec.describe 'resort show page' do
   it 'displays resort attributes', :vcr do
     expect(page).to have_css("img[alt*='Arapahoe Basin']")
     expect(page).to have_content('Arapahoe Basin')
-    expect(page).to have_content('Mask Requirements: Yes')
+    expect(page).to have_content('Mask Required: Yes')
     expect(page).to have_content('Snow Conditions')
     within("##{@resort_id}-snow") do
       expect(page).to have_content('New Snow:')
@@ -23,28 +23,23 @@ RSpec.describe 'resort show page' do
       expect(page).to have_content('Open Trails: 3/147')
       expect(page).to have_link('Trail Map')
     end
-    expect(page).to have_content("Today's Weather")
+    expect(page).to have_content("Today's Forecast")
     within("##{@resort_id}-weather") do
-      expect(page).to have_content('Morning:')
+      expect(page).to have_content('Morning')
       within('#morning-weather') do
         expect(page).to have_css("img[alt*='Patchy moderate snow']")
-        expect(page).to have_content('Snowfall:')
-        expect(page).to have_content('Temperature: 17 Fahrenheit')
-        expect(page).to have_content('Wind: 29 mph')
+        expect(page).to have_content('17 Fahrenheit')
+        expect(page).to have_content('29 mph')
       end
-      expect(page).to have_content('Noon:')
       within('#noon-weather') do
         expect(page).to have_css("img[alt*='Partly cloudy']")
-        expect(page).to have_content('Snowfall:')
-        expect(page).to have_content('Temperature: 20 Fahrenheit')
-        expect(page).to have_content('Wind: 32 mph')
+        expect(page).to have_content('20 Fahrenheit')
+        expect(page).to have_content('32 mph')
       end
-      expect(page).to have_content('Afternoon:')
       within('#afternoon-weather') do
-        expect(page).to have_css("img[alt*='Patchy snow possible']")
-        expect(page).to have_content('Snowfall:')
-        expect(page).to have_content('Temperature: 21 Fahrenheit')
-        expect(page).to have_content('Wind: 28 mph')
+        expect(page).to have_css("img[alt*='Patchy light snow']")
+        expect(page).to have_content('20 Fahrenheit')
+        expect(page).to have_content('24 mph')
       end
     end
   end

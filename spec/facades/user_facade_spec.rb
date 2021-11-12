@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe UserFacade, :vcr do
   describe 'user authentication' do
     it 'returns a specific user' do
-      result = UserFacade.user_auth('mikeosmonson@gmail.com', 'mike')
+      result = UserFacade.user_auth('allan_cruickshank@powlowski.com@gmail.com', 'Greedo')
       expect(result).to be_a(User)
     end
 
