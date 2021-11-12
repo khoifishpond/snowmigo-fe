@@ -122,9 +122,11 @@ Visit [Herkou](https://snowmigo.herokuapp.com)
 ## Features
 
 - [x] Implement Google OAuth </br></br>
-  <img src="https://user-images.githubusercontent.com/58535045/141173676-86c7266b-1e7d-42aa-b4de-ec0365f6c7d6.png" />
+  <img src="https://user-images.githubusercontent.com/58535045/141414793-0639750b-2622-4219-9aa1-308817dd981d.png" />
 - [x] Search resorts by State </br></br>
   <img src="https://user-images.githubusercontent.com/58535045/141174882-5c8c289c-72d0-4496-a329-9e98f4bd087a.png" />
+- [x] State show page </br></br>
+  <img src="https://user-images.githubusercontent.com/58535045/141414934-4ffc42fe-00d5-41fa-92c5-63efa5634cd9.png">
 - [x] Plan a trip! </br></br>
   <img src="https://user-images.githubusercontent.com/58535045/141175129-f75fc87a-e462-4221-a0d3-224645a44e1c.png" />
 
