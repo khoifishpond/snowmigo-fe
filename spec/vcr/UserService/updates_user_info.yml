@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: patch
-    uri: http://snowmigo-be.herokuapp.com/api/v1/users/4
+    uri: http://snowmigo-be.herokuapp.com/api/v1/users/9
     body:
       encoding: UTF-8
       string: '{"name":"Ozzie","email":"mikeosmonson@gmail.com","address":"Denver","ski_pass":"Epic","ski_or_board":"snow
@@ -24,26 +24,29 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 01:42:33 GMT
+      - Fri, 12 Nov 2021 06:37:45 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b558126f7e3477c7f34fa4f7035964a2"
+      - W/"5acf7cddd6ec8c9b6a6e2e3efce6be81"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1bd72178-1ea1-4678-bcde-c2b0400c6e17
+      - 556b94e0-6fd8-437e-8482-7309530f4a44
       X-Runtime:
-      - '0.010389'
+      - '0.029041'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Ozzie","email":"mikeosmonson@gmail.com","exp_level":"expert","ski_pass":"Epic","address":"Denver","ski_or_board":"snow
-        board","emergency_name":"Christina","emergency_number":"3945638198","trips":[],"friends":[]}}}'
-  recorded_at: Thu, 11 Nov 2021 01:42:33 GMT
+      string: '{"data":{"id":"9","type":"user","attributes":{"name":"Ozzie","email":"mikeosmonson@gmail.com","exp_level":"expert","ski_pass":"Epic","address":"Denver","ski_or_board":"snow
+        board","emergency_name":"Christina","emergency_number":"3945638198","trips":[{"data":{"id":"65","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"47","type":"rider","attributes":{"user_id":9,"trip_id":65,"host":true,"driver":null,"budget":null,"rider_name":"Ozzie","vote":null}}}],"resort_options":[]}}},{"data":{"id":"68","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"50","type":"rider","attributes":{"user_id":9,"trip_id":68,"host":true,"driver":null,"budget":null,"rider_name":"Ozzie","vote":null}}}],"resort_options":[]}}},{"data":{"id":"69","type":"trip","attributes":{"name":"Happy
+        fun time","resort_id":null,"resort_name":null,"start_date":"2021-11-08","end_date":"2021-11-25","vote_status":"open","riders":[{"data":{"id":"51","type":"rider","attributes":{"user_id":9,"trip_id":69,"host":true,"driver":null,"budget":null,"rider_name":"Ozzie","vote":null}}}],"resort_options":[]}}}],"friends":[]}}}'
+  recorded_at: Fri, 12 Nov 2021 06:37:46 GMT
 recorded_with: VCR 6.0.0

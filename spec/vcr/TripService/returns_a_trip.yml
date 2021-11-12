@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/1
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/6
     body:
       encoding: US-ASCII
       string: ''
@@ -21,27 +21,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 02:43:41 GMT
+      - Fri, 12 Nov 2021 06:33:12 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4018de837848039dbb70be9dfd169197"
+      - W/"5b318e3a811f6b4ad067e3c053b9e099"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 99221251-8c09-4ffa-b750-71c1ffd38672
+      - 369c109c-26b8-4a74-b499-70390b21b5be
       X-Runtime:
-      - '0.017889'
+      - '0.014335'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"trip","attributes":{"name":"Cool Trip Name","resort_id":null,"resort_name":null,"start_date":"2021-11-02","end_date":"2021-11-08","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":1,"trip_id":1,"host":false,"driver":false,"budget":25,"rider_name":"Mace
-        Windu"}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":5,"trip_id":1,"host":false,"driver":false,"budget":33,"rider_name":"Jyn
-        Erso"}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":1,"resort_id":3,"resort_name":"Elwanda","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":1,"resort_id":58,"resort_name":"Portia","vote_count":0}}}]}}}'
-  recorded_at: Thu, 11 Nov 2021 02:43:41 GMT
+      string: '{"data":{"id":"6","type":"trip","attributes":{"name":"Nihil consequatur
+        nobis.","resort_id":null,"resort_name":null,"start_date":"2025-11-02","end_date":"2025-12-12","vote_status":"open","riders":[{"data":{"id":"1","type":"rider","attributes":{"user_id":2,"trip_id":6,"host":false,"driver":false,"budget":48,"rider_name":"Freddie
+        Mercury","vote":null}}},{"data":{"id":"2","type":"rider","attributes":{"user_id":7,"trip_id":6,"host":false,"driver":false,"budget":45,"rider_name":"Chirrut
+        Imwe","vote":null}}}],"resort_options":[{"data":{"id":"1","type":"resort_option","attributes":{"trip_id":6,"resort_id":46,"resort_name":"Carmela","vote_count":0}}},{"data":{"id":"2","type":"resort_option","attributes":{"trip_id":6,"resort_id":24,"resort_name":"Selena","vote_count":0}}}]}}}'
+  recorded_at: Fri, 12 Nov 2021 06:33:12 GMT
 recorded_with: VCR 6.0.0

@@ -21,27 +21,28 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 01:42:10 GMT
+      - Fri, 12 Nov 2021 05:00:56 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"c8ad621852ff80bedaf441cc97d5d769"
+      - W/"637da8e35ea65c01eff5092a423a24aa"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - caff2f94-c169-48a6-ba0a-bfe8eebabbbc
+      - 5a2b5a2e-dcc2-414b-8e8d-d61bb1b519a7
       X-Runtime:
-      - '0.007537'
+      - '0.012527'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Luke Skywalker","email":"carie@grimes-schroeder.co","exp_level":"8","ski_pass":"Epic","address":"42981
-        Tremblay Gateway, Kochland, OH 96944","ski_or_board":"1","emergency_name":"Samwise
-        Gamgee","emergency_number":"2813308004","trips":[],"friends":[]}}}'
-  recorded_at: Thu, 11 Nov 2021 01:42:10 GMT
+      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Greedo","email":"allan_cruickshank@powlowski.com","exp_level":"3","ski_pass":"Epic","address":"2238
+        Walter Port, Beckyhaven, OH 04363","ski_or_board":"1","emergency_name":"Samwise
+        Gamgee","emergency_number":"2813308004","trips":[],"friends":[{"data":{"id":"2","type":"friendship","attributes":{"user_id":4,"friend_id":3,"friend_name":"Obi-Wan
+        Kenobi"}}}]}}}'
+  recorded_at: Fri, 12 Nov 2021 05:00:57 GMT
 recorded_with: VCR 6.0.0

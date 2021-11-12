@@ -8,7 +8,8 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item" style="background-color: #E7ECEF;">
               <h5 class="card-title"><%= @resort.name %></h5>
-              <p class="card-text">Mask Required: <%= @resort.mask_required %></p>
+              <p class="card-text">Mask Required:
+                <%= @resort.mask_required %></p>
             </li>
             <li class="list-group-item" style="background-color: #E7ECEF;">
               <div id="<%= @resort.id %>-snow">
@@ -24,7 +25,7 @@
                       <p>No snow</p>
                     <% else %>
                       <%= @resort.snow_condition %></li>
-                    <% end %>
+                  <% end %>
                 </ul>
               </div>
             </li>
@@ -37,7 +38,7 @@
                       <p>0</p>
                     <% else %>
                       <%= @resort.open_lifts %></li>
-                    <% end %>
+                  <% end %>
                   <li>Open Trails:
                     <%= @resort.open_trails %></li>
                   <li><%= link_to 'Trail Map', @resort.trail_map %></li>
@@ -47,15 +48,15 @@
           </ul>
         </div>
       </div>
-        <div class="col-5">
-          <div id="<%= @resort.id %>-weather">
-            <br>
-            <br>
+      <div class="col-5">
+        <div id="<%= @resort.id %>-weather">
+          <br>
+          <br>
           <table class="table">
             <thead>
               <tr>
                 <th scope="col">Today's Forecast</th>
-                <th scope="col">       </th>
+                <th scope="col"></th>
                 <th scope="col">Snowfall</th>
                 <th scope="col">Temp</th>
                 <th scope="col">Wind</th>
@@ -63,61 +64,73 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">Morning</th>
-                <td>
-                  <img src="<%= @resort.morning_weather[:weather_icon] %>" alt="<%= @resort.morning_weather[:weather] %>">
-                </td>
-                <td>
+                <div id="morning-weather">
+                  <th scope="row">Morning</th>
+                  <td>
+                    <img src="<%= @resort.morning_weather[:weather_icon] %>" alt="<%= @resort.morning_weather[:weather] %>">
+                  </td>
+                  <td>
                     <% if @resort.morning_weather[:snowfall] == nil %>
-                    <p>0 in</p>
+                      <p>0 in</p>
                     <% else %>
-                    <%= @resort.morning_weather[:snowfall] %>
+                      <%= @resort.morning_weather[:snowfall] %>
                     <% end %>
-                </td>
-                <td>
-                    <%= @resort.morning_weather[:temp] %> Fahrenheit
-                </td>
-                <td>
-                  <%= @resort.morning_weather[:wind] %> mph
-                </td>
+                  </td>
+                  <td>
+                    <%= @resort.morning_weather[:temp] %>
+                    Fahrenheit
+                  </td>
+                  <td>
+                    <%= @resort.morning_weather[:wind] %>
+                    mph
+                  </td>
+                </div>
               </tr>
               <tr>
-                <th scope="row">Noon</th>
-                <td>
-                  <img src="<%= @resort.noon_weather[:weather_icon] %>" alt="<%= @resort.noon_weather[:weather] %>">
-                </td>
-                <td>
+                <div id="noon-weather">
+                  <th scope="row">Noon</th>
+                  <td>
+                    <img src="<%= @resort.noon_weather[:weather_icon] %>" alt="<%= @resort.noon_weather[:weather] %>">
+                  </td>
+                  <td>
                     <% if @resort.noon_weather[:snowfall] == nil %>
-                    <p>0 in</p>
+                      <p>0 in</p>
                     <% else %>
-                    <%= @resort.noon_weather[:snowfall] %>
+                      <%= @resort.noon_weather[:snowfall] %>
                     <% end %>
-                </td>
-                <td>
-                    <%= @resort.noon_weather[:temp] %> Fahrenheit
-                </td>
-                <td>
-                  <%= @resort.noon_weather[:wind] %> mph
-                </td>
+                  </td>
+                  <td>
+                    <%= @resort.noon_weather[:temp] %>
+                    Fahrenheit
+                  </td>
+                  <td>
+                    <%= @resort.noon_weather[:wind] %>
+                    mph
+                  </td>
+                </div>
               </tr>
               <tr>
-                <th scope="row">Afternoon</th>
-                <td>
-                  <img src="<%= @resort.afternoon_weather[:weather_icon] %>" alt="<%= @resort.afternoon_weather[:weather] %>">
-                </td>
-                <td>
+                <div id="afternoon-weather">
+                  <th scope="row">Afternoon</th>
+                  <td>
+                    <img src="<%= @resort.afternoon_weather[:weather_icon] %>" alt="<%= @resort.afternoon_weather[:weather] %>">
+                  </td>
+                  <td>
                     <% if @resort.afternoon_weather[:snowfall] == nil %>
-                    <p>0 in</p>
+                      <p>0 in</p>
                     <% else %>
-                    <%= @resort.afternoon_weather[:snowfall] %>
+                      <%= @resort.afternoon_weather[:snowfall] %>
                     <% end %>
-                </td>
-                <td>
-                    <%= @resort.afternoon_weather[:temp] %> Fahrenheit
-                </td>
-                <td>
-                  <%= @resort.afternoon_weather[:wind] %> mph
-                </td>
+                  </td>
+                  <td>
+                    <%= @resort.afternoon_weather[:temp] %>
+                    Fahrenheit
+                  </td>
+                  <td>
+                    <%= @resort.afternoon_weather[:wind] %>
+                    mph
+                  </td>
+                </div>
               </tr>
             </tbody>
           </table>

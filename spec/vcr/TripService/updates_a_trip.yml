@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: patch
-    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/3
+    uri: http://snowmigo-be.herokuapp.com/api/v1/trips/7
     body:
       encoding: UTF-8
-      string: '{"name":"This is a trip","start_date":"2021-11-09","end_date":"2021-11-10"}'
+      string: '{"name":"Happy time","start_date":"11/09/2021","end_date":"11/10/2021","resort_id":3}'
     headers:
       User-Agent:
       - Faraday v1.8.0
@@ -23,26 +23,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Nov 2021 02:43:41 GMT
+      - Fri, 12 Nov 2021 06:34:38 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"c4e3f1d360ae55d3ea7b11b0a3b59177"
+      - W/"2ef0eede3757894a50cc35ecb8cd8026"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 933b096c-1a24-48aa-bfe0-1eaabbefa8a9
+      - 69118aad-046d-4fff-bbce-5b6f125550fd
       X-Runtime:
-      - '0.014232'
+      - '0.121723'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"3","type":"trip","attributes":{"name":"This is a trip","resort_id":null,"resort_name":null,"start_date":"2021-11-09","end_date":"2021-11-10","vote_status":"open","riders":[{"data":{"id":"3","type":"rider","attributes":{"user_id":5,"trip_id":3,"host":false,"driver":false,"budget":30,"rider_name":"Jyn
-        Erso"}}}],"resort_options":[]}}}'
-  recorded_at: Thu, 11 Nov 2021 02:43:41 GMT
+      string: '{"data":{"id":"7","type":"trip","attributes":{"name":"Happy time","resort_id":null,"resort_name":null,"start_date":"2021-09-11","end_date":"2021-10-11","vote_status":"open","riders":[{"data":{"id":"3","type":"rider","attributes":{"user_id":2,"trip_id":7,"host":false,"driver":false,"budget":58,"rider_name":"Freddie
+        Mercury","vote":null}}}],"resort_options":[{"data":{"id":"3","type":"resort_option","attributes":{"trip_id":7,"resort_id":84,"resort_name":"Leigh","vote_count":0}}}]}}}'
+  recorded_at: Fri, 12 Nov 2021 06:34:39 GMT
 recorded_with: VCR 6.0.0
