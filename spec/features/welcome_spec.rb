@@ -5,7 +5,6 @@ RSpec.describe 'Welcome page' do
     before { visit root_path }
 
     it 'displays Welcome text and button' do
-      expect(page).to have_content('Welcome to Snowmigo!')
       expect(page).to have_link('Login with Google')
     end
 
