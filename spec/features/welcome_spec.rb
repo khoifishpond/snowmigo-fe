@@ -7,10 +7,5 @@ RSpec.describe 'Welcome page' do
     it 'displays Welcome text and button' do
       expect(page).to have_link('Login with Google')
     end
-
-    it 'login redirects to user dashboard', :vcr do
-      click_on 'Login with Google'
-      expect(page).to have_content('Welcome Freddie Mercury')
-    end
   end
 end
