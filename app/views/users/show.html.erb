@@ -1,29 +1,32 @@
 <body class="users">
-  <div class="row">
-    <div class="col">
-      <div class="card" id='user-info' style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"><%= current_user.name %></h5>
-          <p class="card-text"></p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Location: <%= current_user.address %></li>
-          <li class="list-group-item">Pass Type: <%= current_user.ski_pass %></li>
-          <li class="list-group-item">Board or ski: <%= current_user.ski_or_board %></li>
-          <li class="list-group-item">Experience Level: <%= current_user.exp_level %></li>
-          <li class="list-group-item">Emergency Contact Name: <%= current_user.emergency_name %></li>
-          <li class="list-group-item">Emergency Contact Number: <%= number_to_phone(current_user.emergency_number, area_code: true) %></li>
-          <li class="list-group-item"><%= link_to "Edit info", edit_user_path(current_user.id) %></li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+  <div class="container px-0">
+    <div class="row gx-5">
+      <div class="col">
+       <div class="p-3 border bg-secondary" id="profile-card">
+         <br>
+          <div class="card" id='user-info' style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%= current_user.name %></h5>
+              <p class="card-text"></p>
+            </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Location: <%= current_user.address %></li>
+            <li class="list-group-item">Pass Type: <%= current_user.ski_pass %></li>
+            <li class="list-group-item">Board or ski: <%= current_user.ski_or_board %></li>
+            <li class="list-group-item">Experience Level: <%= current_user.exp_level %></li>
+            <li class="list-group-item">Emergency Contact Name: <%= current_user.emergency_name %></li>
+            <li class="list-group-item">Emergency Contact Number: <%= number_to_phone(current_user.emergency_number, area_code: true) %></li>
+            <li class="list-group-item"><%= link_to "Edit info", edit_user_path(current_user.id) %></li>
+          </ul>
         </div>
       </div>
     </div>
-      <div class="col">col</div>
+  </div>
+  <div class="col">
+      <div class="p-3 border bg-secondary"><h3>Hosted Events</h3>
         <br>
+        <div class="container" id="hosted-events">
           <div id='friend'>
             <%= form_with url: friendships_path, local: true do |f| %>
               <%= f.text_field :email, placeholder: 'name@example.com' %>
@@ -34,8 +37,8 @@
                 <%=  friend[:data][:attributes][:friend_name] %>
               <% end %>
             <%= 'No friends added currently!' if current_user.friends.empty? %>
-          <div/>
-        <br>
+            <div/>
+          <br>
         <div class="col">
 
 <div id='past-trips'>
