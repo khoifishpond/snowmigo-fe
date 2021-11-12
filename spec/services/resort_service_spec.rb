@@ -69,7 +69,6 @@ RSpec.describe ResortService do
     expect(resort_weather[:morning]).to have_key(:wind)
     expect(resort_weather[:morning][:wind]).to be_a(String)
     expect(resort_weather[:morning]).to have_key(:snowfall)
-    # expect(resort_weather[:morning][:snowfall]).to be_a(String)
 
     expect(resort_weather).to have_key(:noon)
     expect(resort_weather[:noon]).to be_a(Hash)
@@ -82,7 +81,6 @@ RSpec.describe ResortService do
     expect(resort_weather[:noon]).to have_key(:wind)
     expect(resort_weather[:noon][:wind]).to be_a(String)
     expect(resort_weather[:noon]).to have_key(:snowfall)
-    # expect(resort_weather[:noon][:snowfall]).to be_a(String)
 
     expect(resort_weather).to have_key(:afternoon)
     expect(resort_weather[:afternoon]).to be_a(Hash)
@@ -95,6 +93,5 @@ RSpec.describe ResortService do
     expect(resort_weather[:afternoon]).to have_key(:wind)
     expect(resort_weather[:afternoon][:wind]).to be_a(String)
     expect(resort_weather[:afternoon]).to have_key(:snowfall)
-    # expect(resort_weather[:afternoon][:snowfall]).to be_a(String)
   end
 end

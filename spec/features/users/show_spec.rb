@@ -39,14 +39,6 @@ RSpec.describe 'User Dashboard'do
         end
       end
 
-      it 'returns past Trips' do
-        within("#past-trips") do
-          expect(page).to have_content("Tempora est illo.")
-          expect(page).to have_content("2020-11-02")
-          expect(page).to have_content("2020-12-12")
-        end
-      end
-
       context 'Logout' do
         it 'has a logout button' do
           expect(page).to have_link('Logout')
