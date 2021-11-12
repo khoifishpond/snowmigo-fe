@@ -18,3 +18,8 @@
    width: 150px;
    height: 220px;
  }
+
+h6 {
+  display: inline-block;
+margin: 0;
+}
