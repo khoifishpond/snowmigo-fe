@@ -13,15 +13,149 @@
  *= require_tree .
  *= require_self
  */
- .card {
-   object-fit: scale-down ;
-   width: 150px;
-   height: 220px;
- }
+.card {
+  object-fit: scale-down;
+  width: 150px;
+  height: 220px;
+}
+
+.welcome {
+  width: 100%;
+  margin: auto;
+  background-image: url("https://mikeputnamphoto.com/wp-content/uploads/2015/05/Mt.-Bachelor-Sunrise.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.users {
+  width: 100%;
+  margin: auto;
+  background-image: url("https://user-images.githubusercontent.com/83885722/141417549-5bd5e840-21d7-40f3-a62c-51d777c29d34.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.edit {
+  width: 100%;
+  margin: auto;
+  background-image: url("https://user-images.githubusercontent.com/83885722/141418072-a5e68618-c018-493f-ab9f-76cc9541966c.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.resorts {
+  width: 100%;
+  margin: auto;
+  background-image: url("https://user-images.githubusercontent.com/83885722/141415947-db0d82bb-2ee7-44ec-943c-ee7f8c96eafb.jpeg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.resort-index {
+  width: 100%;
+  margin: auto;
+  background-image: url("https://user-images.githubusercontent.com/83885722/141418452-87602f0a-08b9-45d7-8363-cf28f879a5f9.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.new-trip {
+  width: 100%;
+  margin: auto;
+  background-image: url("https://user-images.githubusercontent.com/83885722/141418578-fd0344b5-64dd-40eb-a97c-ae293144a7dd.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+.trip-show {
+  width: 100%;
+  margin: auto;
+  background-image: url("https://user-images.githubusercontent.com/83885722/141418578-fd0344b5-64dd-40eb-a97c-ae293144a7dd.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+#weather_box {
+  box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.25), inset -6px -6px 6px rgba(255, 255, 255, 0.3);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: 0px 300px;
+  height: 80%;
+  border-radius: 25px;
+  background-color: rgba(240,240,240,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#user_box {
+  box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.25), inset -6px -6px 6px rgba(255, 255, 255, 0.3);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: 25px 25px 25px 25px;
+  height: 80%;
+  border-radius: 25px;
+  background-color: rgba(240,240,240,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#box {
+  box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.25), inset -6px -6px 6px rgba(255, 255, 255, 0.3);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: 25px 25px 25px 25px;
+  height: 80%;
+  border-radius: 25px;
+  background-color: rgba(240,240,240,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-5 {
+  box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.25), inset -6px -6px 6px rgba(255, 255, 255, 0.3);
+  padding-top: 2px;
+  padding-bottom: 5px;
+  margin: 25px 50px 75px 100px;
+  height: 50%;
+  border-radius: 25px;
+  background-color: rgba(240,240,240,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 h6 {
   display: inline-block;
-margin: 0;
+  margin: 0;
 }
 
 .nav-image {
